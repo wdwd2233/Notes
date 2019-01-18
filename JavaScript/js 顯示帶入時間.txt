@@ -1,0 +1,101 @@
+
+    //----------------------------------20190117 棋
+    // 1.使用者點按今日。
+    $('#btn-today').on('click', function (event) {
+        event.preventDefault();
+        //  2.系統填入今天日期於啟始與截止輸入盒。
+        var dt = new Date();
+        var sdt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#sDate').val(sdt + ' 00:00:00');
+        $('#eDate').val(sdt + ' 23:59:59');
+        //  3.結束。
+    });
+    // 1.使用者點按昨日。
+    $('#btn-yesterday').on('click', function (event) {
+        event.preventDefault();
+        //  2.系統填入昨天日期於啟始與截止輸入盒。
+        var dt = new Date();
+        dt.setDate(dt.getDate() - 1);
+        var sdt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#sDate').val(sdt + ' 00:00:00');
+        $('#eDate').val(sdt + ' 23:59:59');
+        //  3.結束。
+    });
+    // 1.使用者點按本周。
+    $('#btn-thisweek').on('click', function (event) {
+        event.preventDefault();
+        //  2.系統填入星期一啟始輸入盒，今日於截止輸入盒。
+        var dt = new Date();
+        var edt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#eDate').val(edt + ' 23:59:59');
+        var day = dt.getDay(),
+            diff = dt.getDate() - day + (day == 0 ? -6 : 1); // adjust when day is sunday
+        dt.setDate(diff);
+        var sdt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#sDate').val(sdt + ' 00:00:00');
+        //  3.結束。
+    });
+    // 1.使用者點按上周。
+    $('#btn-lastweek').on('click', function (event) {
+        event.preventDefault();
+        //  2.系統填入上周星期一啟始輸入盒，上周星期日於截止輸入盒。
+        var dt = new Date();
+        var day = dt.getDay(),
+            diff = dt.getDate() - day + (day == 0 ? -6 : 1) - 7;
+        dt.setDate(diff);
+        var sdt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#sDate').val(sdt + ' 00:00:00');
+        diff = dt.getDate() + 6;
+        dt.setDate(diff);
+        var edt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#eDate').val(edt + ' 23:59:59');
+        //  3.結束。
+    });
+    // 1.使用者點按本月。
+    $('#btn-thismonth').on('click', function (event) {
+        event.preventDefault();
+        //  2.系統填入本月一日啟始輸入盒，本月底於截止輸入盒。
+        var dt = new Date();
+        dt = new Date(dt.getFullYear(), dt.getMonth(), 1);
+        var sdt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#sDate').val(sdt + ' 00:00:00');
+        dt = new Date(dt.getFullYear(), dt.getMonth() + 1, 0);
+        var edt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#eDate').val(edt + ' 23:59:59');
+        //  3.結束。
+    });
+    // 1.使用者點按上月。
+    $('#btn-lastmonth').on('click', function (event) {
+        event.preventDefault();
+        //  2.系統填入上月一日於啟始輸入盒，上周底於截止輸入盒。
+        var dt = new Date();
+        dt = new Date(dt.getFullYear(), dt.getMonth() - 1, 1);
+        var sdt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#sDate').val(sdt + ' 00:00:00');
+        dt = new Date();
+        dt = new Date(dt.getFullYear(), dt.getMonth() - 1 + 1, 0);
+        var edt = dt.getFullYear().toString()
+            + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
+            + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
+        $('#eDate').val(edt + ' 23:59:59');
+        //  3.結束。
+    });
+    //----------------------------------20190117 棋

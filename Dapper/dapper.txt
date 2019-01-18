@@ -1,0 +1,24 @@
+	
+	
+---------------
+** select 值 (41564165)
+
+await con.ExecuteAsync("sp_GetMemberIdById", p, commandType: CommandType.StoredProcedure);
+ret = p.Get<int>("@r");
+	
+	
+** select count 值 ()
+
+IEnumerable<int> tmp = await con.QueryAsync<int>("sp_GetMemberIdById", p, commandType: CommandType.StoredProcedure);
+ret = tmp.FirstOrDefault();
+
+** select Model
+
+IEnumerable<GameRecordApiiTotalViewModel> tmp = await con.QueryAsync<GameRecordApiiTotalViewModel>("sp_GetGameRecordTotalApi", p, commandType: CommandType.StoredProcedure);
+ret = tmp.FirstOrDefault<GameRecordApiiTotalViewModel>();
+
+** select List<Model>
+
+IEnumerable<GameRecordApiiViewModel> tmp = await con.QueryAsync<GameRecordApiiViewModel>("sp_GetGameRecordListtApi", p, commandType: CommandType.StoredProcedure);
+ret = tmp.ToList<GameRecordApiiViewModel>();
+
