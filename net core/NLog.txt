@@ -1,0 +1,40 @@
+Install-Package NLog.Web.AspNetCore -Version 4.8.0
+Install-Package NLog.Extensions.Logging -Version 1.4.0
+Install-Package NLog.Targets.ElasticSearch -Version 6.0.0
+Install-Package Elasticsearch.Net -Version 6.5.0
+
+
+
+1.新增 NLog.config
+這邊的設定會將系統執行時的 Log 寫到文字檔與 Elasticsearch 中，
+Log 寫到 Elasticsearch 是透過 NLog.targets.ElasticSearch 這個套件
+
+1.1.修改 NLog.config 檔案屬性，將「複製到輸出目錄」修改為「永遠複製」
+
+
+2.修改 appsettings.Development.json
+ "ConnectionStrings":{
+			"ElasticSearchServerAddress": "http://127.0.0.1:9200"  //elasticsearch 服務位置
+ }
+ 
+ 
+3.修改 Program.cs
+   public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .UseNLog();             //新增.UseNLog();
+				
+				
+				
+4.修改 Startup.cs
+Configure 方法簽章增加 ILoggerFactory，並且在方法裡使用 AddNLog ( enable NLog as logging provider in .NET Core )
+
+using Microsoft.Extensions.Logging;
+using NLog.Extensions.Logging;
+
+public void Configure(,ILoggerFactory loggerFactory)
+
+//Configure加入
+loggerFactory.AddNLog();
+	
+	
