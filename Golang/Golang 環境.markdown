@@ -56,6 +56,7 @@
     }
 ```
 4.	專案偏好設定 設定→開啟settings.json→工作區設定
+
 ```javascript
 {
 			"go.inferGopath": true,
@@ -65,6 +66,7 @@
 }```
         
 5. 編譯命令 → ctrl+shift+b → tasks.json
+
 ```javascript
 {
    "version": "2.0.0",
