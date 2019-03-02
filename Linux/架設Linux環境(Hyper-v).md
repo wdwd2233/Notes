@@ -36,9 +36,11 @@
 
 
 ### 查看網路位置
+```javascript
 cd /etc/sysconfig/network-scripts/
-ls
 
+ls
+```
 ##### 啟動網路介面
 ```javascript
 ifup eth0
