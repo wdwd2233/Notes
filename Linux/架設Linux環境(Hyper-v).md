@@ -11,44 +11,48 @@
 
 ## Hyper-v 新增虛擬機器
 
-1. 名稱: ceserver
+* 名稱: ceserver
+* 儲存位置 : C:\Hyper-v\
+* 虛擬機世代 : 第一代
+* 記憶體: 2048 MB (使用動態記憶體)
+* 連線 : 外部
 
-2. 儲存位置 : C:\Hyper-v\
+## 安裝 CentOS 7
 
-3. 虛擬機世代 : 第一代
+* 虛擬機名稱 :ceserver.vhdx
+* 虛擬機位置 :C:\Hyper-v\ceserver\
+* 虛擬機大小 :127G
+* 從可開機CD/DVD-ROM安裝作業系統(映像檔(.iso檔)
 
-4. 記憶體: 2048 MB (使用動態記憶體)
+## Linux 設定
 
-5. 連線 : 外部
+* 配置
+ * ROOT密碼 : a
 
-虛擬機名稱 :ceserver.vhdx
-虛擬機位置 :C:\Hyper-v\ceserver\
-虛擬機大小 :127G
-從可開機CD/DVD-ROM安裝作業系統(映像檔(.iso檔)
-
-
-
-配置
-ROOT密碼 : a
-
-用戶建立 
-使用者名稱 : rd
-密碼 : a
+* 用戶建立 
+ * 使用者名稱 : rd
+ * 密碼 : a
 
 
 
-查看網路位置
+### 查看網路位置
 cd /etc/sysconfig/network-scripts/
 ls
 
 # 啟動網路介面
+```javascript
 ifup eth0
-
+```
 # 停用網路介面
+```javascript
 ifdown eth0
+```
 
-安裝 ifconfig
-sudo yum install net-tools 
+取得分配到的 IP 位置: 
+```javascript
+hostname -I
+```
+
 
 設定內網 IP
 
@@ -67,7 +71,7 @@ chmod +x *.sh
 
 
 ls      →檢查當前目錄下內容
-ls -al	→檢視當前目錄位置及內容 
+ls -al    →檢視當前目錄位置及內容 
 
 cd		→回到根目錄
 cd /etc →移動到目標目錄
