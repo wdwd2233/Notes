@@ -21,12 +21,12 @@
 
 ##安裝
 
-#### 1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit)
+####1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit)
 
 1. 測試是否安裝完成 cmd → git version
 	
  
-#### 2. golang [下載](https://golang.org/dl/) (go1.12.windows-amd64.msi)
+####2. golang [下載](https://golang.org/dl/) (go1.12.windows-amd64.msi)
 1. 測試是否安裝完成 cmd → cd c:/go → go version。
 
 2.	設定專案資料夾 (E:\GitHub\golang\Main)。
@@ -37,7 +37,7 @@
 3. 本機(內容) → 進階系統設定 → 環境變數 → GOPATH (E:\GitHub\golang\Main )。
 		
         
-#### 3. 安裝 VisualStudio Code [下載](https://code.visualstudio.com/)
+####3. 安裝 VisualStudio Code [下載](https://code.visualstudio.com/)
 
 1. 擴充功能 安裝 Go(ms-vscode.go) ,安裝完成需要重新啟動VS code。
 
