@@ -1,6 +1,6 @@
 ![golang](https://github.com/wdwd2233/Notes/blob/master/Golang/img/golang.png?raw=true)
 
-#Golang 環境
+# Golang 環境 #
 
 * 部署簡單
 
@@ -19,7 +19,7 @@
 
 
 
-##安裝##
+## 安裝 ##
 
 #### 1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit) ####
 
