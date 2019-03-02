@@ -1,3 +1,5 @@
+![golang](https://github.com/wdwd2233/Notes/blob/master/Golang/img/golang.png?raw=true)
+
 #Golang 環境
 
 * 部署簡單
