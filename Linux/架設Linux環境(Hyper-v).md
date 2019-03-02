@@ -27,7 +27,7 @@
 ## Linux 設定
 
 * 配置
- * ROOT密碼 : a
+ ** ROOT密碼 : a
 
 * 用戶建立 
  * 使用者名稱 : rd
@@ -39,11 +39,11 @@
 cd /etc/sysconfig/network-scripts/
 ls
 
-# 啟動網路介面
+##### 啟動網路介面
 ```javascript
 ifup eth0
 ```
-# 停用網路介面
+##### 停用網路介面
 ```javascript
 ifdown eth0
 ```
@@ -54,18 +54,13 @@ hostname -I
 ```
 
 
-設定內網 IP
 
-以 root 登入
-獲得自動分配到的 IP
-啟動網卡: ifup eth0
-取得分配到的 IP 位置: hostname -I
+### 腳本安裝
 
-複製安裝用的腳本
 cd SetupScript
 chmod +x *.sh
 
-執行設定內網 IP 的腳本
+### 執行設定內網 IP 的腳本
 ./setup_network.sh
 
 
