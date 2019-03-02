@@ -16,17 +16,17 @@ $('#btn-today').on('click', function (event) {
 
 ### 昨日
 ```javascript
-    $('#btn-yesterday').on('click', function (event) {
+$('#btn-yesterday').on('click', function (event) {
         event.preventDefault();
        
-        var dt = new Date();
+    var dt = new Date();
         dt.setDate(dt.getDate() - 1);
-        var sdt = dt.getFullYear().toString()
+    var sdt = dt.getFullYear().toString()
             + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
             + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
-        $('#sDate').val(sdt + ' 00:00:00');
-        $('#eDate').val(sdt + ' 23:59:59');
-    });
+    $('#sDate').val(sdt + ' 00:00:00');
+    $('#eDate').val(sdt + ' 23:59:59');
+});
 ```
 
 ### 本周
@@ -45,13 +45,13 @@ $('#btn-thisweek').on('click', function (event) {
     var sdt = dt.getFullYear().toString()
         + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
         + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
-     $('#sDate').val(sdt + ' 00:00:00');
+    $('#sDate').val(sdt + ' 00:00:00');
 });
 ```
 	
 ### 上周
 ```javascript
-    $('#btn-lastweek').on('click', function (event) {
+$('#btn-lastweek').on('click', function (event) {
         event.preventDefault();
 		
     var dt = new Date();
@@ -73,7 +73,7 @@ $('#btn-thisweek').on('click', function (event) {
 	
 ### 本月。
 ```javascript
-    $('#btn-thismonth').on('click', function (event) {
+$('#btn-thismonth').on('click', function (event) {
         event.preventDefault();
 		
     var dt = new Date();
@@ -91,7 +91,7 @@ $('#btn-thisweek').on('click', function (event) {
 ```
 ### 上月
 ```javascript
-    $('#btn-lastmonth').on('click', function (event) {
+$('#btn-lastmonth').on('click', function (event) {
         event.preventDefault();
 		
     var dt = new Date();
