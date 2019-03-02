@@ -106,5 +106,5 @@ $('#btn-lastmonth').on('click', function (event) {
         + '/' + (dt.getMonth() > 8 ? dt.getMonth() + 1 : '0' + (dt.getMonth() + 1).toString())
         + '/' + (dt.getDate() > 9 ? dt.getDate().toString() : '0' + dt.getDate().toString());
     $('#eDate').val(edt + ' 23:59:59');
-    });
+});
 ```
