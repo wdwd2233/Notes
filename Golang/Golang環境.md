@@ -23,11 +23,21 @@
 
 #### 1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit)
 
-1. 測試是否安裝完成 cmd → git version
+1. 安裝
+	
+	![選擇n++](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git1.png?raw=true)
+	
+	![command](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git2.png?raw=true)
+	
+2. 測試是否安裝完成 cmd → git version
+
+	![command](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git3.png?raw=true)
 	
  
 #### 2. golang [下載](https://golang.org/dl/) (go1.12.windows-amd64.msi)
 1. 測試是否安裝完成 cmd → cd c:/go → go version。
+
+	![command](https://github.com/wdwd2233/Notes/blob/master/Golang/img/go1.png?raw=true)
 
 2.	設定專案資料夾 (E:\GitHub\golang\Main)。
 
