@@ -72,10 +72,10 @@
 
 ```javascript
 {
-			"go.inferGopath": true,
-			"go.testFlags": [
-				"-v"
-			]
+	"go.inferGopath": true,
+	"go.testFlags": [
+		"-v"
+	]
 }
 ```
         
