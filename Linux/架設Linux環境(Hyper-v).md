@@ -27,12 +27,11 @@
 ## Linux 設定
 
 * 配置
-
- * ROOT密碼 : a
+    * ROOT密碼 : a
 
 * 用戶建立 
- * 使用者名稱 : rd
- * 密碼 : a
+    * 使用者名稱 : rd
+    * 密碼 : a
 
 
 
@@ -69,7 +68,7 @@ chmod +x *.sh
 ls      →檢查當前目錄下內容
 ls -al    →檢視當前目錄位置及內容 
 
-cd		→回到根目錄
+cd    	→回到根目錄
 cd /etc →移動到目標目錄
 
 cd (change directory, 變換目錄)
