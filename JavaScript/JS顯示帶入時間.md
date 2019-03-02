@@ -1,4 +1,4 @@
-#JavaScript
+# JavaScript
 
 
 ### 今日
@@ -49,7 +49,7 @@ $('#btn-thisweek').on('click', function (event) {
 });
 ```
 	
-### 上周。
+### 上周
 ```javascript
     $('#btn-lastweek').on('click', function (event) {
         event.preventDefault();
@@ -71,7 +71,7 @@ $('#btn-thisweek').on('click', function (event) {
 });
 ```
 	
-###本月。
+### 本月。
 ```javascript
     $('#btn-thismonth').on('click', function (event) {
         event.preventDefault();
@@ -89,7 +89,7 @@ $('#btn-thisweek').on('click', function (event) {
     $('#eDate').val(edt + ' 23:59:59');
 });
 ```
-###上月
+### 上月
 ```javascript
     $('#btn-lastmonth').on('click', function (event) {
         event.preventDefault();
