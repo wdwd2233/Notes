@@ -46,17 +46,18 @@
 3. 出現Install All全部安裝。
         
     1. 測試golang專案環境
-```javascript
-	package main
-    
-    import "fmt"
-    
-    func main() {
-        
-        fmt.Println("Hello ，世界")
-    
-    }
-```
+	```javascript
+		package main
+		
+		import "fmt"
+		
+		func main() {
+			
+			fmt.Println("Hello ，世界")
+		
+		}
+	```
+
 4. 專案偏好設定 設定→開啟settings.json→工作區設定
 
 ```javascript
@@ -65,7 +66,8 @@
 			"go.testFlags": [
 				"-v"
 			]
-}```
+}
+```
         
 5. 編譯命令 → ctrl+shift+b → tasks.json
 
