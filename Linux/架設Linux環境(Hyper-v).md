@@ -1,22 +1,32 @@
-架設Linux環境
 
-安裝 CentOS VM
-下載 CentOS minimal iso (如 CentOS-7-x86_64-DVD-1810.iso)
-網址: https://www.centos.org/download/
+![](https://github.com/wdwd2233/Notes/blob/master/Linux/img/hyper-v.jpg?raw=true)
 
 
-Hyper-v 新增虛擬機器
+# 架設Linux環境
 
-名稱: ceserver
-儲存位置 : C:\Hyper-v\
-虛擬機世代 : 第一代
-記憶體: 2048 MB (使用動態記憶體)
-連線 : 外部
+##### 1. 安裝 CentOS VM  [下載](https://www.centos.org/download/) 
+
+
+
+
+## Hyper-v 新增虛擬機器
+
+1. 名稱: ceserver
+
+2. 儲存位置 : C:\Hyper-v\
+
+3. 虛擬機世代 : 第一代
+
+4. 記憶體: 2048 MB (使用動態記憶體)
+
+5. 連線 : 外部
 
 虛擬機名稱 :ceserver.vhdx
 虛擬機位置 :C:\Hyper-v\ceserver\
 虛擬機大小 :127G
 從可開機CD/DVD-ROM安裝作業系統(映像檔(.iso檔)
+
+
 
 配置
 ROOT密碼 : a
@@ -56,7 +66,7 @@ chmod +x *.sh
 
 
 
-ls  	→檢查當前目錄下內容
+ls      →檢查當前目錄下內容
 ls -al	→檢視當前目錄位置及內容 
 
 cd		→回到根目錄
