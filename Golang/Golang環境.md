@@ -19,9 +19,9 @@
 
 
 
-##安裝
+##安裝##
 
-####1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit)
+#### 1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit) ####
 
 1. 測試是否安裝完成 cmd → git version
 	
