@@ -54,7 +54,7 @@
 
 
 
-### Linux 設定
+### Linux CentOS 設定
 
 #### 查看網路位置
 ```javascript
@@ -69,7 +69,7 @@ ifup eth0
 ```javascript
 ifdown eth0
 ```
-#####取得分配到的 IP 位置: 
+##### 取得分配到的 IP 位置: 
 ```javascript
 hostname -I
 ```
