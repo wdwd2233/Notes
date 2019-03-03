@@ -78,9 +78,9 @@ hostname -I
 
 1. 使用WinSCP 將檔案傳進  /root/
 	* ```javascript
-	cd SetupScript
-	chmod +x *.sh
-	```
+		cd SetupScript
+		chmod +x *.sh
+		```
 
 #### 腳本安裝
 ```javascript
