@@ -91,16 +91,30 @@ chmod +x *.sh
 ```
 
 
-### 安裝系統工具
+##### 3.安裝系統工具
+
+```javascript
+./install_systool.sh
+```
 
 1. 系統工具
 	1. samba
 	2. rsync
 	3. docker
-```javascript
-./install_systool.sh
-```
 
+
+##### 4. 安裝 git
+
+1. git工具	
+	1. git client
+	2. docker gitlab/gitlab-ce
+```javascript
+./install_git.sh
+```
+2. 手動在 C:\WINDOWS\system32\drivers\etc\hosts 加入 $git_server_ip git.ce.com.tw
+3. 更改密碼
+	1. 設定 root 密碼 (8 碼)
+	2. Sign in: root 確認登入
 
 ls      →檢查當前目錄下內容
 ls -al    →檢視當前目錄位置及內容 
