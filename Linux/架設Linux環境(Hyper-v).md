@@ -54,25 +54,29 @@
 
 
 
-### Linux CentOS 設定
+### Linux 設定內網
 
 #### 查看網路位置
 ```javascript
 cd /etc/sysconfig/network-scripts/
 ls
 ```
-##### 啟動網路介面
-```javascript
-ifup eth0
-```
 ##### 停用網路介面
 ```javascript
 ifdown eth0
+```
+##### 啟動網路介面
+```javascript
+ifup eth0
 ```
 ##### 取得分配到的 IP 位置: 
 ```javascript
 hostname -I
 ```
+
+### Linux 安裝腳本
+
+1. 使用WinSCP 將檔案傳進  
 
 #### 腳本安裝
 ```javascript
