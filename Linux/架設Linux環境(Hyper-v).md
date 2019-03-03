@@ -97,7 +97,7 @@ chmod +x *.sh
 	1. samba
 	2. rsync
 	3. docker
-2. ```javascript
+```javascript
 ./install_systool.sh
 ```
 
