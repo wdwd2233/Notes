@@ -104,13 +104,12 @@ chmod +x *.sh
 
 
 ##### 4. 安裝 git
-
-1. git工具	
-	1. git client
-	2. docker gitlab/gitlab-ce
 ```javascript
 ./install_git.sh
 ```
+1. git工具	
+	1. git client
+	2. docker gitlab/gitlab-ce
 2. 手動在 C:\WINDOWS\system32\drivers\etc\hosts 加入 $git_server_ip git.ce.com.tw
 3. 更改密碼
 	1. 設定 root 密碼 (8 碼)
