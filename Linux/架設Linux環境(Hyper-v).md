@@ -90,8 +90,6 @@ hostname -I
 	./setup_network.sh
 ```
 
-### 執行設定內網 IP 的腳本
-./setup_network.sh
 
 ### 安裝系統工具
 
