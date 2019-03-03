@@ -76,7 +76,11 @@ hostname -I
 
 ### Linux 安裝腳本
 
-1. 使用WinSCP 將檔案傳進  
+1. 使用WinSCP 將檔案傳進  /root/
+	* ```javascript
+	cd SetupScript
+	chmod +x *.sh
+	```
 
 #### 腳本安裝
 ```javascript
