@@ -77,13 +77,13 @@ hostname -I
 ### Linux 安裝腳本
 
 1. 複製安裝用的腳本
-	* 使用WinSCP 將檔案傳進  /root/
-	* ```javascript
+	1. 使用WinSCP 將檔案傳進  /root/
+	2. ```javascript
 		cd SetupScript
 		chmod +x *.sh
 		```
 2. 執行設定內網 IP 的腳本
-	* ```javascript
+	1. ```javascript
 		./setup_network.sh
 	  ```
 
