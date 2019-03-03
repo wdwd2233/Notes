@@ -80,6 +80,8 @@ hostname -I
 	1. 使用WinSCP 將檔案傳進  /root/
 	2. ```javascript
 		cd SetupScript
+		```
+	3. ```javascript
 		chmod +x *.sh
 		```
 2. 執行設定內網 IP 的腳本
