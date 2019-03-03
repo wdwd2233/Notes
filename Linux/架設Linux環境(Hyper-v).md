@@ -6,7 +6,7 @@
 
 ##### 1. 安裝 CentOS VM  [下載](https://www.centos.org/download/) 
 
-##### 2. 安裝 WinSCP [下載(免安裝)](https://www.azofreeware.com/2008/03/winscp-41-beta.html)
+##### 2. 安裝 WinSCP [免安裝](https://www.azofreeware.com/2008/03/winscp-41-beta.html)
 
 
 ## Hyper-v 新增虛擬機器
@@ -14,11 +14,11 @@
 1. 新增虛擬交換器管 → 虛擬交換器管理員 → 建立虛擬交換器 → 建立外部
 
 2. 
-* 名稱: ceserver
-* 儲存位置 : C:\Hyper-v\
-* 虛擬機世代 : 第一代
-* 記憶體: 2048 MB (使用動態記憶體)
-* 連線 : 外部
+	* 名稱: ceserver
+	* 儲存位置 : C:\Hyper-v\
+	* 虛擬機世代 : 第一代
+	* 記憶體: 2048 MB (使用動態記憶體)
+	* 連線 : 外部
 
 ## 安裝 CentOS 7
 
