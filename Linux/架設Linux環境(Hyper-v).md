@@ -54,10 +54,11 @@
 
 
 
-### 查看網路位置
+### Linux 設定
+
+#### 查看網路位置
 ```javascript
 cd /etc/sysconfig/network-scripts/
-
 ls
 ```
 ##### 啟動網路介面
@@ -68,13 +69,12 @@ ifup eth0
 ```javascript
 ifdown eth0
 ```
-
 #####取得分配到的 IP 位置: 
 ```javascript
 hostname -I
 ```
 
-### 腳本安裝
+#### 腳本安裝
 ```javascript
 cd SetupScript
 chmod +x *.sh
