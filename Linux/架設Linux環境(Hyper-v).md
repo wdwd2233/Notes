@@ -76,17 +76,16 @@ hostname -I
 
 ### Linux 安裝腳本
 
-1. 使用WinSCP 將檔案傳進  /root/
+1. 複製安裝用的腳本
+	* 使用WinSCP 將檔案傳進  /root/
 	* ```javascript
 		cd SetupScript
 		chmod +x *.sh
 		```
-
-#### 腳本安裝
-```javascript
-cd SetupScript
-chmod +x *.sh
-```
+2. 執行設定內網 IP 的腳本
+	* ```javascript
+		./setup_network.sh
+	  ```
 
 ### 執行設定內網 IP 的腳本
 ./setup_network.sh
