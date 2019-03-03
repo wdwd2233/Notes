@@ -93,13 +93,14 @@ hostname -I
 ./setup_network.sh
 
 ### 安裝系統工具
+
 1. ```javascript
 	./install_systool.sh
 	```
 2. 系統工具
- * samba
-* rsync
-* docker
+	* samba
+	* rsync
+	* docker
 
 
 ls      →檢查當前目錄下內容
