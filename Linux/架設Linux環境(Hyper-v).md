@@ -81,25 +81,25 @@ hostname -I
 1. 使用WinSCP 將檔案傳進  /root/
 	
 ```javascript
-	cd SetupScript
-	chmod +x *.sh
+cd SetupScript
+chmod +x *.sh
 ```
 		
 ##### 2. 執行設定內網 IP 的腳本
 ```javascript
-	./setup_network.sh
+./setup_network.sh
 ```
 
 
 ### 安裝系統工具
 
-1. ```javascript
-	./install_systool.sh
-	```
-2. 系統工具
-	* samba
-	* rsync
-	* docker
+1. 系統工具
+	1. samba
+	2. rsync
+	3. docker
+2. ```javascript
+./install_systool.sh
+```
 
 
 ls      →檢查當前目錄下內容
