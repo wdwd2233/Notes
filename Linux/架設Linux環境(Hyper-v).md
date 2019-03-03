@@ -76,15 +76,15 @@ hostname -I
 
 ### Linux 安裝腳本
 
-1. 複製安裝用的腳本
+##### 1. 複製安裝用的腳本
+
 	1. 使用WinSCP 將檔案傳進  /root/
+	
 	2. ```javascript
 		cd SetupScript
-		```
-	3. ```javascript
 		chmod +x *.sh
 		```
-2. 執行設定內網 IP 的腳本
+##### 2. 執行設定內網 IP 的腳本
 	1. ```javascript
 		./setup_network.sh
 	  ```
@@ -92,6 +92,14 @@ hostname -I
 ### 執行設定內網 IP 的腳本
 ./setup_network.sh
 
+### 安裝系統工具
+1. ```javascript
+	./install_systool.sh
+	```
+2. 系統工具
+ * samba
+* rsync
+* docker
 
 
 ls      →檢查當前目錄下內容
