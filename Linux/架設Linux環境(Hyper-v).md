@@ -114,3 +114,11 @@ chmod +x *.sh
 3. 更改密碼
 	1. 設定 root 密碼 (8 碼)
 	2. Sign in: root 確認登入
+	
+	
+##### 5. 安裝 MySQL
+```javascript
+./create_container
+```
+安裝 2 , 1 
+
