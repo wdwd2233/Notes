@@ -26,3 +26,23 @@
 6. setup_locale
 	* 設定 Linux 系統時區
 
+### server_operation.sh
+1. clone_server
+	* 關閉伺服器
+2. setup_server_firewall
+	* 設定防火牆
+		* 開啟 port=12201
+		* 開啟 port=12301
+		* 開啟 port=12401
+		* 開啟 port=12501
+		* 開啟 port=12601
+3. build_server
+	* 看不懂
+4. commit_server
+	* 看不懂
+5. pull_server_env
+	* 看不懂
+6. start_server
+7. stop_server
+8. check_server_status
+9. create_nginx
