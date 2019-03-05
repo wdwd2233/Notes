@@ -46,3 +46,6 @@
 7. stop_server
 8. check_server_status
 9. create_nginx
+	* 安裝 nginx (docker) 
+
+
