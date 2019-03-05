@@ -118,7 +118,12 @@ chmod +x *.sh
 	
 ##### 5. 安裝 MySQL
 ```javascript
-./create_container
+./create_container.sh
 ```
 安裝 2 , 1 
 
+##### 6. 安裝 Nginx
+```javascript
+./server_operation.sh
+```
+安裝 31
