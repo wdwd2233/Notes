@@ -1,0 +1,1 @@
+![windows10](https://github.com/wdwd2233/Notes/blob/master/Windows/img/WindowsServer.png?raw=true)
