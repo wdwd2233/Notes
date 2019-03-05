@@ -35,6 +35,7 @@
 
 ![windows10](https://github.com/wdwd2233/Notes/blob/master/Windows/img/VPN%20(7).png?raw=true)
 
-#### 9. 回到「FIC VPN」內容後，於「網路功能」頁籤，點選「網際網路通訊協定第4 版( TCP/IPv4 )」，然後再點選「內容」點選「進階」,取消「使用遠端網路的預設閘道」，然後點擊「確定」
+#### 9. 回到「FIC VPN」內容後，於「網路功能」頁籤，點選「網際網路通訊協定第4 版( TCP/IPv4 )」，
+	然後再點選「內容」點選「進階」,取消「使用遠端網路的預設閘道」，然後點擊「確定」
 
 ![windows10](https://github.com/wdwd2233/Notes/blob/master/Windows/img/VPN%20(1).png?raw=true)
