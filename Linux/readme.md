@@ -26,7 +26,7 @@
 		* 連線: 外部網路
 	5. 連接虛擬硬碟
 		* 虛擬機名稱: ceserver.vhdx
-		* 虛擬機位置: C:\Hyper-v\ceserver\
+		* 虛擬機位置: C:\Hyper-v\ceserver\Virtual Hard Disks\
 		* 虛擬機大小: 127G
 	6. 安裝選項
 		* 從可開機CD/DVD-ROM安裝作業系統
