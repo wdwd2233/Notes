@@ -1,0 +1,331 @@
+#!/bin/bash
+# common script functions
+
+#ANIS color
+#ex. printf "I ${ESC_RED}love${ESC_NC} Stack Overflow\n"
+#ex. echo -e "I ${ESC_RED}love${ESC_NC} Stack Overflow by echo"
+C_NONE=0
+C_BLACK=30
+C_RED=31
+C_GREEN=32
+C_YELLOW=33
+C_BLUE=34
+C_MAGENTA=35
+C_CYAN=36
+C_WHITE=37
+C_HL_BLACK=90
+C_HL_RED=91
+C_HL_GREEN=92
+C_HL_YELLOW=93
+C_HL_BLUE=94
+C_HL_MAGENTA=95
+C_HL_CYAN=96
+C_HL_WHITE=97
+
+ESC_RED='\033[0;31m'
+ESC_NC='\033[0m'
+ESC_FORMAT="\033[0;%dm%s\033[0m"
+ESC_BOLD_FORMAT="\033[1;%dm%s\033[0m"
+
+#列印顏色字串
+#ex. print C_RED "hello!"
+function printc()
+{
+	eval "c=\$$1"
+	fmt=$2
+	arg1=$3
+	arg2=$4
+	arg3=$5
+	arg4=$6
+	arg5=$7
+	cfmt=$(printf $ESC_FORMAT "$c" "$2")
+	
+	if [ -z "$arg1" ]; then
+		printf "$cfmt"
+	elif [ -z "$arg2" ]; then
+		printf "$cfmt" "$arg1"
+	elif [ -z "$arg3" ]; then
+		printf "$cfmt" "$arg1" "$arg2"
+	elif [ -z "$arg4" ]; then
+		printf "$cfmt" "$arg1" "$arg2" "$arg3"
+	elif [ -z "$arg5" ]; then
+		printf "$cfmt" "$arg1" "$arg2" "$arg3" "$arg4"
+	else
+		printf "$cfmt" "$arg1" "$arg2" "$arg3" "$arg4" "$arg5"
+	fi
+}
+
+#刪除含有search的該行
+#args: file, search pattern
+function file_delline()
+{
+	#echo sed -i "/$2/d" $1
+	sed -i "/$2/d" $1
+}
+
+
+#檔尾加入一行
+#args: file, new string
+function file_append()
+{
+	sed -i "$ a $2" $1
+}
+
+#檔案搜尋某一字串,刪除該行;並在檔尾加入新行
+#ex. file_rline a.txt ^NETWORK= NETWORK=192.168.1.254
+#	 => 原NETWORK那行會被刪除, 檔尾加入新行NETWORK=192.168.1.254
+#args: file, search pattern, new string
+function file_rline()
+{
+	file=$1
+	del=$2
+	append=$3
+	file_delline "$file" "$del"
+	file_append "$file" "$append"
+}
+
+#替代檔案字串
+#args: file, search pattern, new string
+function file_replace()
+{
+	file=$1
+	pattern=$2
+	replace=$3
+	sed -i "s/$pattern/$replace/" $file
+}
+
+#建立 mysql 使用者
+function mysql_createUser()
+{
+	user=$1
+	password=$2
+	domain=$3
+	mysql -uroot -e "CREATE USER '$user'@'$domain' IDENTIFIED BY '$password'" mysql
+	mysql -uroot -e "CREATE USER '$user'@localhost IDENTIFIED BY '$password'" mysql
+	mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO '$user'@'$domain' WITH GRANT OPTION" mysql
+	mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO '$user'@localhost WITH GRANT OPTION" mysql
+	mysql -uroot -e "FLUSH PRIVILEGES" mysql
+}
+
+#字串是否含有子字串
+#ex. strin abcdef abc
+# [ $? -eq 0 ] && echo good	#如果包含,echo good
+# [ $? -eq 0 ] || echo bad #如果不包含,echo bad
+# if [ $? -eq 0 ]; then echo good fi
+# strin abcdef abc && echo good
+function strin()
+{
+	str=$1
+	pattern=$2
+	if [[ "$str" == *"$pattern"* ]]; then
+		return 0
+	else
+		return 1
+	fi
+}
+
+
+#取得外部IP
+#ex.
+#	getOuterIP myip
+#	echo "Inner IP: $myip"
+function getOuterIP()
+{
+	for i in {1..4}
+	do
+		_ip=$(hostname -I | awk "{print $"$i"}")
+		[ "$_ip" != '' ] && (strin $_ip '10.1' || strin $_ip '10.0' || strin $_ip '192.168') || eval "$1=$_ip" && return 0
+	done
+	return 1
+}
+
+#取得內部IP
+#ex.
+#	getInnerIP myip
+#	echo "Inner IP: $myip"
+function getInnerIP()
+{
+	for i in {1..4}
+	do
+		_ip=$(hostname -I | awk "{print $"$i"}")
+		[ "$_ip" != '' ] && (strin $_ip '10.1' || strin $_ip '10.0' || strin $_ip '192.168') && eval "$1=$_ip" && return 0
+	done
+	return 1
+}
+
+#args: <asking message>
+#return: 1(false) or 0(true)
+#usage: 
+#if (askYesNo "hello?"); then 
+#	echo "yes"
+#else 
+#	echo "no"
+#fi
+function askYesNo()
+{
+	ret=0
+	while true; do
+		read -p "$1" yn
+		case $yn in
+			[Yy]* ) return 0;;
+			[Nn]* ) return 1;;
+			[Qq]* ) exit 1;;
+			* ) echo "Please answer yes or no.";;
+		esac
+	done
+	return $ret
+}
+#args: <color> <asking message>
+function askYesNoColor()
+{
+	eval "c=\$$1"
+	cmsg=$(printf $ESC_FORMAT "$c" "$2")
+	askYesNo "$cmsg"
+	return $?
+}
+
+#args: <msg> <output varname>
+#ex. askDefault "host ip address" static_ip
+#echo $static_ip
+function askDefault()
+{
+	msg=$1
+	varname=$2
+	default=${!varname}
+	
+	read -r -p "$msg($default)?" userInput
+	if ! [ -z "$default" ]; then
+		userInput=${userInput:-$default}
+	fi
+	
+	eval "$varname='$userInput'"
+}
+#args: <color> <msg> <output varname>
+function askDefaultColor()
+{
+	eval "c=\$$1"
+	cmsg=$(printf $ESC_FORMAT "$c" "$2")
+	askDefault "$cmsg" "$3"
+	return $?
+}
+
+
+#獲得此機器的 OS, Version name
+#ex.
+#	getOSVer os ver
+#	echo "this machine: $os $ver"
+function getOSVer()
+{
+	if [ -f /etc/os-release ]; then
+		# freedesktop.org and systemd
+		. /etc/os-release
+		OS=$NAME
+		VER=$VERSION_ID
+	elif type lsb_release >/dev/null 2>&1; then
+		# linuxbase.org
+		OS=$(lsb_release -si)
+		VER=$(lsb_release -sr)
+	elif [ -f /etc/lsb-release ]; then
+		# For some versions of Debian/Ubuntu without lsb_release command
+		. /etc/lsb-release
+		OS=$DISTRIB_ID
+		VER=$DISTRIB_RELEASE
+	elif [ -f /etc/debian_version ]; then
+		# Older Debian/Ubuntu/etc.
+		OS=Debian
+		VER=$(cat /etc/debian_version)
+	elif [ -f /etc/SuSe-release ]; then
+		# Older SuSE/etc.
+		...
+	elif [ -f /etc/redhat-release ]; then
+		# Older Red Hat, CentOS, etc.
+		...
+	else
+		# Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+		OS=$(uname -s)
+		VER=$(uname -r)
+	fi
+	
+	eval "$1='$OS'"
+	eval "$2='$VER'"
+	return 0
+}
+
+#搜尋程式碼檔案
+#usage: searchSourceCode <pattern> [dir]
+#ex. searchSourceCode .*Thread
+#ex. searchSourceCode api.*Thread\(
+function searchSourceCode()
+{
+	pattern=$1
+	dir=$2
+
+	if [ -z "$pattern" ]; then
+		echo "usage: $0 <pattern> [dir]"
+		exit 1
+	fi
+	if [ -z "$dir" ]; then
+		dir='.'
+	fi
+	
+	printc C_CYAN "exec: grep --include=\*.{c,h,cpp,inl} -rnw \"$dir\" -e \"$pattern\""
+	grep --color --include=\*.{c,h,cpp,inl} -rnw "$dir" -e "$pattern"
+}
+
+#args: <string> <find> <replace> <output varname>
+#ex. str_replace "$str" "$find" "$replace" result
+#echo $result
+function str_replace()
+{
+	s=$1
+	find=$2
+	replace=$3
+	varname=$4
+	
+	s2=${s//$find/$replace}
+	eval "$varname='$s2'"
+}
+
+
+#取亂數
+#ex. r=$(rand 5)	#取 0~4
+#ex. r=$(rand 1 5) #取 1~5
+#ex. r=$(rand) #取一個亂數
+function rand()
+{
+	from=$1
+	to=$2
+	
+	if [ -z "$to" ]; then
+			if [ -z "$from" ]; then
+				echo $RANDOM
+			else
+				echo $(($RANDOM % $from))
+			fi
+	else
+		num=$(($to - $from + 1))
+		echo $(($from + $RANDOM % $num))
+	fi
+}
+
+#替換 <tag>...</tag> 中字串
+#args: <file> <prefix tag> <postfix tag> <replace string>
+#ex. tag_replace 'b.txt' "'gameServers'" '],.*)' "gameServers => ${r}"
+function tag_replace()
+{
+	f=$1
+	prefix=$2
+	postfix=$3
+	rstr=$4
+
+	#echo sed -i ":begin; /${prefix}/,/${postfix}/ { /${postfix}/! { $! { N; b begin }; }; s/${prefix}.*${postfix}/${rstr}/; };" $f
+	sed -i ":begin; /${prefix}/,/${postfix}/ { /${postfix}/! { $! { N; b begin }; }; s/${prefix}.*${postfix}/${rstr}/; };" $f
+}
+
+#args: <func name> [arg1 arg2 ...]
+function sufunc()
+{
+	SH_DIR=$(dirname $(readlink -f $0))
+	FUNC=$(declare -f  "$1")
+	sudo bash -c "cd $SH_DIR; $FUNC; "$1" "$2" "$3" "$4" "$5" "$6""
+}
