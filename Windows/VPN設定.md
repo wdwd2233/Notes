@@ -17,7 +17,7 @@
 
 4. 如下圖，請填寫「網際網路位址」 及「目的地名稱」，然後點擊「建立」
 
-
+	![windows10](https://github.com/wdwd2233/Notes/blob/master/Windows/img/VPN%20(9).png?raw=true)
 
 5. 截至目前為止，尚未設定完成，請回至「網路和共用中心」，並點選「變更介面卡設定」。
 
