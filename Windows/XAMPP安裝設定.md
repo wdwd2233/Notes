@@ -8,7 +8,7 @@
 
 ###  2. XAMPP安裝
 
-1. ####警告視窗：預設安裝到C:\XAMPP資料夾中
+1. 警告視窗：預設安裝到C:\XAMPP資料夾中
 
 ![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).JPG?raw=true)
 
@@ -38,9 +38,15 @@
 
 
 
-### 更改 Apache 預設的根目錄
 
+## 更改 Apache 預設的根目錄
 
-DocumentRoot "C:/xampp/htdocs"
+### 首先還是先打開 XAMPP 的控制台，點一下在 Apache 那行的按鈕 Config 選擇 “Apache (httpd.conf)”
 
-DocumentRoot "D:\WorkPlace\cegame\env\server\backend"
+![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(6).png?raw=true)
+
+### 這時候會自動打開一個文件編輯器，然後進行修改：CTRL + F 尋找關鍵字 -> htdocs
+
+#### 注意的是 “DocumentRoot” & “<Directory “*:/xampp/htdocs”>” 要同時修改。
+
+![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(7).png?raw=true)
