@@ -34,7 +34,10 @@
 
 6. [Next]開始跑進度條
 
-	![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(5).png?raw=true)
+	![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(5).png?raw=true)  
+	
+	
+	
 
 
 - - - -
