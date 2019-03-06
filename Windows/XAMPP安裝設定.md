@@ -36,10 +36,6 @@
 
 	![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(5).png?raw=true)  
 	
-	
-	
-
-
 - - - -
 
 ## 更改 Apache 預設的根目錄
