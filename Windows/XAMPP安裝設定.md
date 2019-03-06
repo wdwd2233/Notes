@@ -4,15 +4,15 @@
 
 # XAMPP環境
 
-###  XAMPP [下載](https://www.apachefriends.org/zh_tw/index.html)
+###  1. XAMPP [下載](https://www.apachefriends.org/zh_tw/index.html)
 
-###  XAMPP安裝
+###  2. XAMPP安裝
 
-##### 警告視窗：預設安裝到C:\XAMPP資料夾中
+##### 1. 警告視窗：預設安裝到C:\XAMPP資料夾中
 ![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).JPG?raw=true)
 
 
-##### [Next]
+##### 2. [Next]
 ![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).png?raw=true)
 
 
