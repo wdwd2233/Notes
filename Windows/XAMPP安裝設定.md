@@ -8,12 +8,12 @@
 
 ###  2. XAMPP安裝
 
-##### 1. 警告視窗：預設安裝到C:\XAMPP資料夾中
-![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).JPG?raw=true)
+	##### 1. 警告視窗：預設安裝到C:\XAMPP資料夾中
+	![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).JPG?raw=true)
 
 
-##### 2. [Next]
-![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).png?raw=true)
+	##### 2. [Next]
+	![XAMPP](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP%20(1).png?raw=true)
 
 
 ##### 選擇要安裝的套件
