@@ -52,3 +52,22 @@
 	firewall-cmd --add-service=elasticsearch --permanent
 	firewall-cmd --reload
 	```
+	
+### 3. [Kibana](https://www.elastic.co/downloads/kibana)(kibana-6.6.1-x86_64.rpm)
+
+1. 用瀏覽器查詢 Elasticsearch API 實在是很難閱讀，所以需要一個漂亮的圖形化工具，下載後透過 WinSCP 放到 /tmp/，執行以下指令安裝：
+	```javascript
+	rpm -ivh /tmp/kibana-*.rpm
+	```
+2. 安裝好後，執行以下指令啟動: 
+	```javascript
+	systemctl start kibana
+	```
+3. 查看狀態：
+ 	```javascript
+	systemctl status kibana
+	```
+4. 設定 Kibana  綁定的 IP 及 Port
+ 	```javascript
+	vi /etc/kibana/kibana.yml
+	```
