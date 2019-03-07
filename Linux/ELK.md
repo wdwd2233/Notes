@@ -12,37 +12,36 @@
 	rpm -ivh /tmp/jre-*.rpm
 	```
 ### Elasticsearch [下載](https://www.elastic.co/downloads/elasticsearch) (elasticsearch-6.6.1.rpm)
- 1. Elasticsearch 是搜尋引擎，就像是資料庫，把收集到的 Log 存在這裡，讓你可以快速的查詢。
- 2.
+ 1. Elasticsearch 是搜尋引擎，就像是資料庫，把收集到的 Log 存在這裡，下載後透過 WinSCP 放到 /tmp/，執行以下指令安裝：
 	```javascript
 	rpm -ivh /tmp/elasticsearch-*.rpm
 	```
- 3. 安裝好後，執行以下指令啟動: 
+ 2. 安裝好後，執行以下指令啟動: 
 	```javascript
 	systemctl start elasticsearch
 	```
- 4. 查看狀態：
+ 3. 查看狀態：
  	```javascript
 	systemctl status elasticsearch
 	curl "http://localhost:9200/_cat/nodes"
 	```
- 5. 設定記憶體
+ 4. 設定記憶體
 	```javascript
 	rpm -ivh /tmp/elasticsearch-*.rpm
 	```
- 6. 設定 Elasticsearch 綁定的 IP 及 Port
+ 5. 設定 Elasticsearch 綁定的 IP 及 Port
  	```javascript
 	vi /etc/elasticsearch/elasticsearch.yml
 	```
- 7. 設定完成後，重新啟動：
+ 6. 設定完成後，重新啟動：
   	```javascript
 	systemctl restart elasticsearch
 	```
- 8. 試試看用 IP 查詢 nodes
+ 7. 試試看用 IP 查詢 nodes
    	```javascript
 	curl "http://192.168.2.107:9200/_cat/nodes"
 	```
- 9. 防火牆
+ 8. 防火牆
 	* 完全關閉
      ```javascript
 	systemctl stop firewalld
