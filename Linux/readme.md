@@ -70,10 +70,13 @@ ifdown eth0
 ifup eth0
 ```
 
-##### 添加開機自動啟動網路介面
+##### 開機自動啟動啟動網路介面
 ```javascript
-echo 'ONBOOT=yes'>>/etc/sysconfig/network-scripts/eth0
+cd /etc/sysconfig/network-scripts/ifcfg-eth0 
+↓
+ONBOOT=yes		<== 是否開機啟動
 ```
+
 
 ##### 取得分配到的 IP 位置: 
 ```javascript
