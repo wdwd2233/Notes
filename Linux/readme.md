@@ -69,6 +69,12 @@ ifdown eth0
 ```javascript
 ifup eth0
 ```
+
+##### 添加開機自動啟動網路介面
+```javascript
+echo 'ONBOOT=yes'>>/etc/sysconfig/network-scripts/eth0
+```
+
 ##### 取得分配到的 IP 位置: 
 ```javascript
 hostname -I
@@ -81,7 +87,7 @@ hostname -I
 1. 使用WinSCP 將檔案傳進  /root/
 	
 ```javascript
-cd SetupScript
+cd /SetupScript
 chmod +x *.sh
 ```
 		
