@@ -71,3 +71,8 @@
  	```javascript
 	vi /etc/kibana/kibana.yml
 	```
+ 6. 設定完成後，重新啟動：
+  	```javascript
+	systemctl restart kibana
+	```
+
