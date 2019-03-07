@@ -43,12 +43,12 @@
 	curl "http://192.168.2.107:9200/_cat/nodes"
 	```
  9. 防火牆
-  * 完全關閉
+	* 完全關閉
      ```javascript
 	systemctl stop firewalld
 	systemctl disable firewalld
 	```
-  * 增加防火牆規則
+	* 增加防火牆規則
      ```javascript
 	firewall-cmd --add-service=elasticsearch --permanent
 	firewall-cmd --reload
