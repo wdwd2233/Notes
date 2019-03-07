@@ -5,7 +5,7 @@
 
 # 安裝
 
-### 1. [Java](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html) (jdk-11.0.2_linux-x64_bin.rpm)
+### 1. [Java](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=236877_42970487e3af4f5aa5bca3f542482c60) (jre-8u201-linux-x64.rpm)
  1. 因為 Elasticsearch 及 Logstash 是用 Java 開發，所以要安裝 JVM，下載後透過 WinSCP 放到 /tmp/，執行以下指令安裝：
  2.
 	```javascript
