@@ -72,7 +72,7 @@ ifup eth0
 
 ##### 開機自動啟動啟動網路介面
 ```javascript
-cd /etc/sysconfig/network-scripts/ifcfg-eth0 
+vi /etc/sysconfig/network-scripts/ifcfg-eth0 
 ↓
 ONBOOT=yes		<== 是否開機啟動
 ```
@@ -90,7 +90,7 @@ hostname -I
 1. 使用WinSCP 將檔案傳進  /root/
 	
 ```javascript
-cd /SetupScript
+cd SetupScript/
 chmod +x *.sh
 ```
 		
