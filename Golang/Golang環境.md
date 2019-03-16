@@ -25,9 +25,18 @@
 
 1. 安裝
 	
-	![選擇n++](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git1.png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(1).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(2).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(3).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(4).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(5).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(6).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(7).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(8).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(9).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(10).png?raw=true)
+	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(11).png?raw=true)
 	
-	![command](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git2.png?raw=true)
 	
 2. 測試是否安裝完成 cmd → git version
 
