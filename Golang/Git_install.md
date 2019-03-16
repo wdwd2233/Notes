@@ -6,8 +6,12 @@
 ![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(1).png?raw=true)
 
 2.Seect Destination Location
-	>>>>C:\Program Files\Git
-	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(2).png?raw=true)
+```javascript
+C:\Program Files\Git
+```
+
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(2).png?raw=true)
+
 
 3. Select components
 	>>>>Windows Ecplorer integration
