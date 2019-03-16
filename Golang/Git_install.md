@@ -1,4 +1,7 @@
-1. Next
+
+# Git安裝
+
+### 1. Next
 	![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(1).png?raw=true)
 
 2.Seect Destination Location
