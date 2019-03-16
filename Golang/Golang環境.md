@@ -23,7 +23,7 @@
 
 #### 1.git [下載](https://gitforwindows.org/) (Git-2.21.0-64-bit)
 
-1. 安裝
+1. [安裝](https://github.com/wdwd2233/Notes/blob/master/Golang/Git_install.md)
 	
 2. 測試是否安裝完成 cmd → git version
 
