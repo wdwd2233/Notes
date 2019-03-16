@@ -12,6 +12,7 @@ C:\Program Files\Git
 
 ![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(2).png?raw=true)
 
+
 ### 3. Select components
 ```javascript
 Windows Ecplorer integration
@@ -24,46 +25,50 @@ Associate .sh files to be run with Bash
 
 ![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(3).png?raw=true)
 
+### 4. Select Start Menu Folder
+```javascript
+Git
+```
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(4).png?raw=true)
+
 ### 5. Choosing the default editor by git 
 ```javascript
 Use Notepad++ as Git's default editor
 ```
 
-![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(4).png?raw=true)
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(5).png?raw=true)
 
 ### 6. adjusting your PATH environment 
 ```javascript
 Git from the command line and also from 3ed-party software
 ```
 
-![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(5).png?raw=true)
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(6).png?raw=true)
 
 ### 7. choosing HTTPS transport backend
 ```javascript
 Use the OpenSSL library 
 ```
 	
-![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(6).png?raw=true)
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(7).png?raw=true)
 
 ### 8. configuring the line ending conversions 
 ```javascript
 Checkout windows-style , commit Unix-style line endings
 ```
 	
-![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(7).png?raw=true)
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(8).png?raw=true)
 
 ### 9. cconfiguring the terminal emulator to use whit Git Bash
 ```javascript
 Use MinTTY (the default terminal of MSYS2)
 ```
 
-![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(8).png?raw=true)
+![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(9).png?raw=true)
 
 ### 10. configuring extra options 
 ```javascript
 Enable file system caching 
 Enable Git Credential Manager
 ```
-
-![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(9).png?raw=true)
 ![安裝Git](https://github.com/wdwd2233/Notes/blob/master/Golang/img/git_install/git_install(10).png?raw=true)
