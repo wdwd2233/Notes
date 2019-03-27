@@ -5,6 +5,10 @@
 
 # 安裝
 ----
+
+cd /tmp
+
+
 ### 1. [Java](https://javadl.oracle.com/webapps/download/AutoDL?BundleId=236877_42970487e3af4f5aa5bca3f542482c60) (jre-8u201-linux-x64.rpm)
  1. 因為 Elasticsearch 及 Logstash 是用 Java 開發，所以要安裝 JVM，下載後透過 WinSCP 放到 /tmp/，執行以下指令安裝：
 	```javascript
@@ -95,7 +99,8 @@
 
 1. 用瀏覽器查詢 Elasticsearch API 實在是很難閱讀，所以需要一個漂亮的圖形化工具，下載後透過 WinSCP 放到 /tmp/，執行以下指令安裝：
 	```javascript
-	rpm -ivh /tmp/kibana-*.rpm
+	wget https://artifacts.elastic.co/downloads/kibana/kibana-6.6.2-x86_64.rpm
+	yum -y install /tmp/kibana-*.rpm
 	```
 2. 安裝好後，執行以下指令啟動: 
 	```javascript
