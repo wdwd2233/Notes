@@ -32,23 +32,23 @@
 	```javascript
 	vi /etc/elasticsearch/jvm.options
 	```
-	找到以下兩個設定值，都改為 1g：
-	# Xms 記憶體使用下限
-	# Xmx 記憶體使用上限
-	-Xms1g
-	-Xmx1g
+	* 找到以下兩個設定值，都改為 1g：
+	*  Xms 記憶體使用下限
+	*  Xmx 記憶體使用上限
+		* -Xms1g
+		* -Xmx1g
  5. 設定 Elasticsearch 綁定的 IP 及 Port
  	```javascript
 	vi /etc/elasticsearch/elasticsearch.yml
 	```
 	* 綁定特定 IP
-	* network.bind_host: 192.168.56.101
+		* network.bind_host: 192.168.56.101
 	* 綁定多個 IP
-	* network.host: ["192.168.56.101", "127.0.0.1"]
+		* network.host: ["192.168.56.101", "127.0.0.1"]
 	* 綁定所有 IP
-	* network.bind_host: 0.0.0.0
+		* network.bind_host: 0.0.0.0
 	* 綁定 Port，預設其實就是 9200
-	* http.port: 9200
+		* http.port: 9200
  6. 設定完成後，重新啟動：
   	```javascript
 	systemctl restart elasticsearch
