@@ -3,14 +3,14 @@
 
 ## 1. SQL Server 2016 組態管理員
 
-	1. SQL Server 服務
-		* MSSQLSERVER(MSSQLSERVER) `啟動`
-		* MSSQLSERVER `啟動`
+1. SQL Server 服務
+	* MSSQLSERVER(MSSQLSERVER) `啟動`
+	* MSSQLSERVER `啟動`
 		
 		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection.png?raw=true)
 		
-	2. SQL Server 服務組態
-		* MSSQLSERVER的通訊協定 → TCP/IP `已啟用`
+2. SQL Server 服務組態
+	* MSSQLSERVER的通訊協定 → TCP/IP `已啟用`
 		
 		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(2).png?raw=true)
 		
