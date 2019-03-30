@@ -1,5 +1,5 @@
 
-![SQL server] https://github.com/wdwd2233/Notes/blob/master/Windows/img/MicrosoftSQLServer2016.jpg?raw=true
+![SQL server] (https://github.com/wdwd2233/Notes/blob/master/Windows/img/MicrosoftSQLServer2016.jpg?raw=true)
 
 1. SQL Server 2016 組態管理員
 
