@@ -5,9 +5,9 @@
 
 #### 1. SQL Server 服務
 
- 1. MSSQLSERVER(MSSQLSERVER) `啟動`
+ * MSSQLSERVER(MSSQLSERVER) `啟動`
 	
- 2. MSSQLSERVER `啟動`
+ * MSSQLSERVER `啟動`
 		
 	![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection.png?raw=true)
 		
