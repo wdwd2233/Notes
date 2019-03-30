@@ -20,13 +20,13 @@
 ## 2. Microsoft SQL Server Management Studio 
 
  * 伺服器屬性
-  * 安全性 
+	* 安全性 
 	  * 伺服器驗證 SQL server 及 Windows `驗證模式`
 			
 		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(3).png?raw=true)
 		
  * 連線
-  * `允許此伺服器的遠端連線`
+	* `允許此伺服器的遠端連線`
 			
 		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(4).png?raw=true)
 
