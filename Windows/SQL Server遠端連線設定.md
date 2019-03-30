@@ -4,6 +4,7 @@
 ## 1. SQL Server 2016 組態管理員
 
 #### 1. SQL Server 服務
+
 	1. MSSQLSERVER(MSSQLSERVER) `啟動`
 	
 	2. MSSQLSERVER `啟動`
