@@ -1,0 +1,24 @@
+1. SQL Server 2016 組態管理員
+
+	1. SQL Server 服務
+		* MSSQLSERVER(MSSQLSERVER) 啟動
+		* MSSQLSERVER 啟動
+		
+	2. SQL Server 服務組態
+		* MSSQLSERVER的通訊協定 → TCP/IP 已啟用
+		
+2. Microsoft SQL Server Management Studio 
+
+	1. 伺服器屬性
+		* 安全性 
+			* 伺服器驗證 SQL server 及 Windows 驗證模式 
+		* 連線
+			* 允許此伺服器的遠端連線
+
+3. Windows 防火牆 
+
+	1. 防火牆 輸入規則
+		* 新增規則 → 連接埠 → TCP 特定本機連接埠 1433 
+		
+		
+連線字串 220.134.132.97,1433 
