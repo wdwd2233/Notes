@@ -33,9 +33,9 @@
 ## 3. Windows 防火牆 
 
  * 防火牆 輸入規則
-  * 新增規則 → 連接埠 → TCP 特定本機連接埠 `1433`
-		
-		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(5).png?raw=true)
+	* 新增規則 → 連接埠 → TCP 特定本機連接埠 `1433`
+
+	![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(5).png?raw=true)
 		
 
 `連線字串 220.134.132.97,1433` 
