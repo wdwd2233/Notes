@@ -1,7 +1,7 @@
 
 ![SQL server](https://github.com/wdwd2233/Notes/blob/master/Windows/img/MicrosoftSQLServer2016.jpg?raw=true)
 
-1. SQL Server 2016 組態管理員
+## 1. SQL Server 2016 組態管理員
 
 	1. SQL Server 服務
 		* MSSQLSERVER(MSSQLSERVER) `啟動`
@@ -14,7 +14,7 @@
 		
 		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(2).png?raw=true)
 		
-2. Microsoft SQL Server Management Studio 
+## 2. Microsoft SQL Server Management Studio 
 
 	1. 伺服器屬性
 		* 安全性 
@@ -27,7 +27,7 @@
 			
 			![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection%20(4).png?raw=true)
 
-3. Windows 防火牆 
+## 3. Windows 防火牆 
 
 	1. 防火牆 輸入規則
 		* 新增規則 → 連接埠 → TCP 特定本機連接埠 `1433`
