@@ -5,11 +5,11 @@
 
 #### 1. SQL Server 服務
 
-	1. MSSQLSERVER(MSSQLSERVER) `啟動`
+ 1. MSSQLSERVER(MSSQLSERVER) `啟動`
 	
-	2. MSSQLSERVER `啟動`
+ 2. MSSQLSERVER `啟動`
 		
-		![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection.png?raw=true)
+	![Setting](https://github.com/wdwd2233/Notes/blob/master/Windows/img/SQLConnection.png?raw=true)
 		
 #### 2. SQL Server 服務組態
 	* MSSQLSERVER的通訊協定 → TCP/IP `已啟用`
