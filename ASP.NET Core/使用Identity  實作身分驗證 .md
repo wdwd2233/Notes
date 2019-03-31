@@ -23,19 +23,19 @@ public void ConfigureServices(IServiceCollection services)
 
 	// 新增 Microsoft.AspNetCore.Authentication.Cookies
     services.AddAuthentication("MyCookieAuthenticationScheme")
-          .AddCookie("MyCookieAuthenticationScheme", options =>
-      {
-          options.AccessDeniedPath = "/Account/Forbidden/";
-          options.LoginPath = "/Account/Login/";
-      });
+        .AddCookie("MyCookieAuthenticationScheme", options =>
+			{
+				options.AccessDeniedPath = "/Account/Forbidden/";
+				options.LoginPath = "/Account/Login/";
+			});
 
 	// 建議作法
     //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    //    .AddCookie(options =>
-    //{
-    //    options.AccessDeniedPath = "/Account/Forbidden/";
-    //    options.LoginPath = "/Account/Login/";
-    //});
+    //  .AddCookie(options =>
+    //		{
+    //		    options.AccessDeniedPath = "/Account/Forbidden/";
+    //		    options.LoginPath = "/Account/Login/";
+    //		});
 
 	 
 }
