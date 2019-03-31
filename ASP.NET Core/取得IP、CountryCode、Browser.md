@@ -19,7 +19,7 @@ public void ConfigureServices(IServiceCollection services)
 
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-    // 取得client IP
+    // 新增
     services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 }
 ```
@@ -29,21 +29,22 @@ public void ConfigureServices(IServiceCollection services)
 ```javascript
 public class AccountController : Controller
 {
-// 取得client  IP
-private IHttpContextAccessor _accessor;
+	// 新增
+	private IHttpContextAccessor _accessor;
 
-public AccountController(IHttpContextAccessor accessor)
-{
-_accessor = accessor;
+	// 新增
+	public AccountController(IHttpContextAccessor accessor)
+	{
+		_accessor = accessor;
+	}
 
-
-
-public IActionResult Index()
-{
-// 取得client IP
-string IP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
-
-return View();
+	public IActionResult Index()
+	{
+		// 取得client IP
+		string IP = _accessor.HttpContext.Connection.RemoteIpAddress.ToString();
+		
+		return View();
+	}
 }
 ```
 
