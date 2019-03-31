@@ -70,8 +70,9 @@ public class AccountController : Controller
 	
 ## 3. 取得IP CountryCode
 
-	1. 使用 IPCountryFinder 取得，先將[IPCountryFinder](https://github.com/wdwd2233/Notes/blob/master/ASP.NET%20Core/library/IPCountryFinder.cs) 導入專案。
-	2. 繼承 改寫 Controller
+ 1. 使用 IPCountryFinder 取得，先將[IPCountryFinder](https://github.com/wdwd2233/Notes/blob/master/ASP.NET%20Core/library/IPCountryFinder.cs) 導入專案。
+ 2. 取得IP國別對應資料，透過[ipinfodb](https://ipinfodb.com/free-database) or [ip2location](https://lite.ip2location.com/database/ip-country) ，放入專案wwwroot內。
+ 3. 繼承 改寫 Controller
 	
 ```javascript
 public class AccountController : Controller
