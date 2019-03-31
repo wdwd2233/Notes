@@ -67,6 +67,39 @@ public class AccountController : Controller
 }
 ```
 	
+	
+## 3. 取得IP CountryCode
+
+```javascript
+public class AccountController : Controller
+{
+	// 新增
+	 private readonly IHostingEnvironment _hostingEnvironment;
+
+	// 新增
+	public AccountController(IHostingEnvironment hostingEnvironment)
+	{
+		_hostingEnvironment = hostingEnvironment;
+	}
+
+	public IActionResult Index()
+	{
+		// 宣告 
+		string DirPath = "",
+		// 取得網站根目錄
+		DirPath = Path.Combine(_hostingEnvironment.WebRootPath);
+		// 讀取IP 國別對應資料
+		Originalfile = Path.Combine(DirPath, "IpToCountry.csv");
+		// 宣告使用IPCountryFinder類別
+		IPCountryFinder IPArea = new IPCountryFinder(Originalfile
+		// 實作
+		string CountryCode = IPArea.GetCountryCode("220.134.132.79");
+		
+		return View();
+	}
+}
+```
+	
 一个在线编辑markdown文档的编辑器
 
 向Mac下优秀的markdown编辑器mou致敬
