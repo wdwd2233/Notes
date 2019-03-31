@@ -50,16 +50,16 @@ public class AccountController : Controller
 
 ## 2. 取得瀏覽器版本 IP位置
     
- 1.  使用UserAgent 取得，先將UserAgent導入專案。
+ 1.  使用UserAgent 取得，先將[UserAgent](Notes/ASP.NET Core/UserAgent.rar)導入專案。
  2.  
 ```javascript
 public class AccountController : Controller
 {
 	public IActionResult Index()
 	{
-	// 取得client瀏覽器、版本
-    UserAgent Agent = new UserAgent(Request.Headers["User-Agent"]);
-    string Browser = Agent.Browser.Name + " " + Agent.Browser.Version;
+		// 取得client瀏覽器、版本
+		UserAgent Agent = new UserAgent(Request.Headers["User-Agent"]);
+		string Browser = Agent.Browser.Name + " " + Agent.Browser.Version;
 	
 	return View();
 	}
