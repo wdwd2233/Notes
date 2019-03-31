@@ -50,7 +50,9 @@ public class AccountController : Controller
 
 ## 2. 取得瀏覽器版本 IP位置
     
- 1.  使用UserAgent 取得，先將[UserAgent](https://github.com/wdwd2233/Notes/blob/master/ASP.NET%20Core/UserAgent.rar) 導入專案。 
+ 1. 使用UserAgent 取得，先將[UserAgent](https://github.com/wdwd2233/Notes/blob/master/ASP.NET%20Core/UserAgent.rar) 導入專案。 
+ 2. 改寫 Controller
+ 
 ```javascript
 public class AccountController : Controller
 {
