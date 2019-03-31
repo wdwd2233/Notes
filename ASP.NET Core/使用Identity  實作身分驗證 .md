@@ -31,7 +31,7 @@ public void ConfigureServices(IServiceCollection services)
 	
 	// 建議作法
 	//services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-	//  .AddCookie(options =>
+	//	.AddCookie(options =>
 	//		{
 	//		    options.AccessDeniedPath = "/Account/Forbidden/";
 	//		    options.LoginPath = "/Account/Login/";
