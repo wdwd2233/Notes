@@ -24,7 +24,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
- 2. 改寫 Controller
+ 2. 改寫 Controller 。
 
 ```javascript
 public class AccountController : Controller
@@ -51,7 +51,7 @@ public class AccountController : Controller
 ## 2. 取得瀏覽器版本 IP位置
     
  1. 使用UserAgent 取得，先將[UserAgent](https://github.com/wdwd2233/Notes/blob/master/ASP.NET%20Core/library/UserAgent.rar) 導入專案。 
- 2. 繼承 改寫 Controller
+ 2. 繼承 改寫 Controller 。
  
 ```javascript
 public class AccountController : Controller
@@ -72,7 +72,7 @@ public class AccountController : Controller
 
  1. 使用 IPCountryFinder 取得，先將[IPCountryFinder](https://github.com/wdwd2233/Notes/blob/master/ASP.NET%20Core/library/IPCountryFinder.cs) 導入專案。
  2. 取得IP國別對應資料，透過[ipinfodb](https://ipinfodb.com/free-database) or [ip2location](https://lite.ip2location.com/database/ip-country) ，放入專案wwwroot內。
- 3. 繼承 改寫 Controller
+ 3. 繼承 改寫 Controller 。
 	
 ```javascript
 public class AccountController : Controller
