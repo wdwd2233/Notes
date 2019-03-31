@@ -71,8 +71,8 @@ public class AccountController : Controller
 		HttpContext.Session.SetInt32("AccountID", model.AccountID);
 		
 		//新英 讀取 
-		string Account = HttpContext.Session.GetString("Account") ;
-		int AccountID =  HttpContext.Session.GetInt32("AccountID") 
+		string Account = HttpContext.Session.GetString("Account");
+        int? AccountID = HttpContext.Session.GetInt32("AccountID");
 		
 		
 		return View();
