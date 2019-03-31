@@ -64,14 +64,14 @@ public class AccountController : Controller
 	{
 		// 新增
 		var identity = new ClaimsIdentity("Account");
-        identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
-        ClaimsPrincipal principal = new ClaimsPrincipal(identity);
-        await HttpContext.SignInAsync("MyCookieAuthenticationScheme", principal);
-
+		identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
+		ClaimsPrincipal principal = new ClaimsPrincipal(identity);
+		await HttpContext.SignInAsync("MyCookieAuthenticationScheme", principal);
+		
 		// 建議作法
-        //var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
-        //identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
-        //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
+		//var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
+		//identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
+		//await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
 
 		
 		
