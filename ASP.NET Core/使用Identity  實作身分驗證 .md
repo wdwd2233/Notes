@@ -22,28 +22,27 @@ public void ConfigureServices(IServiceCollection services)
 
 
 	// 新增 Microsoft.AspNetCore.Authentication.Cookies
-    services.AddAuthentication("MyCookieAuthenticationScheme")
-        .AddCookie("MyCookieAuthenticationScheme", options =>
+	services.AddAuthentication("MyCookieAuthenticationScheme")
+		.AddCookie("MyCookieAuthenticationScheme", options =>
 			{
 				options.AccessDeniedPath = "/Account/Forbidden/";
 				options.LoginPath = "/Account/Login/";
 			});
-
+	
 	// 建議作法
-    //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    //  .AddCookie(options =>
-    //		{
-    //		    options.AccessDeniedPath = "/Account/Forbidden/";
-    //		    options.LoginPath = "/Account/Login/";
-    //		});
+	//services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+	//  .AddCookie(options =>
+	//		{
+	//		    options.AccessDeniedPath = "/Account/Forbidden/";
+	//		    options.LoginPath = "/Account/Login/";
+	//		});
 
-	 
 }
 
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
 	// 新增 Authentication 
-    app.UseAuthentication();
+	app.UseAuthentication();
 	
 	
 	app.UseMvc(routes =>
@@ -62,6 +61,7 @@ public class AccountController : Controller
 {
 	public IActionResult Index()
 	{
+	
 		// 新增
 		var identity = new ClaimsIdentity("Account");
 		identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
@@ -73,8 +73,6 @@ public class AccountController : Controller
 		//identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
 		//await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
 
-		
-		
 		return View();
 	}
 }
