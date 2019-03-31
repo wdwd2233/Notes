@@ -72,7 +72,7 @@ public class AccountController : Controller
 		
 		//新英 讀取 
 		string Account = HttpContext.Session.GetString("Account");
-        int? AccountID = HttpContext.Session.GetInt32("AccountID");
+		int? AccountID = HttpContext.Session.GetInt32("AccountID");
 		
 		
 		return View();
