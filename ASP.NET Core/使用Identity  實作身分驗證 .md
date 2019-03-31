@@ -100,10 +100,10 @@ namespace Example.Controllers
 
 ```javascript   
 public async Task<IActionResult> Logout()
-	{
-		// 登出
-		await HttpContext.SignOutAsync("MyCookieAuthenticationScheme");
-	
-		return RedirectToAction("Index", "Home");
-	}
+{
+	// 登出
+	await HttpContext.SignOutAsync("MyCookieAuthenticationScheme");
+
+	return RedirectToAction("Index", "Home");
+}
 ```
