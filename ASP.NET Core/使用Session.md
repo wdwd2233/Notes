@@ -26,31 +26,29 @@ public void ConfigureServices(IServiceCollection services)
 
     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-
-	// 新增 Microsoft.AspNetCore.Authentication.Cookies
-    services.AddAuthentication("MyCookieAuthenticationScheme")
-          .AddCookie("MyCookieAuthenticationScheme", options =>
-      {
-          options.AccessDeniedPath = "/Account/Forbidden/";
-          options.LoginPath = "/Account/Login/";
-      });
-
-	// 建議作法
-    //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    //    .AddCookie(options =>
-    //{
-    //    options.AccessDeniedPath = "/Account/Forbidden/";
-    //    options.LoginPath = "/Account/Login/";
-    //});
-
+    // 新增 將 Session 存在 ASP.NET Core 記憶體中
+    services.AddDistributedMemoryCache();
+    services.AddMemoryCache();
+    services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+    services.AddHttpContextAccessor();
+    services.AddSession(options =>
+    {
+        //設定時間(30分鐘)
+        options.IdleTimeout = TimeSpan.FromMinutes(3000);
+    });
+    services.Configure<CookieTempDataProviderOptions>(options =>
+    {
+        //Tempdata 提供者和工作階段狀態的 cookie 
+        options.Cookie.IsEssential = true;
+    });
+	
 	 
 }
 
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
-	// 新增 Authentication 
-    app.UseAuthentication();
-	
+	// 新增 Microsoft.AspNetCore.Session
+    app.UseSession();
 	
 	app.UseMvc(routes =>
        {
@@ -68,17 +66,13 @@ public class AccountController : Controller
 {
 	public IActionResult Index()
 	{
-		// 新增
-		var identity = new ClaimsIdentity("Account");
-        identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
-        ClaimsPrincipal principal = new ClaimsPrincipal(identity);
-        await HttpContext.SignInAsync("MyCookieAuthenticationScheme", principal);
-
-		// 建議作法
-        //var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
-        //identity.AddClaim(new Claim(ClaimTypes.Name, model.Account));
-        //await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(identity));
-
+		//新增 寫入 Session
+		HttpContext.Session.SetString("Account", model.Account);
+		HttpContext.Session.SetInt32("AccountID", model.AccountID);
+		
+		//新英 讀取 
+		string Account = HttpContext.Session.GetString("Account");
+		int? AccountID = HttpContext.Session.GetInt32("AccountID");
 		
 		
 		return View();
@@ -86,21 +80,3 @@ public class AccountController : Controller
 }
 ```
 
- 4. 需要驗證的頁面
- 
-```javascript
-namespace Example.Controllers
-{
-    [Authorize]
-    public class ExampleController : Controller
-    {
-	
-        public async Task<ActionResult> Index()
-        {
-            return View();
-        }
-
-    
-    }
-} 
-```
