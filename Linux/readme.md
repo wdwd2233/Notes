@@ -149,4 +149,4 @@ chmod +x *.sh
 3. 操作redis	client   redis-cli
 4. 設定 		hset login:1001 ip "127.0.0.1"
 5. 讀取 		hget login:1001 ip
-6. 刪除 		cli.FlushAll().Result()
+6. 刪除 		cli.FlushAll().Result()  or flushall
