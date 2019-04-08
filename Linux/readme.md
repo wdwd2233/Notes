@@ -136,3 +136,17 @@ chmod +x *.sh
 ./server_operation.sh
 ```
 安裝 31
+
+
+##### 7. 安裝架設 Redis
+```javascript
+./create_container.sh
+```
+安裝 1
+
+1. 查看 		docker images 
+2. 進入redis	docker exec -it my-redis bash
+3. 操作redis	client   redis-cli
+4. 設定 		hset login:1001 ip "127.0.0.1"
+5. 讀取 		hget login:1001 ip
+6. 刪除 		cli.FlushAll().Result()
