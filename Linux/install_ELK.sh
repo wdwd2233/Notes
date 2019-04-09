@@ -71,23 +71,23 @@ function install_Kibana ()
 	echo '安裝成功 Kibana.....'
 }
 
-#install_Java
-#if [ $? -ne 0 ]; then
-#	printc C_RED "安裝 Java 失敗 ~! "
-#	exit 1;
-#fi
-#
-#install_Elasticsearch
-#if [ $? -ne 0 ]; then
-#	printc C_RED "安裝 Elasticsearch 失敗 ~! "
-#	exit 1;
-#fi
+install_Java
+if [ $? -ne 0 ]; then
+	printc C_RED "安裝 Java 失敗 ~! "
+	exit 1;
+fi
 
-#install_Logstash
-#if [ $? -ne 0 ]; then
-#	printc C_RED "安裝 Logstash 失敗 ~! "
-#	exit 1;
-#fi
+install_Elasticsearch
+if [ $? -ne 0 ]; then
+	printc C_RED "安裝 Elasticsearch 失敗 ~! "
+	exit 1;
+fi
+
+install_Logstash
+if [ $? -ne 0 ]; then
+	printc C_RED "安裝 Logstash 失敗 ~! "
+	exit 1;
+fi
 
 install_Kibana
 if [ $? -ne 0 ]; then
