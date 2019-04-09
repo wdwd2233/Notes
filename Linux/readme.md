@@ -72,9 +72,7 @@ ifup eth0
 
 ##### 開機自動啟動啟動網路介面
 ```javascript
-vi /etc/sysconfig/network-scripts/ifcfg-eth0 
-↓
-ONBOOT=yes		<== 是否開機啟動
+sed  -i 's/ONBOOT=no/ONBOOT=yes/g' /etc/sysconfig/network-scripts/ifcfg-eth0 
 ```
 
 
