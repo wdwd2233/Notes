@@ -12,7 +12,7 @@ function install_Java()
 function install_Elasticsearch ()
 {
 	echo '開始下載 Elasticsearch.....'
-	wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.6.2.rpm
+	wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.7.1.rpm
 	
 	echo '開始安裝 Elasticsearch.....'
 	yum -y install elasticsearch-*.rpm
@@ -36,7 +36,7 @@ function install_Elasticsearch ()
 function install_Logstash ()
 {
 	echo '開始下載 Logstash.....'
-	wget https://artifacts.elastic.co/downloads/logstash/logstash-6.6.2.rpm
+	wget https://artifacts.elastic.co/downloads/logstash/logstash-6.7.1.rpm
 	
 	echo '開始安裝 Logstash.....'
 	yum -y install logstash-*.rpm
@@ -53,7 +53,7 @@ function install_Logstash ()
 function install_Kibana ()
 {
 	echo '開始下載 Kibana.....'
-	wget https://artifacts.elastic.co/downloads/kibana/kibana-6.6.2-x86_64.rpm
+	wget https://artifacts.elastic.co/downloads/kibana/kibana-6.7.1-x86_64.rpm
 
 	echo '開始安裝 Kibana.....'
 	yum -y install /tmp/kibana-*.rpm
