@@ -6,6 +6,7 @@ function install_Java()
 	
 	cd /tmp
 	yum -y install java-1.8.0-openjdk-devel java-1.8.0-openjdk
+	
 	echo '安裝成功 Java.....'
 }
 
@@ -27,8 +28,16 @@ function install_Elasticsearch ()
 	#firewall-cmd --add-service=elasticsearch --permanent
 	#firewall-cmd --reload
 	
+	# 更改vm.max_map_count 數
+	echo "vm.max_map_count=262144" > /etc/sysctl.conf
+	# 重新啟動生效
+	sysctl -p
+	
 	#重新啟動 Elasticsearch
 	systemctl restart elasticsearch
+	
+	# 刪除安裝檔
+	rm -f elasticsearch-*.rpm
 	
 	echo '安裝成功 Elasticsearch.....'
 }
@@ -45,6 +54,9 @@ function install_Logstash ()
 	
 	# 啟動 Logstash 
 	systemctl start logstash
+	
+	# 刪除安裝檔
+	rm -f logstash-*.rpm
 	
 	echo '安裝成功 Logstash.....'
 }
@@ -69,6 +81,9 @@ function install_Kibana ()
 	systemctl start kibana
 	
 	echo '安裝成功 Kibana.....'
+	
+	# 刪除安裝檔
+	rm -f kibana-*.rpm
 }
 
 install_Java
