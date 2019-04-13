@@ -34,7 +34,8 @@ function install_Elasticsearch ()
 	sysctl -p
 	
 	#啟動 Elasticsearch
-	systemctl enable  elasticsearch
+	systemctl start elasticsearch
+	systemctl enable elasticsearch
 	
 	# 刪除安裝檔
 	rm -f elasticsearch-*.rpm
@@ -53,6 +54,7 @@ function install_Logstash ()
 	/usr/share/logstash/bin/system-install
 	
 	# 啟動 Logstash 
+	systemctl start logstash
 	systemctl enable logstash
 	
 	# 刪除安裝檔
@@ -78,6 +80,7 @@ function install_Kibana ()
 	#sed  -i 's/#i18n.locale: "en"/i18n.locale: "zh_CN"/g' /etc/kibana/kibana.yml
 	#python main.py /etc/kibana/
 	# 啟動 Logstash 
+	systemctl start kibana
 	systemctl enable kibana
 	
 	echo '安裝成功 Kibana.....'
@@ -90,19 +93,18 @@ function install_Kibana ()
 function localize_Kibana ()
 {
 	cd /tmp
+	git clone 'https://github.com/anbai-inc/Kibana_Hanization.git'
+	cp -r /tmp/Kibana_Hanization/translations /usr/share/kibana/src/legacy/core_plugins/kibana
 	
-	# git clone 'https://github.com/anbai-inc/Kibana_Hanization.git'
-	# cp -r /tmp/Kibana_Hanization/translations /usr/share/kibana/src/legacy/core_plugins/kibana
-	
-	wget https://github.com/wdwd2233/Notes/blob/master/Linux/Kibana/translations/zh_CN.json
-	mkdir -p /usr/share/kibana/src/legacy/core_plugins/kibana/translations
-	cp -r /tmp/zh_CN.json /usr/share/kibana/src/legacy/core_plugins/kibana/translations
+	#wget -c https://github.com/wdwd2233/Notes/blob/master/Linux/Kibana/translations/zh_CN.json
+	#mkdir -p /usr/share/kibana/src/legacy/core_plugins/kibana/translations
+	#cp -r /tmp/zh_CN.json /usr/share/kibana/src/legacy/core_plugins/kibana/translations
+	#chmod 755 /usr/share/kibana/src/legacy/core_plugins/kibana/translations/zh_CN.json
 	
 	
 	sed  -i 's/#i18n.locale: "en"/i18n.locale: "zh_CN"/g' /etc/kibana/kibana.yml
 	rm -rf Kibana_Hanization
 	systemctl restart kibana
-	
 	echo '漢化成功 Kibana.....'
 }
 
@@ -130,7 +132,6 @@ if [ $? -ne 0 ]; then
 	printc C_RED "安裝 Kibana 失敗 ~! "
 	exit 1;
 fi
-
 
 localize_Kibana
 if [ $? -ne 0 ]; then
