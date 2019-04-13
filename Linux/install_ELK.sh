@@ -86,6 +86,27 @@ function install_Kibana ()
 	rm -f kibana-*.rpm
 }
 
+
+function localize_Kibana ()
+{
+	cd /tmp
+	
+	# git clone 'https://github.com/anbai-inc/Kibana_Hanization.git'
+	# cp -r /tmp/Kibana_Hanization/translations /usr/share/kibana/src/legacy/core_plugins/kibana
+	
+	wget https://github.com/wdwd2233/Notes/blob/master/Linux/Kibana/translations/zh_TW.json
+	mkdir -p /usr/share/kibana/src/legacy/core_plugins/kibana/translations
+	cp -r /tmp/zh_TW.json /usr/share/kibana/src/legacy/core_plugins/kibana/translations
+	
+	
+	sed  -i 's/#i18n.locale: "en"/i18n.locale: "zh_TW"/g' /etc/kibana/kibana.yml
+	rm -rf Kibana_Hanization
+	systemctl restart kibana
+	
+	echo '漢化成功 Kibana.....'
+}
+
+
 install_Java
 if [ $? -ne 0 ]; then
 	printc C_RED "安裝 Java 失敗 ~! "
@@ -107,5 +128,12 @@ fi
 install_Kibana
 if [ $? -ne 0 ]; then
 	printc C_RED "安裝 Kibana 失敗 ~! "
+	exit 1;
+fi
+
+
+localize_Kibana
+if [ $? -ne 0 ]; then
+	printc C_RED "安裝 Kibana 漢化失敗 ~! "
 	exit 1;
 fi
