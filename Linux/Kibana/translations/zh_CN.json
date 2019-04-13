@@ -86,7 +86,7 @@
     "kbn.home.letsStartTitle": "讓我們開始吧",
 
     "kbn.home.letsStartDescription_": "We noticed that you don't have any data in your cluster. You can try our sample data and dashboards or jump in with your own data.",
-    "kbn.home.letsStartDescription": "我們註意到您的集群中沒有任何數據。您可以嘗試使用我們提供的示例數據和儀表板，也可以使用自己的數據。",
+    "kbn.home.letsStartDescription": "我們注意到您的集群中沒有任何數據。您可以嘗試使用我們提供的示例數據和儀表板，也可以使用自己的數據。",
 
     "kbn.home.tryButtonLabel_": "Try our sample data",
     "kbn.home.tryButtonLabel": "試試我們的示例數據",
@@ -269,7 +269,7 @@
     "kbn.discoverTitle": "發現",
 
     "kbn.management.objects.objectsTable.howToDeleteSavedObjectsDescription_": "From here you can delete saved objects, such as saved searches. You can also edit the raw data of saved objects. Typically objects are only modified via their associated application, which is probably what you should use instead of this screen.",
-    "kbn.management.objects.objectsTable.howToDeleteSavedObjectsDescription": "從這里，您可以刪除已保存的對象，例如已保存的搜索。您還可以編輯已保存對象的原始數據。通常，對象僅通過其關聯的應用程序進行修改，而不是在這里進行修改。",
+    "kbn.management.objects.objectsTable.howToDeleteSavedObjectsDescription": "從這裡，您可以刪除已保存的對象，例如已保存的搜索。您還可以編輯已保存對象的原始數據。通常，對像僅通過其關聯的應用程序進行修改，而不是在這裡進行修改。",
 
     "kbn.dashboard.listing.searchBar.searchFieldPlaceholder_": "Search…",
     "kbn.dashboard.listing.searchBar.searchFieldPlaceholder": "搜索...",
@@ -926,7 +926,7 @@
     "xpack.ml.fileDatavisualizer.resultsLinks.openInDataVisualizerTitle": "數據可視化",
 
     "xpack.ml.datavisualizer.selector.dataVisualizerDescription_": "The Machine Learning Data Visualizer tool helps you understand your data, by analyzing the metrics and fields in a log file or an existing Elasticsearch index.",
-    "xpack.ml.datavisualizer.selector.dataVisualizerDescription": "機器學習數據可視化工具通過分析日誌文件或現有的Elasticsearch索引中的指標和字段, 幫助您了解數據。",
+    "xpack.ml.datavisualizer.selector.dataVisualizerDescription": "機器學習數據可視化工具通過分析日誌文件或現有的Elasticsearch索引中的指標和字段, 幫助您瞭解數據。",
 
     "xpack.ml.datavisualizer.showEmptyFieldsLabel_": "show empty fields",
     "xpack.ml.datavisualizer.showEmptyFieldsLabel": "顯示空字段",
@@ -965,7 +965,7 @@
     "xpack.ml.datavisualizer.startTrial.fullMLFeaturesDescription": "要體驗 {platinumSubscriptionLink} 提供的完整機器學習功能, 請開始30天的試用。",
 
     "xpack.ml.datavisualizer.sidebar.createJobDescription_": "Use the Advanced job wizard to create a job to find anomalies in this data:",
-    "xpack.ml.datavisualizer.sidebar.createJobDescription": "使用'高級作業'向導創建作業以查找此數據中的異常：",
+    "xpack.ml.datavisualizer.sidebar.createJobDescription": "使用'高級作業'嚮導創建作業以查找此數據中的異常：",
 
     "xpack.ml.datavisualizer.metricInternalServerErrorTitle_": "Error loading data for metrics in index {index}. {message}. The request may have timed out. Try using a smaller sample size or narrowing the time range.",
     "xpack.ml.datavisualizer.metricInternalServerErrorTitle": "在索引{index}中加載指標數據時出錯。{message}。請求可能已超時。請嘗試使用較小的樣本量或縮小時間範圍。",
@@ -1103,7 +1103,7 @@
     "common.ui.courier.indexPatternIdLabel": "索引規則ID",
 
     "common.ui.fieldEditor.url.labelTemplateHelpText_": "Label template help",
-    "common.ui.fieldEditor.url.labelTemplateHelpText": "標簽模板幫助",
+    "common.ui.fieldEditor.url.labelTemplateHelpText": "標籤模板幫助",
 
     "common.ui.fieldEditor.url.urlTemplateLabel_": "URL template",
     "common.ui.fieldEditor.url.urlTemplateLabel": "URL模板",
@@ -1121,7 +1121,7 @@
     "common.ui.aggTypes.customMetricLabel": "自定義指標",
 
     "common.ui.notify.toaster.fixItButtonLabel_": "Fix it",
-    "common.ui.notify.toaster.fixItButtonLabel": "修複它",
+    "common.ui.notify.toaster.fixItButtonLabel": "修復它",
 
     "xpack.ml.settings.filterLists.table.newButtonLabel_": "New",
     "xpack.ml.settings.filterLists.table.newButtonLabel": "新建",
@@ -1412,7 +1412,7 @@
     "kbn.discover.noResults.indexFailureIndexText": "索引 {failureIndex}",
 
     "kbn.discover.fieldChooser.fieldCalculator.analysisIsNotAvailableForObjectFieldsErrorMessage_": "Analysis is not available for object fields.",
-    "kbn.discover.fieldChooser.fieldCalculator.analysisIsNotAvailableForObjectFieldsErrorMessage": "分析不適用於對象字段。",
+    "kbn.discover.fieldChooser.fieldCalculator.analysisIsNotAvailableForObjectFieldsErrorMessage": "分析不適用於對像字段。",
 
     "kbn.discover.bucketIntervalTooltip.tooLargeBucketsText_": "buckets that are too large",
     "kbn.discover.bucketIntervalTooltip.tooLargeBucketsText": "桶過大",
@@ -1532,7 +1532,7 @@
     "kbn.discover.fieldChooser.toggleFieldFilterButtonShowAriaLabel": "顯示字段設置",
 
     "kbn.discover.fetchError.howToAddressErrorDescription_": "You can address this error by editing the {fetchErrorScript} field in {managementLink}, under the {scriptedFields} tab.",
-    "kbn.discover.fetchError.howToAddressErrorDescription": "您可以通過在{managementLink}中的{fetchErrorScript}字段在{scriptedFields}標簽下編輯{fetchErrorScript}字段來解決此錯誤。",
+    "kbn.discover.fetchError.howToAddressErrorDescription": "您可以通過在{managementLink}中的{fetchErrorScript}字段在{scriptedFields}標籤下編輯{fetchErrorScript}字段來解決此錯誤。",
 
     "kbn.discover.noResults.expandYourTimeRangeTitle_": "Expand your time range",
     "kbn.discover.noResults.expandYourTimeRangeTitle": "擴展您的時間範圍",
@@ -1640,7 +1640,7 @@
     "common.ui.notify.toaster.errorTitle": "錯誤",
 
     "common.ui.notify.toaster.unavailableServerErrorMessage_": "An HTTP request has failed to connect. Please check if the Kibana server is running and that your browser has a working connection, or contact your system administrator.",
-    "common.ui.notify.toaster.unavailableServerErrorMessage": "HTTP請求連接失敗。請檢查kibana服務器是否正在運行, 您的瀏覽器是否有工作連接, 或與系統管理員聯系。",
+    "common.ui.notify.toaster.unavailableServerErrorMessage": "HTTP請求連接失敗。請檢查kibana服務器是否正在運行, 您的瀏覽器是否有工作連接, 或與系統管理員聯繫。",
 
     "common.ui.notify.toaster.timeRemainingInSecondsLabel_": "{timeRemaining}s",
     "common.ui.notify.toaster.timeRemainingInSecondsLabel": "{timeRemaining}秒",
@@ -1769,7 +1769,7 @@
     "xpack.monitoring.noData.blurbs.monitoringIsOffTitle": "監控功能當前是關閉狀態",
 
     "xpack.crossClusterReplication.autoFollowPatternDetailPanel.viewIndicesLink_": "View your follower indices in Index Management",
-    "xpack.crossClusterReplication.autoFollowPatternDetailPanel.viewIndicesLink": "在索引管理中查看您的關註者指數",
+    "xpack.crossClusterReplication.autoFollowPatternDetailPanel.viewIndicesLink": "在索引管理中查看您的關注者指數",
 
     "xpack.crossClusterReplication.followerIndexDetailPanel.viewIndexLink_": "View in Index Management",
     "xpack.crossClusterReplication.followerIndexDetailPanel.viewIndexLink": "在索引管理中查看",
@@ -1781,28 +1781,28 @@
     "kbn.management.objects.view.howToModifyObjectTitle": "請謹慎行事!",
 
     "kbn.management.objects.view.howToModifyObjectDescription_": " Modifying objects is for advanced users only. Object properties are not validated and invalid objects could cause errors, data loss, or worse. Unless someone with intimate knowledge of the code told you to be in here, you probably shouldn\u2019t be.",
-    "kbn.management.objects.view.howToModifyObjectDescription": "修改對象僅適用於高級用戶。對象屬性未經過驗證, 無效對象可能會導致錯誤、數據丟失或更糟的情況。除非有熟悉代碼的人告訴你在這里應如何修改, 否則你可能不應該在這里修改配置。",
+    "kbn.management.objects.view.howToModifyObjectDescription": "修改對像僅適用於高級用戶。對像屬性未經過驗證, 無效對象可能會導致錯誤、數據丟失或更糟的情況。除非有熟悉代碼的人告訴你在這裡應如何修改, 否則你可能不應該在這裡修改配置。",
 
     "kbn.management.objects.view.savedSearchDoesNotExistErrorMessage_": "The saved search associated with this object no longer exists.",
-    "kbn.management.objects.view.savedSearchDoesNotExistErrorMessage": "與此對象關聯的已保存搜索將不再存在。",
+    "kbn.management.objects.view.savedSearchDoesNotExistErrorMessage": "與此對像關聯的已保存搜索將不再存在。",
 
     "kbn.management.objects.view.viewItemButtonLabel_": "View {title}",
     "kbn.management.objects.view.viewItemButtonLabel": "查看{title}",
 
     "kbn.management.objects.view.fieldDoesNotExistErrorMessage_": "A field associated with this object no longer exists in the index pattern.",
-    "kbn.management.objects.view.fieldDoesNotExistErrorMessage": "與此對象關聯的字段將不再存在於索引規則中。",
+    "kbn.management.objects.view.fieldDoesNotExistErrorMessage": "與此對像關聯的字段將不再存在於索引規則中。",
 
     "kbn.management.objects.view.howToFixErrorDescription_": "If you know what this error means, go ahead and fix it \u2014 otherwise click the delete button above.",
-    "kbn.management.objects.view.howToFixErrorDescription": "如果您知道此錯誤的含義, 請繼續修複它, 否則單擊上面的刪除按鈕。",
+    "kbn.management.objects.view.howToFixErrorDescription": "如果您知道此錯誤的含義, 請繼續修復它, 否則單擊上面的刪除按鈕。",
 
     "kbn.management.objects.view.indexPatternDoesNotExistErrorMessage_": "The index pattern associated with this object no longer exists.",
-    "kbn.management.objects.view.indexPatternDoesNotExistErrorMessage": "與此對象關聯的索引規則將不再存在。",
+    "kbn.management.objects.view.indexPatternDoesNotExistErrorMessage": "與此對像關聯的索引規則將不再存在。",
 
     "kbn.management.objects.view.cancelButtonAriaLabel_": "Cancel",
     "kbn.management.objects.view.cancelButtonAriaLabel": "取消",
 
     "kbn.management.objects.view.saveButtonLabel_": "Save { title } Object",
-    "kbn.management.objects.view.saveButtonLabel": "保存{ title }對象",
+    "kbn.management.objects.view.saveButtonLabel": "保存{ title }對像",
 
     "kbn.management.objects.view.deleteItemButtonLabel_": "Delete {title}",
     "kbn.management.objects.view.deleteItemButtonLabel": "刪除{title}",
@@ -1829,7 +1829,7 @@
     "kbn.management.objects.view.savedObjectProblemErrorMessage": "此保存的對象有問題",
 
     "kbn.management.objects.view.saveButtonAriaLabel_": "Save { title } Object",
-    "kbn.management.objects.view.saveButtonAriaLabel": "保存{ title }對象",
+    "kbn.management.objects.view.saveButtonAriaLabel": "保存{ title }對像",
 
     "kbn.management.objects.view.cancelButtonLabel_": "Cancel",
     "kbn.management.objects.view.cancelButtonLabel": "取消",
@@ -1838,13 +1838,13 @@
     "kbn.discover.topNav.openSearchPanel.openSearchTitle": "打開搜索",
 
     "console.consoleDisplayName_": "Console",
-    "console.consoleDisplayName": "控制臺",
+    "console.consoleDisplayName": "控制台",
 
     "kbn.devTools.consoleTitle_": "Console",
-    "kbn.devTools.consoleTitle": "控制臺",
+    "kbn.devTools.consoleTitle": "控制台",
 
     "console.welcomePage.pageTitle_": "Welcome to Console",
-    "console.welcomePage.pageTitle": "歡迎來到控制臺",
+    "console.welcomePage.pageTitle": "歡迎來到控制台",
 
     "xpack.monitoring.noData.blurbs.monitoringIsOffDescription_": "Monitoring provides insight to your hardware performance and load.",
     "xpack.monitoring.noData.blurbs.monitoringIsOffDescription": "監控提供了對硬件性能和負載的觀察。",
@@ -1898,7 +1898,7 @@
     "xpack.monitoring.cluster.overview.logstashPanel.overviewLinkLabel": "總覽",
 
     "xpack.monitoring.cluster.listing.alertsInticator.highSeverityTooltip_": "There are some critical cluster issues that require your immediate attention!",
-    "xpack.monitoring.cluster.listing.alertsInticator.highSeverityTooltip": "有一些很關鍵的集群問題需要您立即關註！",
+    "xpack.monitoring.cluster.listing.alertsInticator.highSeverityTooltip": "有一些很關鍵的集群問題需要您立即關注！",
 
     "xpack.monitoring.cluster.listing.incompatibleLicense.getLicenseLinkLabel_": "Get a license with full functionality",
     "xpack.monitoring.cluster.listing.incompatibleLicense.getLicenseLinkLabel": "獲取全功能授權",
@@ -2219,7 +2219,7 @@
     "kbn.management.editIndexPattern.sourcePlaceholder": "源篩選器，接受通配符(例如：`user*` 以篩選以'user'開頭的字段)",
 
     "kbn.management.editIndexPattern.mappingConflictLabel_": "{conflictFieldsLength, plural, one {A field is} other {# fields are}} defined as several types (string, integer, etc) across the indices that match this pattern. You may still be able to use these conflict fields in parts of Kibana, but they will be unavailable for functions that require Kibana to know their type. Correcting this issue will require reindexing your data.",
-    "kbn.management.editIndexPattern.mappingConflictLabel": "{conflictFieldsLength, plural, one {字段被} other {# 字段被}} 定義為多個與此模式匹配的索引類型(字符串、整數等)。 您可能仍然可以在Kibana的某些部分使用這些沖突字段，但對於需要Kibana知道其類型的函數，它們將不可用。更正此問題需要重新索引數據。",
+    "kbn.management.editIndexPattern.mappingConflictLabel": "{conflictFieldsLength, plural, one {字段被} other {# 字段被}} 定義為多個與此模式匹配的索引類型(字符串、整數等)。 您可能仍然可以在Kibana的某些部分使用這些衝突字段，但對於需要Kibana知道其類型的函數，它們將不可用。更正此問題需要重新索引數據。",
 
     "kbn.management.editIndexPattern.scripted.table.langDescription_": "Language used for the field",
     "kbn.management.editIndexPattern.scripted.table.langDescription": "用於該字段的語言",
@@ -2264,7 +2264,7 @@
     "kbn.management.editIndexPattern.fields.table.primaryTimeAriaLabel": "主時間字段",
 
     "kbn.management.editIndexPattern.mappingConflictHeader_": "Mapping conflict",
-    "kbn.management.editIndexPattern.mappingConflictHeader": "映射沖突",
+    "kbn.management.editIndexPattern.mappingConflictHeader": "映射衝突",
 
     "kbn.management.editIndexPattern.scripted.deprecationLangLabel.deprecationLangDetail_": "The following deprecated languages are in use: {deprecatedLangsInUse}. Support for these languages will be removed in the next major version of Kibana and Elasticsearch. Convert you scripted fields to {link} to avoid any problems.",
     "kbn.management.editIndexPattern.scripted.deprecationLangLabel.deprecationLangDetail": "以下不推薦使用的語言正在使用中: {deprecatedLangsInUse}。對這些語言的支持將在Kibana和Elasticsearch的下一個主要版本中刪除。將腳本化的字段轉換為{link}，以避免引起任何問題。",
@@ -2282,7 +2282,7 @@
     "kbn.management.editIndexPattern.source.table.deleteAria": "刪除",
 
     "kbn.management.editIndexPattern.unsupportedTimePatternLabel_": "Support for time-interval based index patterns has been removed! In the next major version of Kibana this index patterns will stop working. Migrate saved objects that use this index pattern to a wildcard pattern and delete this one.",
-    "kbn.management.editIndexPattern.unsupportedTimePatternLabel": "對基於時間間隔的索引規則的支持已被刪除！在Kibana的下一個主要版本中, 這種索引規則將停止工作。將使用此索引規則的已保存對象遷移到通配符模式, 並將其刪除。",
+    "kbn.management.editIndexPattern.unsupportedTimePatternLabel": "對基於時間間隔的索引規則的支持已被刪除！在Kibana的下一個主要版本中, 這種索引規則將停止工作。將使用此索引規則的已保存對像遷移到通配符模式, 並將其刪除。",
 
     "kbn.management.editIndexPattern.fields.table.searchableDescription_": "These fields can be used in the filter bar",
     "kbn.management.editIndexPattern.fields.table.searchableDescription": "這些字段可在篩選器欄中使用",
@@ -2351,7 +2351,7 @@
     "kbn.management.editIndexPattern.scripted.table.editDescription": "編輯此字段",
 
     "kbn.management.editIndexPattern.source.noteLabel_": "Note that multi-fields will incorrectly appear as matches in the table below. These filters only actually apply to fields in the original source document, so matching multi-fields are not actually being filtered.",
-    "kbn.management.editIndexPattern.source.noteLabel": "請註意, 多字段將在下表中錯誤地顯示為匹配項。這些篩選器實際上只適用於原始源文檔中的字段, 因此實際上不會篩選匹配的多字段。",
+    "kbn.management.editIndexPattern.source.noteLabel": "請注意, 多字段將在下表中錯誤地顯示為匹配項。這些篩選器實際上只適用於原始源文檔中的字段, 因此實際上不會篩選匹配的多字段。",
 
     "kbn.management.editIndexPattern.source.table.filterDescription_": "Filter name",
     "kbn.management.editIndexPattern.source.table.filterDescription": "篩選器名稱",
@@ -2435,7 +2435,7 @@
     "kbn.management.editIndexPattern.scriptedHeader": "腳本化字段",
 
     "xpack.searchProfiler.profileTree.cumulativeTimeTooltip_": "The cumulative time of all shards in the index. Note: this is not wall-clock time, as shards can execute in parallel.",
-    "xpack.searchProfiler.profileTree.cumulativeTimeTooltip": "索引中所有分片的累積時間。 註意：這是總計時間，因為分片可以並行執行。",
+    "xpack.searchProfiler.profileTree.cumulativeTimeTooltip": "索引中所有分片的累積時間。 注意：這是總計時間，因為分片可以並行執行。",
 
     "xpack.searchProfiler.goldLicenseTitle_": "Gold",
     "xpack.searchProfiler.goldLicenseTitle": "黃金",
@@ -2522,7 +2522,7 @@
     "console.settingsPage.pageTitle": "設置",
 
     "console.requestOptions.copyAsUrlButtonLabel_": "Copy as cURL",
-    "console.requestOptions.copyAsUrlButtonLabel": "複制為cURL格式",
+    "console.requestOptions.copyAsUrlButtonLabel": "複製為cURL格式",
 
     "console.requestOptions.openDocumentationButtonLabel_": "Open documentation",
     "console.requestOptions.openDocumentationButtonLabel": "打開文檔",
@@ -2537,7 +2537,7 @@
     "console.welcomePage.quickTips.submitRequestDescription": "使用綠色三角形按鈕向ES提交請求。",
 
     "console.welcomePage.supportedRequestFormatDescription_": "While typing a request, Console will make suggestions which you can then accept by hitting Enter/Tab. These suggestions are made based on the request structure {asWellAs} your indices and types.",
-    "console.welcomePage.supportedRequestFormatDescription": "在鍵入請求時, 控制臺將提出建議, 然後您可以通過點擊Enter/Tab 接受這些建議。這些建議是根據您的索引和類型的請求結構{asWellAs}提出的。",
+    "console.welcomePage.supportedRequestFormatDescription": "在鍵入請求時, 控制台將提出建議, 然後您可以通過點擊Enter/Tab 接受這些建議。這些建議是根據您的索引和類型的請求結構{asWellAs}提出的。",
 
     "console.requestOptions.autoIndentButtonLabel_": "Auto indent",
     "console.requestOptions.autoIndentButtonLabel": "自動縮進",
@@ -2561,16 +2561,16 @@
     "console.settingsPage.templatesLabelText": "模板",
 
     "console.welcomePage.quickIntroDescription_": "The Console UI is split into two panes: an editor pane (left) and a response pane (right). Use the editor to type requests and submit them to Elasticsearch. The results will be displayed in the response pane on the right side.",
-    "console.welcomePage.quickIntroDescription": "控制臺界面分為兩個窗格:編輯器窗格(左)和響應窗格(右)。使用編輯器輸入請求並將其提交到Elasticsearch。結果將顯示在右側的響應窗格中。",
+    "console.welcomePage.quickIntroDescription": "控制台界面分為兩個窗格:編輯器窗格(左)和響應窗格(右)。使用編輯器輸入請求並將其提交到Elasticsearch。結果將顯示在右側的響應窗格中。",
 
     "console.topNav.welcomeTabLabel_": "Welcome",
     "console.topNav.welcomeTabLabel": "歡迎",
 
     "console.helpPage.requestFormatDescription_": "You can type one or more requests in the white editor. Console understands requests in a compact format:",
-    "console.helpPage.requestFormatDescription": "您可以在空白編輯器中鍵入一個或多個請求。控制臺以緊湊的格式理解請求:",
+    "console.helpPage.requestFormatDescription": "您可以在空白編輯器中鍵入一個或多個請求。控制台以緊湊的格式理解請求:",
 
     "console.welcomePage.quickTips.keyboardShortcutsDescription_": "Study the keyboard shortcuts under the Help button. Good stuff in there!",
-    "console.welcomePage.quickTips.keyboardShortcutsDescription": "學習'幫助'按鈕下的鍵盤快捷鍵。好東西在那里！",
+    "console.welcomePage.quickTips.keyboardShortcutsDescription": "學習'幫助'按鈕下的鍵盤快捷鍵。好東西在那裡！",
 
     "console.helpPage.keyboardCommands.collapseAllScopesDescription_": "Collapse all scopes but the current one. Expand by adding a shift.",
     "console.helpPage.keyboardCommands.collapseAllScopesDescription": "折疊除當前範圍以外的所有範圍。通過添加移動來展開。",
@@ -2609,7 +2609,7 @@
     "console.helpPage.keyboardCommands.jumpToPreviousNextRequestDescription": "跳轉到上一個/下一個請求開始或結束處。",
 
     "console.welcomePage.quickTips.cUrlFormatForRequestsDescription_": "You can paste requests in cURL format and they will be translated to the Console syntax.",
-    "console.welcomePage.quickTips.cUrlFormatForRequestsDescription": "您可以以cURL格式粘貼請求，它們將被轉換為控制臺語法。",
+    "console.welcomePage.quickTips.cUrlFormatForRequestsDescription": "您可以以cURL格式粘貼請求，它們將被轉換為控制台語法。",
 
     "console.helpPage.requestFormatTitle_": "Request format",
     "console.helpPage.requestFormatTitle": "請求格式",
@@ -2654,10 +2654,10 @@
     "console.helpPage.keyboardCommands.openDocumentationDescription": "打開當前請求的文檔",
 
     "console.welcomePage.supportedRequestFormatTitle_": "Console understands requests in a compact format, similar to cURL:",
-    "console.welcomePage.supportedRequestFormatTitle": "控制臺以緊湊的格式理解請求, 類似於cURL:",
+    "console.welcomePage.supportedRequestFormatTitle": "控制台以緊湊的格式理解請求, 類似於cURL:",
 
     "console.welcomePage.quickTipsTitle_": "A few quick tips, while I have your attention",
-    "console.welcomePage.quickTipsTitle": "有幾個小竅門，請大家註意",
+    "console.welcomePage.quickTipsTitle": "有幾個小竅門，請大家注意",
 
     "console.settingsPage.cancelButtonLabel_": "Cancel",
     "console.settingsPage.cancelButtonLabel": "取消",
@@ -2765,7 +2765,7 @@
     "kbn.management.objects.objectsTable.flyout.invalidFormatOfImportedFileErrorMessage": "保存的對象文件格式無效, 無法導入。",
 
     "kbn.management.objects.confirmModalOptions.modalTitle_": "Delete saved Kibana object?",
-    "kbn.management.objects.confirmModalOptions.modalTitle": "刪除保存的Kibana對象？",
+    "kbn.management.objects.confirmModalOptions.modalTitle": "刪除保存的Kibana對像？",
 
     "kbn.management.objects.savedObjectsDescription_": "Import, export, and manage your saved searches, visualizations, and dashboards.",
     "kbn.management.objects.savedObjectsDescription": "導入、導出和管理保存的搜索、可視化和儀表板。",
@@ -2882,7 +2882,7 @@
     "kbn.management.objects.objectsTable.deleteSavedObjectsConfirmModal.idColumnName": "編號/名稱",
 
     "kbn.management.objects.unknownSavedObjectTypeNotificationMessage_": "Unknown saved object type: {type}",
-    "kbn.management.objects.unknownSavedObjectTypeNotificationMessage": "未知的已保存對象類型: {type}",
+    "kbn.management.objects.unknownSavedObjectTypeNotificationMessage": "未知的已保存對像類型: {type}",
 
     "kbn.management.objects.objectsTable.relationships.visualization.indexPattern.calloutText_": "Here is the index pattern tied to this visualization.",
     "kbn.management.objects.objectsTable.relationships.visualization.indexPattern.calloutText": "下面是與此可視化相關聯的索引規則。",
@@ -2900,7 +2900,7 @@
     "kbn.management.objects.objectsTable.table.deleteButtonLabel": "刪除",
 
     "kbn.management.objects.objectsTable.flyout.confirmImport.resolvingConflictsLoadingMessage_": "Resolving conflicts\u2026",
-    "kbn.management.objects.objectsTable.flyout.confirmImport.resolvingConflictsLoadingMessage": "解決沖突中...",
+    "kbn.management.objects.objectsTable.flyout.confirmImport.resolvingConflictsLoadingMessage": "解決衝突中...",
 
     "kbn.management.objects.objectsTable.flyout.importSavedObjectTitle_": "Import saved objects",
     "kbn.management.objects.objectsTable.flyout.importSavedObjectTitle": "導入已保存的對象",
@@ -2927,16 +2927,16 @@
     "kbn.management.objects.objectsTable.table.typeFilterName": "類型",
 
     "kbn.management.objects.confirmModalOptions.modalDescription_": "You can't recover deleted objects",
-    "kbn.management.objects.confirmModalOptions.modalDescription": "您無法恢複已刪除的對象",
+    "kbn.management.objects.confirmModalOptions.modalDescription": "您無法恢復已刪除的對象",
 
     "kbn.management.objects.objectsTable.relationships.dashboard.calloutTitle_": "Dashboard",
     "kbn.management.objects.objectsTable.relationships.dashboard.calloutTitle": "儀表板",
 
     "kbn.management.objects.objectsTable.flyout.importSuccessfulCallout.noObjectsImportedTitle_": "No objects imported",
-    "kbn.management.objects.objectsTable.flyout.importSuccessfulCallout.noObjectsImportedTitle": "未導入對象",
+    "kbn.management.objects.objectsTable.flyout.importSuccessfulCallout.noObjectsImportedTitle": "未導入對像",
 
     "kbn.management.objects.objectsTable.flyout.confirmImport.savingConflictsLoadingMessage_": "Saving conflicts\u2026",
-    "kbn.management.objects.objectsTable.flyout.confirmImport.savingConflictsLoadingMessage": "保存沖突...",
+    "kbn.management.objects.objectsTable.flyout.confirmImport.savingConflictsLoadingMessage": "保存衝突...",
 
     "kbn.management.objects.objectsTable.relationships.visualization.calloutText_": "Here are some dashboards which contain this visualization. If you delete this visualization, these dashboards will no longer show them.",
     "kbn.management.objects.objectsTable.relationships.visualization.calloutText": "下面是一些包含此可視化效果的儀表板。如果刪除此可視化效果, 這些儀表板將不再顯示它們。",
@@ -2978,7 +2978,7 @@
     "kbn.management.objects.objectsTable.flyout.confirmImport.savedSearchAreLinkedProperlyLoadingMessage": "確保保存的搜索鏈接正確中...",
 
     "kbn.management.objects.objectsTable.flyout.indexPatternConflictsTitle_": "Index Pattern Conflicts",
-    "kbn.management.objects.objectsTable.flyout.indexPatternConflictsTitle": "索引規則沖突",
+    "kbn.management.objects.objectsTable.flyout.indexPatternConflictsTitle": "索引規則衝突",
 
     "kbn.management.objects.objectsTable.exportObjectsConfirmModalDescription_": "Select which types to export. The number in parentheses indicates how many of this type are available to export.",
     "kbn.management.objects.objectsTable.exportObjectsConfirmModalDescription": "選擇要導出的類型。括號中的數字指示可導出此類型的數量。",
@@ -2987,13 +2987,13 @@
     "kbn.management.objects.objectsTable.flyout.selectFileToImportFormRowLabel": "請選擇一個JSON文件以導入",
 
     "kbn.management.objects.objectsTable.table.columnActions.viewRelationshipsActionDescription_": "View the relationships this saved object has to other saved objects",
-    "kbn.management.objects.objectsTable.table.columnActions.viewRelationshipsActionDescription": "查看此保存的對象與其他已保存對象的關系",
+    "kbn.management.objects.objectsTable.table.columnActions.viewRelationshipsActionDescription": "查看此保存的對象與其他已保存對象的關係",
 
     "kbn.management.objects.objectsTable.exportObjectsConfirmModal.cancelButtonLabel_": "Cancel",
     "kbn.management.objects.objectsTable.exportObjectsConfirmModal.cancelButtonLabel": "取消",
 
     "kbn.management.objects.objectsTable.table.columnActions.viewRelationshipsActionName_": "Relationships",
-    "kbn.management.objects.objectsTable.table.columnActions.viewRelationshipsActionName": "關系",
+    "kbn.management.objects.objectsTable.table.columnActions.viewRelationshipsActionName": "關係",
 
     "xpack.monitoring.cluster.listing.logstashColumnTitle_": "Logstash",
     "xpack.monitoring.cluster.listing.logstashColumnTitle": "Logstash",
@@ -3068,7 +3068,7 @@
     "inspectorViews.requests.requestSucceededTooltipTitle": "請求成功",
 
     "inspectorViews.data.gatheringDataLabel_": "Gathering data",
-    "inspectorViews.data.gatheringDataLabel": "采集數據",
+    "inspectorViews.data.gatheringDataLabel": "採集數據",
 
     "inspectorViews.data.noDataAvailableDescription_": "The element did not provide any data.",
     "inspectorViews.data.noDataAvailableDescription": "該元素未提供任何數據。",
@@ -3140,10 +3140,10 @@
     "common.ui.queryBar.syntaxOptionsDescription": "我們新的自動完成功能和簡單的語法功能可以幫助您創建查詢。只需開始輸入，您將看到與數據相關的匹配項。查看相關文檔請點擊{docsLink}.",
 
     "common.ui.queryBar.luceneDocsDescription.docsLinkText_": "here",
-    "common.ui.queryBar.luceneDocsDescription.docsLinkText": "這里",
+    "common.ui.queryBar.luceneDocsDescription.docsLinkText": "這裡",
 
     "common.ui.queryBar.syntaxOptionsDescription.docsLinkText_": "here",
-    "common.ui.queryBar.syntaxOptionsDescription.docsLinkText": "這里",
+    "common.ui.queryBar.syntaxOptionsDescription.docsLinkText": "這裡",
 
     "common.ui.queryBar.luceneDocsDescription_": "Not ready yet? Find our lucene docs {docsLink}.",
     "common.ui.queryBar.luceneDocsDescription": "還沒有準備好？查看我們的lucene文檔，點擊{docsLink}.",
@@ -3218,7 +3218,7 @@
     "common.ui.parseEsInterval.invalidEsIntervalFormatErrorMessage": "無效的間隔格式：{interval}",
 
     "common.ui.flotCharts.pie.unableToDrawLabelsInsideCanvasErrorMessage_": "Could not draw pie with labels contained inside canvas",
-    "common.ui.flotCharts.pie.unableToDrawLabelsInsideCanvasErrorMessage": "無法繪制畫布內包含標簽的餅圖",
+    "common.ui.flotCharts.pie.unableToDrawLabelsInsideCanvasErrorMessage": "無法繪製畫布內包含標籤的餅圖",
 
     "common.ui.aggTypes.paramNamePatternLabel_": "{aggParamName} Pattern",
     "common.ui.aggTypes.paramNamePatternLabel": "{aggParamName} 規則",
@@ -3275,7 +3275,7 @@
     "common.ui.numberList.selectUnitDescription": "您必須指定至少一個{unitName}",
 
     "common.ui.errorAllowExplicitIndex.howToFixErrorTitle_": "Ok, how do I fix this?",
-    "common.ui.errorAllowExplicitIndex.howToFixErrorTitle": "好的，我該怎麽修複這個？",
+    "common.ui.errorAllowExplicitIndex.howToFixErrorTitle": "好的，我該怎麼修復這個？",
 
     "common.ui.searchBar.changeAllFiltersButtonLabel_": "Change all filters",
     "common.ui.searchBar.changeAllFiltersButtonLabel": "更改所有篩選器",
@@ -3338,7 +3338,7 @@
     "common.ui.aggTypes.metrics.geoCentroidTitle": "Geo中心",
 
     "common.ui.directives.fieldNameIcons.conflictFieldAriaLabel_": "Conflicting field",
-    "common.ui.directives.fieldNameIcons.conflictFieldAriaLabel": "沖突字段",
+    "common.ui.directives.fieldNameIcons.conflictFieldAriaLabel": "衝突字段",
 
     "common.ui.aggTypes.metricLabel_": "Metric",
     "common.ui.aggTypes.metricLabel": "指標",
@@ -3347,7 +3347,7 @@
     "common.ui.aggTypes.ipRanges.fromTo.addRangeButtonLabel": "添加範圍",
 
     "common.ui.filterEditor.createCustomLabelInputLabel_": "Custom label",
-    "common.ui.filterEditor.createCustomLabelInputLabel": "自定義標簽",
+    "common.ui.filterEditor.createCustomLabelInputLabel": "自定義標籤",
 
     "common.ui.fieldEditor.syntax.lucene.operations.mathLabel_": "Common mathematic functions: {operators}",
     "common.ui.fieldEditor.syntax.lucene.operations.mathLabel": "常用數學函數：{operators}",
@@ -3524,7 +3524,7 @@
     "common.ui.vis.editors.agg.disableAggButtonTooltip": "禁用聚合",
 
     "common.ui.share.urlPanel.copyIframeCodeButtonLabel_": "Copy iFrame code",
-    "common.ui.share.urlPanel.copyIframeCodeButtonLabel": "複制iFrame代碼",
+    "common.ui.share.urlPanel.copyIframeCodeButtonLabel": "複製iFrame代碼",
 
     "common.ui.fieldEditor.syntax.painlessLabel.javaAPIsLink_": "native Java APIs",
     "common.ui.fieldEditor.syntax.painlessLabel.javaAPIsLink": "原生Java APIs",
@@ -3536,7 +3536,7 @@
     "common.ui.fieldEditor.staticLookup.deleteTitle": "刪除條目",
 
     "common.ui.parseEsInterval.invalidEsCalendarIntervalErrorMessage_": "Invalid calendar interval: {interval}, value must be 1",
-    "common.ui.parseEsInterval.invalidEsCalendarIntervalErrorMessage": "無效日歷間隔：{interval}，值必須為1",
+    "common.ui.parseEsInterval.invalidEsCalendarIntervalErrorMessage": "無效日曆間隔：{interval}，值必須為1",
 
     "common.ui.aggTable.exportLabel_": "Export:",
     "common.ui.aggTable.exportLabel": "導出：",
@@ -3776,7 +3776,7 @@
     "common.ui.aggTypes.changePrecisionLabel": "更改地圖縮放時的精度",
 
     "common.ui.aggTypes.otherBucket.labelForOtherBucketLabel_": "Label for other bucket",
-    "common.ui.aggTypes.otherBucket.labelForOtherBucketLabel": "其他桶的標簽",
+    "common.ui.aggTypes.otherBucket.labelForOtherBucketLabel": "其他桶的標籤",
 
     "common.ui.vis.editors.aggSelect.aggregationLabel_": "Aggregation",
     "common.ui.vis.editors.aggSelect.aggregationLabel": "聚合",
@@ -3788,7 +3788,7 @@
     "common.ui.url.replacementFailedErrorMessage": "替換失敗, 未解決的表達式: {expr}",
 
     "common.ui.courier.savedObject.howToSaveAsNewDescription_": "In previous versions of Kibana, changing the name of a {savedObjectName} would make a copy with the new name. Use the 'Save as a new {savedObjectName}' checkbox to do this now.",
-    "common.ui.courier.savedObject.howToSaveAsNewDescription": "在以前版本的Kibana中，更改{savedObjectName}的名稱將使用新名稱進行複制。現在使用'另存為新的 {savedObjectName}'複選框執行此操作。",
+    "common.ui.courier.savedObject.howToSaveAsNewDescription": "在以前版本的Kibana中，更改{savedObjectName}的名稱將使用新名稱進行複製。現在使用'另存為新的 {savedObjectName}'復選框執行此操作。",
 
     "common.ui.savedObjects.saveModal.saveAsNewLabel_": "Save as a new {objectType}",
     "common.ui.savedObjects.saveModal.saveAsNewLabel": "另存為新{objectType}",
@@ -3806,7 +3806,7 @@
     "common.ui.inspector.title": "檢查器",
 
     "common.ui.share.urlPanel.copyLinkButtonLabel_": "Copy link",
-    "common.ui.share.urlPanel.copyLinkButtonLabel": "複制鏈接",
+    "common.ui.share.urlPanel.copyLinkButtonLabel": "複製鏈接",
 
     "common.ui.aggTypes.sortOnLabel_": "Sort On",
     "common.ui.aggTypes.sortOnLabel": "排序",
@@ -3839,7 +3839,7 @@
     "common.ui.aggTypes.metrics.percentilesLabel": "{field}百分比值",
 
     "common.ui.aggTypes.buckets.intervalOptions.weeklyDisplayName_": "Weekly",
-    "common.ui.aggTypes.buckets.intervalOptions.weeklyDisplayName": "每周",
+    "common.ui.aggTypes.buckets.intervalOptions.weeklyDisplayName": "每週",
 
     "common.ui.courier.savedObject.confirmModal.overwriteConfirmationMessage_": "Are you sure you want to overwrite {title}?",
     "common.ui.courier.savedObject.confirmModal.overwriteConfirmationMessage": "您確定要覆蓋{title}？",
@@ -3848,7 +3848,7 @@
     "common.ui.aggTypes.ranges.removeRangeButtonAriaLabel": "刪除此範圍",
 
     "common.ui.errorAutoCreateIndex.noteTitle_": "Note:",
-    "common.ui.errorAutoCreateIndex.noteTitle": "註意：",
+    "common.ui.errorAutoCreateIndex.noteTitle": "注意：",
 
     "common.ui.fieldEditor.namePlaceholder_": "New scripted field",
     "common.ui.fieldEditor.namePlaceholder": "新建腳本化字段",
@@ -3857,19 +3857,19 @@
     "common.ui.aggResponse.allDocsTitle": "所有文檔",
 
     "common.ui.errorAutoCreateIndex.noteMessage_": "The {autoCreateIndexActionConfig} can also define a whitelist of patterns where this feature should be enabled. We don't discuss how to use the setting that way here because it requires knowing all of the other plugins/interactions that rely on the feature for the same reasons that Kibana does.",
-    "common.ui.errorAutoCreateIndex.noteMessage": "{autoCreateIndexActionConfig}還可以定義啟用此功能的模式白名單。我們在這里不討論如何使用這種設置，因為它需要知道所有其他依賴於該特性的插件/交互，原因與Kibana相同。",
+    "common.ui.errorAutoCreateIndex.noteMessage": "{autoCreateIndexActionConfig}還可以定義啟用此功能的模式白名單。我們在這裡不討論如何使用這種設置，因為它需要知道所有其他依賴於該特性的插件/交互，原因與Kibana相同。",
 
     "common.ui.fieldEditor.syntax.painlessLabel.painlessDetail_": "Painless is powerful but easy to use. It provides access to many {javaAPIs}. Read up on its {syntax} and you'll be up to speed in no time!",
     "common.ui.fieldEditor.syntax.painlessLabel.painlessDetail": "無痛是強大的，但易於使用。它提供了對許多{javaAPIs}的訪問。閱讀它的{syntax}，你很快就能上手!",
 
     "common.ui.aggTypes.otherBucket.labelForMissingValuesLabel_": "Label for missing values",
-    "common.ui.aggTypes.otherBucket.labelForMissingValuesLabel": "缺失值的標簽",
+    "common.ui.aggTypes.otherBucket.labelForMissingValuesLabel": "缺失值的標籤",
 
     "common.ui.filterEditor.rangeStartInputLabel_": "From",
     "common.ui.filterEditor.rangeStartInputLabel": "從",
 
     "common.ui.fieldEditor.scriptInvalidErrorMessage_": "Script is invalid. View script preview for details",
-    "common.ui.fieldEditor.scriptInvalidErrorMessage": "腳本無效。查看腳本預覽以了解詳細信息",
+    "common.ui.fieldEditor.scriptInvalidErrorMessage": "腳本無效。查看腳本預覽以瞭解詳細信息",
 
     "common.ui.fieldEditor.script.getHelpLabel_": "Get help with the syntax and preview the results of your script.",
     "common.ui.fieldEditor.script.getHelpLabel": "獲取有關語法的幫助並預覽腳本的結果。",
@@ -3926,7 +3926,7 @@
     "common.ui.aggTypes.metrics.sumLabel": "{field}總和",
 
     "common.ui.fieldEditor.url.labelTemplateLabel_": "Label template",
-    "common.ui.fieldEditor.url.labelTemplateLabel": "標簽模板",
+    "common.ui.fieldEditor.url.labelTemplateLabel": "標籤模板",
 
     "common.ui.chrome.headerGlobalNav.helpMenuButtonAriaLabel_": "Help menu",
     "common.ui.chrome.headerGlobalNav.helpMenuButtonAriaLabel": "幫助菜單",
@@ -3965,7 +3965,7 @@
     "common.ui.fieldEditor.url.onLabel": "在",
 
     "common.ui.fieldEditor.warningCallOut.descriptionLabel_": "Scripted fields can be used to display and aggregate calculated values. As such, they can be very slow, and if done incorrectly, can cause Kibana to be unusable. There's no safety net here. If you make a typo, unexpected exceptions will be thrown all over the place!",
-    "common.ui.fieldEditor.warningCallOut.descriptionLabel": "腳本字段可用於顯示和聚合計算值。因此，它們可能非常慢，如果做得不正確，會導致Kibana無法使用。這里沒有安全網。如果你輸入錯別字，意外的例外情況就會到處亂丟！",
+    "common.ui.fieldEditor.warningCallOut.descriptionLabel": "腳本字段可用於顯示和聚合計算值。因此，它們可能非常慢，如果做得不正確，會導致Kibana無法使用。這裡沒有安全網。如果你輸入錯別字，意外的例外情況就會到處亂丟！",
 
     "common.ui.vis.editors.sidebar.applyChangesAriaLabel_": "Update the visualization with your changes",
     "common.ui.vis.editors.sidebar.applyChangesAriaLabel": "用您的更改更新可視化效果",
@@ -4181,7 +4181,7 @@
     "common.ui.aggTypes.ipRanges.cidrMask.requiredIpRangeLabel": "需要：",
 
     "common.ui.share.urlPanel.savedObjectLabel_": "Saved object",
-    "common.ui.share.urlPanel.savedObjectLabel": "已保存對象",
+    "common.ui.share.urlPanel.savedObjectLabel": "已保存對像",
 
     "common.ui.aggTypes.orderAgg.metricLabel_": "metric: {metric}",
     "common.ui.aggTypes.orderAgg.metricLabel": "指標：{metric}",
@@ -4217,7 +4217,7 @@
     "common.ui.aggTypes.metrics.medianLabel": "中間 {field}",
 
     "common.ui.errorUrlOverflow.howTofixErrorTitle_": "Ok, how do I fix this?",
-    "common.ui.errorUrlOverflow.howTofixErrorTitle": "好的，我該怎麽修複這個？",
+    "common.ui.errorUrlOverflow.howTofixErrorTitle": "好的，我該怎麼修復這個？",
 
     "common.ui.aggTypes.orderAgg.orderByLabel_": "Order By",
     "common.ui.aggTypes.orderAgg.orderByLabel": "排序以",
@@ -4262,13 +4262,13 @@
     "common.ui.aggTypes.dropPartialBucketsLabel": "丟棄部分存儲桶",
 
     "common.ui.notify.fatalError.unavailableServerErrorMessage_": "An HTTP request has failed to connect. Please check if the Kibana server is running and that your browser has a working connection, or contact your system administrator.",
-    "common.ui.notify.fatalError.unavailableServerErrorMessage": "HTTP請求連接失敗。請檢查Kibana服務器是否正在運行，您的瀏覽器是否有工作連接，或者與系統管理員聯系。",
+    "common.ui.notify.fatalError.unavailableServerErrorMessage": "HTTP請求連接失敗。請檢查Kibana服務器是否正在運行，您的瀏覽器是否有工作連接，或者與系統管理員聯繫。",
 
     "common.ui.aggTypes.metrics.maxLabel_": "Max {field}",
     "common.ui.aggTypes.metrics.maxLabel": "最大 {field}",
 
     "common.ui.aggTypes.sizeTooltip_": "Request top-K hits. Multiple hits will be combined via 'aggregate with'.",
-    "common.ui.aggTypes.sizeTooltip": "請求top-K命中。將通過“聚合以”組合多個命中。",
+    "common.ui.aggTypes.sizeTooltip": "請求top-K命中。將通過「聚合以」組合多個命中。",
 
     "common.ui.vis.editors.aggAdd.addSubGroupButtonLabel_": "Add sub-{groupNameLabel}",
     "common.ui.vis.editors.aggAdd.addSubGroupButtonLabel": "添加子-{groupNameLabel}",
@@ -4394,7 +4394,7 @@
     "common.ui.paginateControls.scrollTopButtonLabel": "滾動到頂部",
 
     "common.ui.errorAutoCreateIndex.howToFixErrorTitle_": "Ok, how do I fix this?",
-    "common.ui.errorAutoCreateIndex.howToFixErrorTitle": "好的，我該怎麽修複這個？",
+    "common.ui.errorAutoCreateIndex.howToFixErrorTitle": "好的，我該怎麼修復這個？",
 
     "common.ui.aggTypes.definiteMetricLabel_": "metric: {safeMakeLabel}",
     "common.ui.aggTypes.definiteMetricLabel": "指標：{safeMakeLabel}",
@@ -4427,7 +4427,7 @@
     "common.ui.vis.kibanaMap.leaflet.fitDataBoundsAriaLabel": "適配數據邊界",
 
     "common.ui.aggTypes.filters.labelPlaceholder_": "Label",
-    "common.ui.aggTypes.filters.labelPlaceholder": "標簽",
+    "common.ui.aggTypes.filters.labelPlaceholder": "標籤",
 
     "common.ui.aggTypes.metrics.serialDiffTitle_": "Serial Diff",
     "common.ui.aggTypes.metrics.serialDiffTitle": "序列差異",
@@ -4526,7 +4526,7 @@
     "common.ui.fieldEditor.labelTemplate.labelHeader": "",
 
     "common.ui.fieldEditor.labelTemplateHeader_": "Label Template",
-    "common.ui.fieldEditor.labelTemplateHeader": "標簽模板",
+    "common.ui.fieldEditor.labelTemplateHeader": "標籤模板",
 
     "common.ui.vis.editors.resizeAriaLabels_": "Press left/right to resize the editor",
     "common.ui.vis.editors.resizeAriaLabels": "按左/右鍵調整編輯器的大小",
@@ -4649,7 +4649,7 @@
     "common.ui.fieldEditor.urlTemplate.templateHeader": "模板",
 
     "common.ui.aggTypes.filters.toggleFilterButtonAriaLabel_": "Toggle filter label",
-    "common.ui.aggTypes.filters.toggleFilterButtonAriaLabel": "切換篩選器標簽",
+    "common.ui.aggTypes.filters.toggleFilterButtonAriaLabel": "切換篩選器標籤",
 
     "common.ui.fieldEditor.color.rangeLabel_": "Range (min:max)",
     "common.ui.fieldEditor.color.rangeLabel": "範圍 (最小:最大)",
@@ -4673,7 +4673,7 @@
     "common.ui.filterEditor.valueInputPlaceholder": "輸入一個值",
 
     "common.ui.aggTypes.otherBucket.showMissingValuesTooltip_": "Only works for fields of type 'string'. When enabled, include documents with missing values in the search. If this bucket is in the top N, it appears in the chart. If not in the top N, and you enable 'Group other values in separate bucket', Elasticsearch adds the missing values to the 'other' bucket.",
-    "common.ui.aggTypes.otherBucket.showMissingValuesTooltip": "僅適用於“string”類型的字段。啟用後，在搜索中包含缺少值的文檔。如果這個桶在N的頂部，它會出現在圖表中。如果不在前n位，並且啟用了“將其他值分組到單獨的存儲桶中”，則Elasticsearch會將缺少的值添加到“其他”存儲桶中。",
+    "common.ui.aggTypes.otherBucket.showMissingValuesTooltip": "僅適用於「string」類型的字段。啟用後，在搜索中包含缺少值的文檔。如果這個桶在N的頂部，它會出現在圖表中。如果不在前n位，並且啟用了「將其他值分組到單獨的存儲桶中」，則Elasticsearch會將缺少的值添加到「其他」存儲桶中。",
 
     "common.ui.fieldEditor.syntax.lucene.limitsLabel_": "There are a few limitations when using Lucene Expressions:",
     "common.ui.fieldEditor.syntax.lucene.limitsLabel": "使用Lucene表達式時有一些限制：",
@@ -4727,7 +4727,7 @@
     "common.ui.fieldEditor.color.deleteTitle": "刪除顏色格式",
 
     "common.ui.fieldEditor.deleteFieldLabel_": "You can't recover a deleted field.{separator}Are you sure you want to do this?",
-    "common.ui.fieldEditor.deleteFieldLabel": "您無法恢複已刪除的字段。{separator}您確定要這樣做嗎？",
+    "common.ui.fieldEditor.deleteFieldLabel": "您無法恢復已刪除的字段。{separator}您確定要這樣做嗎？",
 
     "common.ui.aggTypes.dateRanges.requiredDateRangeLabel_": "Required:",
     "common.ui.aggTypes.dateRanges.requiredDateRangeLabel": "需要：",
@@ -4781,7 +4781,7 @@
     "common.ui.share.urlPanel.savedObjectDescription": "您可以與其他人共享此URL，讓他們加載此{objectType}的最新保存版本。",
 
     "common.ui.notify.banner.attentionTitle_": "Attention",
-    "common.ui.notify.banner.attentionTitle": "註意",
+    "common.ui.notify.banner.attentionTitle": "注意",
 
     "common.ui.fieldEditor.url.typeLabel_": "Type",
     "common.ui.fieldEditor.url.typeLabel": "類型",
@@ -4826,13 +4826,13 @@
     "common.ui.indexPattern.intervals.yearlyHeader": "每年",
 
     "common.ui.aggTypes.filters.definiteFilterLabel_": "Filter {index} label",
-    "common.ui.aggTypes.filters.definiteFilterLabel": "篩選{index}標簽",
+    "common.ui.aggTypes.filters.definiteFilterLabel": "篩選{index}標籤",
 
     "common.ui.exitFullScreenButton.fullScreenModeDescription_": "In full screen mode, press ESC to exit.",
     "common.ui.exitFullScreenButton.fullScreenModeDescription": "在全屏模式下，按ESC鍵退出。",
 
     "common.ui.fieldEditor.mappingConflictLabel.mappingConflictLabel_": "Mapping Conflict:",
-    "common.ui.fieldEditor.mappingConflictLabel.mappingConflictLabel": "映射沖突：",
+    "common.ui.fieldEditor.mappingConflictLabel.mappingConflictLabel": "映射衝突：",
 
     "common.ui.vis.editors.aggAdd.addGroupButtonLabel_": "Add {groupNameLabel}",
     "common.ui.vis.editors.aggAdd.addGroupButtonLabel": "添加{groupNameLabel}",
@@ -4886,7 +4886,7 @@
     "common.ui.aggTypes.orderLabel": "順序",
 
     "common.ui.aggTypes.jsonInputTooltip_": "Any JSON formatted properties you add here will be merged with the elasticsearch aggregation definition for this section. For example 'shard_size' on a terms aggregation.",
-    "common.ui.aggTypes.jsonInputTooltip": "您在此處添加的任何JSON格式的屬性都將與此部分的Elasticsearch搜索聚合定義合並。例如, 術語聚合上的 “分片大小”。",
+    "common.ui.aggTypes.jsonInputTooltip": "您在此處添加的任何JSON格式的屬性都將與此部分的Elasticsearch搜索聚合定義合併。例如, 術語聚合上的 「分片大小」。",
 
     "common.ui.styles.themeAppliedToast_": "Theme applied, please refresh your browser to take affect.",
     "common.ui.styles.themeAppliedToast": "主題已應用，請刷新瀏覽器以生效。",
@@ -4895,7 +4895,7 @@
     "common.ui.indexPattern.confirmOverwriteTitle": "覆蓋{type}?",
 
     "common.ui.fieldEditor.formatLabel_": "Formatting allows you to control the way that specific values are displayed. It can also cause values to be completely changed and prevent highlighting in Discover from working.",
-    "common.ui.fieldEditor.formatLabel": "格式允許您控制特定值的顯示方式。它還可能導致值完全更改, 並防止在 “發現” 中突出顯示工作。",
+    "common.ui.fieldEditor.formatLabel": "格式允許您控制特定值的顯示方式。它還可能導致值完全更改, 並防止在 「發現」 中突出顯示工作。",
 
     "common.ui.aggTypes.buckets.intervalOptions.secondDisplayName_": "Second",
     "common.ui.aggTypes.buckets.intervalOptions.secondDisplayName": "第二個",
@@ -5036,7 +5036,7 @@
     "common.ui.aggTypes.metrics.maxTitle": "最大",
 
     "common.ui.filterEditor.createCustomLabelSwitchLabel_": "Create custom label?",
-    "common.ui.filterEditor.createCustomLabelSwitchLabel": "是否創建自定義標簽？",
+    "common.ui.filterEditor.createCustomLabelSwitchLabel": "是否創建自定義標籤？",
 
     "common.ui.stateManagement.unableToRestoreUrlErrorMessage_": "Unable to completely restore the URL, be sure to use the share functionality.",
     "common.ui.stateManagement.unableToRestoreUrlErrorMessage": "無法完全還原URL，請確保使用共享功能。",
@@ -5105,7 +5105,7 @@
     "common.ui.aggTypes.buckets.intervalOptions.yearlyDisplayName": "每年",
 
     "common.ui.indexPattern.intervals.weeklyHeader_": "Weekly",
-    "common.ui.indexPattern.intervals.weeklyHeader": "每周",
+    "common.ui.indexPattern.intervals.weeklyHeader": "每週",
 
     "common.ui.aggTypes.metrics.uniqueCountTitle_": "Unique Count",
     "common.ui.aggTypes.metrics.uniqueCountTitle": "唯一計數",
@@ -5162,7 +5162,7 @@
     "server.sampleData.ecommerceSpec.controlsTitle": "[電子商務] 控制圖",
 
     "server.sampleData.logsSpec.responseCodesOverTimeTitle_": "[Logs] Response Codes Over Time + Annotations",
-    "server.sampleData.logsSpec.responseCodesOverTimeTitle": "[日誌] 一段時間內的響應代碼+批註",
+    "server.sampleData.logsSpec.responseCodesOverTimeTitle": "[日誌] 一段時間內的響應代碼+批注",
 
     "server.sampleData.logsSpec.fileTypeScatterPlotTitle_": "[Logs] File Type Scatter Plot",
     "server.sampleData.logsSpec.fileTypeScatterPlotTitle": "[日誌] 文件類型散點圖",
@@ -5372,7 +5372,7 @@
     "kbn.visualize.topNavMenu.openInspectorButtonAriaLabel": "打開用於可視化的檢查器",
 
     "kbn.visualize.listing.deleteVisualizations.confirmModalText_": "You can't recover deleted visualizations.",
-    "kbn.visualize.listing.deleteVisualizations.confirmModalText": "您無法恢複已刪除的可視化視圖。",
+    "kbn.visualize.listing.deleteVisualizations.confirmModalText": "您無法恢復已刪除的可視化視圖。",
 
     "kbn.visualize.topNavMenu.openInspectorDisabledButtonTooltip_": "This visualization doesn't support any inspectors.",
     "kbn.visualize.topNavMenu.openInspectorDisabledButtonTooltip": "此可視化視圖不支持任何檢查器。",
@@ -5420,7 +5420,7 @@
     "tileMap.visParams.mapTypeLabel": "地圖類型",
 
     "tileMap.vis.mapDescription_": "Plot latitude and longitude coordinates on a map",
-    "tileMap.vis.mapDescription": "在地圖上繪制緯度和經度坐標",
+    "tileMap.vis.mapDescription": "在地圖上繪製緯度和經度坐標",
 
     "tileMap.vis.mapTitle_": "Coordinate Map",
     "tileMap.vis.mapTitle": "坐標圖",
@@ -5546,7 +5546,7 @@
     "inputControl.vis.listControl.selectPlaceholder": "選擇...",
 
     "inputControl.editor.controlEditor.controlLabel_": "Control Label",
-    "inputControl.editor.controlEditor.controlLabel": "控件標簽",
+    "inputControl.editor.controlEditor.controlLabel": "控件標籤",
 
     "inputControl.vis.inputControlVis.clearFormButtonLabel_": "Clear form",
     "inputControl.vis.inputControlVis.clearFormButtonLabel": "清除表單",
@@ -5627,7 +5627,7 @@
     "kbnVislibVisTypes.controls.gaugeOptions.verticalSplitLabel": "垂直分割",
 
     "kbnVislibVisTypes.controls.gaugeOptions.showLabelsLabel_": "Show Labels",
-    "kbnVislibVisTypes.controls.gaugeOptions.showLabelsLabel": "顯示標簽",
+    "kbnVislibVisTypes.controls.gaugeOptions.showLabelsLabel": "顯示標籤",
 
     "kbnVislibVisTypes.editors.heatmap.showTooltipsLabel_": "Show Tooltips",
     "kbnVislibVisTypes.editors.heatmap.showTooltipsLabel": "顯示工具提示",
@@ -5663,7 +5663,7 @@
     "kbnVislibVisTypes.controls.pointSeries.valueAxes.positionLabel": "位置",
 
     "kbnVislibVisTypes.controls.pointSeries.valueAxes.filterLabelsLabel_": "Filter Labels",
-    "kbnVislibVisTypes.controls.pointSeries.valueAxes.filterLabelsLabel": "篩選標簽",
+    "kbnVislibVisTypes.controls.pointSeries.valueAxes.filterLabelsLabel": "篩選標籤",
 
     "kbnVislibVisTypes.controls.pointSeries.series.showCirclesLabel_": "Show Circles",
     "kbnVislibVisTypes.controls.pointSeries.series.showCirclesLabel": "顯示圈",
@@ -5684,16 +5684,16 @@
     "kbnVislibVisTypes.controls.pointSeries.valueAxes.setAxisExtentsLabel": "設置軸範圍",
 
     "kbnVislibVisTypes.controls.heatmapOptions.howToChangeColorsDescription_": "Note: colors can be changed in the legend",
-    "kbnVislibVisTypes.controls.heatmapOptions.howToChangeColorsDescription": "註意: 顏色可以在圖例中更改",
+    "kbnVislibVisTypes.controls.heatmapOptions.howToChangeColorsDescription": "注意: 顏色可以在圖例中更改",
 
     "kbnVislibVisTypes.heatmap.segmentTitle_": "X-Axis",
     "kbnVislibVisTypes.heatmap.segmentTitle": "X軸",
 
     "kbnVislibVisTypes.controls.pointSeries.valueAxes.labelsTitle_": "Labels",
-    "kbnVislibVisTypes.controls.pointSeries.valueAxes.labelsTitle": "標簽",
+    "kbnVislibVisTypes.controls.pointSeries.valueAxes.labelsTitle": "標籤",
 
     "kbnVislibVisTypes.controls.pointSeries.valueAxes.showLabelsLabel_": "Show Labels",
-    "kbnVislibVisTypes.controls.pointSeries.valueAxes.showLabelsLabel": "顯示標簽",
+    "kbnVislibVisTypes.controls.pointSeries.valueAxes.showLabelsLabel": "顯示標籤",
 
     "kbnVislibVisTypes.histogram.histogramDescription_": "Assign a continuous variable to each axis",
     "kbnVislibVisTypes.histogram.histogramDescription": "為每個軸分配一個連續變量",
@@ -5741,10 +5741,10 @@
     "kbnVislibVisTypes.goal.goalTitle": "目標圖",
 
     "kbnVislibVisTypes.controls.gaugeOptions.howToChangeColorsDescription_": "Note: colors can be changed in the legend",
-    "kbnVislibVisTypes.controls.gaugeOptions.howToChangeColorsDescription": "註意: 顏色可以在圖例中更改",
+    "kbnVislibVisTypes.controls.gaugeOptions.howToChangeColorsDescription": "注意: 顏色可以在圖例中更改",
 
     "kbnVislibVisTypes.controls.gaugeOptions.colorLabelsLabel_": "Color Labels",
-    "kbnVislibVisTypes.controls.gaugeOptions.colorLabelsLabel": "顏色標簽",
+    "kbnVislibVisTypes.controls.gaugeOptions.colorLabelsLabel": "顏色標籤",
 
     "kbnVislibVisTypes.controls.heatmapOptions.resetColorsTitle_": "reset colors",
     "kbnVislibVisTypes.controls.heatmapOptions.resetColorsTitle": "重置顏色",
@@ -5804,7 +5804,7 @@
     "tsvb.topHit.fieldLabel": "字段",
 
     "kbn.server.tutorials.logstashMetrics.longDescription_": "The `{moduleName}` Metricbeat module fetches internal metrics from a Logstash server. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.logstashMetrics.longDescription": "Metricbeat模塊`{moduleName}` 從Logstash服務器獲取內部指標。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.logstashMetrics.longDescription": "Metricbeat模塊`{moduleName}` 從Logstash服務器獲取內部指標。[瞭解更多信息]({learnMoreLink})。",
 
     "timelion.help.mainPage.keyboardTips.generalEditing.submitRequestText_": "Submit request",
     "timelion.help.mainPage.keyboardTips.generalEditing.submitRequestText": "提交請求",
@@ -5933,7 +5933,7 @@
     "kbn.common.tutorials.logstashInstructions.install.java.osxTitle": "下載並安裝Java運行環境",
 
     "timelion.help.configuration.notValid.paragraph1_": "If you're using Logstash, you don't need to configure anything to start exploring your log data with Timelion. To search other indices, go to {advancedSettingsPath} and configure the {esDefaultIndex} and {esTimefield} settings to match your indices.",
-    "timelion.help.configuration.notValid.paragraph1": "如果您使用的是Logstash，那麽您不需要配置任何東西就可以開始使用Timelion來探索日誌數據。要搜索其他索引，請轉到{advancedSettingsPath}並配置{esDefaultIndex}和{esTimefield}設置以匹配您的索引。",
+    "timelion.help.configuration.notValid.paragraph1": "如果您使用的是Logstash，那麼您不需要配置任何東西就可以開始使用Timelion來探索日誌數據。要搜索其他索引，請轉到{advancedSettingsPath}並配置{esDefaultIndex}和{esTimefield}設置以匹配您的索引。",
 
     "tsvb.durationOptions.picosecondsLabel_": "picoseconds",
     "tsvb.durationOptions.picosecondsLabel": "皮秒",
@@ -5993,7 +5993,7 @@
     "tsvb.table.filterLabel": "篩選器",
 
     "tagCloud.vis.tagCloudTitle_": "Tag Cloud",
-    "tagCloud.vis.tagCloudTitle": "標簽雲",
+    "tagCloud.vis.tagCloudTitle": "標籤雲",
 
     "kbn.server.tutorials.phpFpmMetrics.nameTitle_": "PHP-FPM metrics",
     "kbn.server.tutorials.phpFpmMetrics.nameTitle": "PHP-FPM指標",
@@ -6017,7 +6017,7 @@
     "kbn.management.settings.searchBar.unableToParseQueryErrorMessage": "無法解析查詢",
 
     "kbn.server.tutorials.kafkaLogs.longDescription_": "The `kafka` Filebeat module parses logs created by Kafka. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.kafkaLogs.longDescription": "`kafka` Filebeat模塊解析由Kafka創建的日誌。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.kafkaLogs.longDescription": "`kafka` Filebeat模塊解析由Kafka創建的日誌。[瞭解更多信息]({learnMoreLink})。",
 
     "kbn.home.tutorial.card.sampleDataDescription_": "Get started exploring Kibana with these \"one click\" data sets.",
     "kbn.home.tutorial.card.sampleDataDescription": "使用這些 '一鍵式' 數據集開始探索Kibana。",
@@ -6083,7 +6083,7 @@
     "tsvb.iconSelect.bellLabel": "鈴聲",
 
     "tagCloud.vis.schemas.metricTitle_": "Tag Size",
-    "tagCloud.vis.schemas.metricTitle": "標簽尺寸",
+    "tagCloud.vis.schemas.metricTitle": "標籤尺寸",
 
     "vega.vegaParser.baseView.functionIsNotDefinedForGraphErrorMessage_": "{funcName} is not defined for this graph",
     "vega.vegaParser.baseView.functionIsNotDefinedForGraphErrorMessage": "未為此圖表定義{funcName} ",
@@ -6113,7 +6113,7 @@
     "tsvb.dataFormatPicker.fromLabel": "從",
 
     "kbn.server.tutorials.netflow.tutorialLongDescription_": "The Logstash Netflow module collects and parses network flow data, indexes the events into Elasticsearch, and installs a suite of Kibana dashboards. This module support Netflow Version 5 and 9. [Learn more]({linkUrl}).",
-    "kbn.server.tutorials.netflow.tutorialLongDescription": "Logstash Netflow模塊收集和解析網絡流數據，將事件索引到Elasticsearch，並安裝一套Kibana儀表板。此模塊支持NetFlow版本5和9。[了解更多信息]({linkUrl})。",
+    "kbn.server.tutorials.netflow.tutorialLongDescription": "Logstash Netflow模塊收集和解析網絡流數據，將事件索引到Elasticsearch，並安裝一套Kibana儀表板。此模塊支持NetFlow版本5和9。[瞭解更多信息]({linkUrl})。",
 
     "kbn.common.tutorials.metricbeatInstructions.config.debTextPre_": "Modify {path} to set the connection information:",
     "kbn.common.tutorials.metricbeatInstructions.config.debTextPre": "修改{path}以設置連接信息：",
@@ -6134,7 +6134,7 @@
     "timelion.serverSideErrors.holtFunction.missingParamsErrorMessage": "必須指定時期長度和樣本大小 >= 2",
 
     "kbn.server.tutorials.couchbaseMetrics.longDescription_": "The `couchbase` Metricbeat module fetches internal metrics from Couchbase. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.couchbaseMetrics.longDescription": "`couchbase` Metricbeat模塊從Couchbase獲取內部指標。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.couchbaseMetrics.longDescription": "`couchbase` Metricbeat模塊從Couchbase獲取內部指標。[瞭解更多信息]({learnMoreLink})。",
 
     "kbn.server.tutorials.apm.flaskClient.configure.commands.initializeUsingEnvironmentVariablesComment_": "initialize using environment variables",
     "kbn.server.tutorials.apm.flaskClient.configure.commands.initializeUsingEnvironmentVariablesComment": "使用環境變量初始化",
@@ -6197,7 +6197,7 @@
     "kbn.common.tutorials.filebeatInstructions.install.osxTitle": "下載並安裝Filebeat",
 
     "timelion.help.functions.static.args.labelHelpText_": "A quick way to set the label for the series. You could also use the .label() function",
-    "timelion.help.functions.static.args.labelHelpText": "為系列設置標簽的快速方法。還可以使用.label()函數",
+    "timelion.help.functions.static.args.labelHelpText": "為系列設置標籤的快速方法。還可以使用.label()函數",
 
     "tsvb.aggSelect.pipelineAggs.bucketScriptLabel_": "Bucket Script",
     "tsvb.aggSelect.pipelineAggs.bucketScriptLabel": "桶腳本",
@@ -6209,7 +6209,7 @@
     "kbn.common.tutorials.metricbeatCloudInstructions.config.osxTitle": "編輯配置",
 
     "tsvb.table.dataTab.columnLabel_": "Column label",
-    "tsvb.table.dataTab.columnLabel": "列標簽",
+    "tsvb.table.dataTab.columnLabel": "列標籤",
 
     "timelion.help.functions.es.args.intervalHelpText_": "**DO NOT USE THIS**. It's fun for debugging fit functions, but you really should use the interval picker",
     "timelion.help.functions.es.args.intervalHelpText": "**不要使用這個**。調試適應函數很有趣，但是您確實應該使用間隔選擇器",
@@ -6263,7 +6263,7 @@
     "timelion.help.expressions.functionReferenceLinkText": "函數引用",
 
     "kbn.server.tutorials.memcachedMetrics.longDescription_": "The `memcached` Metricbeat module fetches internal metrics from Memcached. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.memcachedMetrics.longDescription": "`memcached` Metricbeat模塊從Memcached獲取內部指標。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.memcachedMetrics.longDescription": "`memcached` Metricbeat模塊從Memcached獲取內部指標。[瞭解更多信息]({learnMoreLink})。",
 
     "timelion.help.functions.range.args.maxHelpText_": "New maximum value",
     "timelion.help.functions.range.args.maxHelpText": "新的最大值",
@@ -6302,7 +6302,7 @@
     "metricVis.schemas.metricTitle": "指標",
 
     "kbn.advancedSettings.savedObjects.listingLimitTitle_": "Objects listing limit",
-    "kbn.advancedSettings.savedObjects.listingLimitTitle": "對象列表限制",
+    "kbn.advancedSettings.savedObjects.listingLimitTitle": "對像列表限制",
 
 	"timelion.help.functions.legend.args.positionHelpText_": "Corner to place the legend in: nw, ne, se, or sw. You can also pass false to disable the legend",
     "timelion.help.functions.legend.args.positionHelpText": "用於放置圖例的角：nw、ne、se或sw。您還可以傳遞false以禁用圖例",
@@ -6332,13 +6332,13 @@
     "kbn.advancedSettings.format.bytesFormatTitle": "字節格式",
 
     "timelion.help.functions.sum.args.termHelpText_": "Number or series to sum with the input series. SeriesList with multiple series will be applied label-wise.",
-    "timelion.help.functions.sum.args.termHelpText": "與輸入序列求和的數字或序列。具有多個序列的序列列表將按標簽應用。",
+    "timelion.help.functions.sum.args.termHelpText": "與輸入序列求和的數字或序列。具有多個序列的序列列表將按標籤應用。",
 
     "kbn.common.tutorials.metricbeatInstructions.config.debTitle_": "Edit the configuration",
     "kbn.common.tutorials.metricbeatInstructions.config.debTitle": "編輯配置",
 
     "kbnVislibVisTypes.gauge.gaugeDescription_": "Gauges indicate the status of a metric. Use it to show how a metric's value relates to reference threshold values.",
-    "kbnVislibVisTypes.gauge.gaugeDescription": "儀表指示指標的狀態。使用它來顯示指標值與參考閾值的關系。",
+    "kbnVislibVisTypes.gauge.gaugeDescription": "儀表指示指標的狀態。使用它來顯示指標值與參考閾值的關係。",
 
     "kbn.dashboard.topNave.shareConfigDescription_": "Share Dashboard",
     "kbn.dashboard.topNave.shareConfigDescription": "分享儀表板",
@@ -6368,7 +6368,7 @@
     "kbn.management.createIndexPattern.step.status.successLabel.strongSuccessLabel": "成功！",
 
     "kbn.server.tutorials.vsphereMetrics.longDescription_": "The `vsphere` Metricbeat module fetches internal metrics from a vSphere cluster. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.vsphereMetrics.longDescription": "`vsphere` Metricbeat模塊從vSphere集群獲取內部指標。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.vsphereMetrics.longDescription": "`vsphere` Metricbeat模塊從vSphere集群獲取內部指標。[瞭解更多信息]({learnMoreLink})。",
 
     "kbn.common.tutorials.logstashInstructions.install.logstash.windowsTitle_": "Download and install Logstash",
     "kbn.common.tutorials.logstashInstructions.install.logstash.windowsTitle": "下載並安裝Logstash",
@@ -6404,7 +6404,7 @@
     "kbn.advancedSettings.notifications.infoLifetimeText": "屏幕上顯示信息通知的時間（以毫秒計）。設置為{infinityValue}將禁用。",
 
     "kbn.server.tutorials.mysqlMetrics.longDescription_": "The `mysql` Metricbeat module fetches internal metrics from the MySQL server. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.mysqlMetrics.longDescription": "`mysql` Metricbeat模塊從MySQL服務器獲取內部指標。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.mysqlMetrics.longDescription": "`mysql` Metricbeat模塊從MySQL服務器獲取內部指標。[瞭解更多信息]({learnMoreLink})。",
 
     "kbn.dashboard.topNav.cloneModal.cancelButtonLabel_": "Cancel",
     "kbn.dashboard.topNav.cloneModal.cancelButtonLabel": "取消",
@@ -6419,7 +6419,7 @@
     "kbn.server.tutorials.redisMetrics.shortDescription": "從Redis獲取內部指標。",
 
     "tsvb.splits.terms.directionLabel_": "Direction",
-    "tsvb.splits.terms.directionLabel": "向導",
+    "tsvb.splits.terms.directionLabel": "嚮導",
 
     "kbn.dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription_": "You can combine data views from any Kibana app into one dashboard and see everything in one place.",
     "kbn.dashboard.listing.createNewDashboard.combineDataViewFromKibanaAppDescription": "您可以將任何Kibana應用程序的數據視圖組合到一個儀表板中，並在一個位置查看所有內容。",
@@ -6524,7 +6524,7 @@
     "kbnVislibVisTypes.horizontalBar.splitTitle": "分割圖表",
 
     "kbnVislibVisTypes.editors.pie.labelsSettingsTitle_": "Labels Settings",
-    "kbnVislibVisTypes.editors.pie.labelsSettingsTitle": "標簽設置",
+    "kbnVislibVisTypes.editors.pie.labelsSettingsTitle": "標籤設置",
 
     "kbnVislibVisTypes.controls.gaugeOptions.subTextLabel_": "Sub Text",
     "kbnVislibVisTypes.controls.gaugeOptions.subTextLabel": "子文本",
@@ -6533,7 +6533,7 @@
     "kbnVislibVisTypes.controls.heatmapOptions.fromLabel": "從",
 
     "kbnVislibVisTypes.editors.pie.showLabelsLabel_": "Show Labels",
-    "kbnVislibVisTypes.editors.pie.showLabelsLabel": "顯示標簽",
+    "kbnVislibVisTypes.editors.pie.showLabelsLabel": "顯示標籤",
 
     "kbnVislibVisTypes.controls.heatmapOptions.scaleToDataBoundsLabel_": "Scale to Data Bounds",
     "kbnVislibVisTypes.controls.heatmapOptions.scaleToDataBoundsLabel": "縮放到數據邊界",
@@ -6608,7 +6608,7 @@
     "timelion.help.configuration.notValid.paragraph2": "您還將看到一些其他時間設置。目前, 你不需要擔心他們。稍後, 您將看到, 如果需要, 您可以動態設置其中的大部分。",
 
     "kbn.server.tutorials.traefikLogs.longDescription_": "The `traefik` Filebeat module parses access logs created by Traefik. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.traefikLogs.longDescription": "`traefik` Filebeat模塊解析Traefik創建的訪問日誌。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.traefikLogs.longDescription": "`traefik` Filebeat模塊解析Traefik創建的訪問日誌。[瞭解更多信息]({learnMoreLink})。",
 
     "tsvb.movingAverage.metricLabel_": "Metric",
     "tsvb.movingAverage.metricLabel": "指標",
@@ -6860,7 +6860,7 @@
     "kbn.advancedSettings.notifications.errorLifetimeTitle": "錯誤通知生存期",
 
     "kbn.server.tutorials.redisMetrics.longDescription_": "The `redis` Metricbeat module fetches internal metrics from the Redis server. [Learn more]({learnMoreLink}).",
-    "kbn.server.tutorials.redisMetrics.longDescription": " `redis` Metricbeat模塊從Redis服務器獲取內部指標。[了解更多信息]({learnMoreLink})。",
+    "kbn.server.tutorials.redisMetrics.longDescription": " `redis` Metricbeat模塊從Redis服務器獲取內部指標。[瞭解更多信息]({learnMoreLink})。",
 
     "xpack.spaces.displayName_": "Spaces",
     "xpack.spaces.displayName": "空間"
