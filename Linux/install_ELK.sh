@@ -93,17 +93,14 @@ function install_Kibana ()
 function localize_Kibana ()
 {
 	cd /tmp
-	git clone 'https://github.com/anbai-inc/Kibana_Hanization.git'
-	cp -r /tmp/Kibana_Hanization/translations /usr/share/kibana/src/legacy/core_plugins/kibana
+	#git clone 'https://github.com/anbai-inc/Kibana_Hanization.git'
+	#cp -r /tmp/Kibana_Hanization/translations /usr/share/kibana/src/legacy/core_plugins/kibana
 	
-	#wget -c https://github.com/wdwd2233/Notes/blob/master/Linux/Kibana/translations/zh_CN.json
-	#mkdir -p /usr/share/kibana/src/legacy/core_plugins/kibana/translations
-	#cp -r /tmp/zh_CN.json /usr/share/kibana/src/legacy/core_plugins/kibana/translations
-	#chmod 755 /usr/share/kibana/src/legacy/core_plugins/kibana/translations/zh_CN.json
-	
+	git clone 'https://github.com/wdwd2233/Setting.git'
+	cp -r /tmp/Setting/Linux/Kibana/translations /usr/share/kibana/src/legacy/core_plugins/kibana
 	
 	sed  -i 's/#i18n.locale: "en"/i18n.locale: "zh_CN"/g' /etc/kibana/kibana.yml
-	rm -rf Kibana_Hanization
+	rm -rf Setting
 	systemctl restart kibana
 	echo '漢化成功 Kibana.....'
 }
