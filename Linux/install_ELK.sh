@@ -53,6 +53,11 @@ function install_Logstash ()
 	
 	/usr/share/logstash/bin/system-install
 	
+	
+	# 載入設定檔
+	git clone 'https://github.com/wdwd2233/Setting.git'
+	cp -r /tmp/Setting/Linux/Logstah/conf.d/pipeline.conf /etc/logstash/conf.d/pipeline.conf
+	
 	# 啟動 Logstash 
 	systemctl start logstash
 	systemctl enable logstash
@@ -130,8 +135,8 @@ if [ $? -ne 0 ]; then
 	exit 1;
 fi
 
-localize_Kibana
-if [ $? -ne 0 ]; then
-	printc C_RED "安裝 Kibana 漢化失敗 ~! "
-	exit 1;
-fi
+#localize_Kibana
+#if [ $? -ne 0 ]; then
+#	printc C_RED "安裝 Kibana 漢化失敗 ~! "
+#	exit 1;
+#fi
