@@ -27,55 +27,47 @@
 
 ### Redis 命令
 
-|-------------指令-------------|------------------------------說明----------------------------------|--------備註--------|
-| -------------------------- |:---------------------------------:| -----:|
-| select [index]			 | 切換數據庫 (默認16個)			 |  	 |
-| keys *       			     | 查詢所有的key       			     |  	 |
-| exists [key]      	     | 判斷key是否存在       	     	 |  	 |
-|del [key]|刪除key ||
-|type [key]|查看key類型||
-|dbsize|查看當前數據庫Keys數量||
-|Flushdb|清空當前數據庫||
-|Flushall|清空全部數據庫||
-|expire [key] [seconds]|設定 過期時間||
-|ttl [key]|查詢 剩餘時間|-1(永遠不過期) <br> -2(已經過期)|
+|-------------指令-------------|------------------------------說明---------------------------------- |--------備註--------|
+| --------------------------   |:---------------------------------:									 |:-----			   |
+|select [index]			       |切換數據庫 (默認16個)				 								 |  				   |
+|keys *       			       |查詢所有的key       			     								 |  				   |
+|exists [key]      	   	       |判斷key是否存在       	     	 									 |  				   |
+|del [key]					   |刪除key 							 								 |					   |
+|type [key]					   |查看key類型						 									 |					   |
+|dbsize						   |查看當前數據庫Keys數量			 									 |					   |
+|Flushdb					   |清空當前數據庫					 									 |					   |
+|Flushall					   |清空全部數據庫					 									 |					   |
+|expire [key] [seconds]		   |設定 過期時間						 								 |					   |
+|ttl [key]					   |查詢 剩餘時間						 								 |-1(永遠不過期) <br> -2(已經過期)|
 
 
 
 
 ## String
-get [key]
-查詢對應的key
-set [key] [value]
-寫入對應的key value
-append [key] [value]
-將給定的value添加到原值得尾端
-strlen [key]
-取得key值得長度
-setnx [key] [value]
-只有在key不存在時才添加此key
 
-incr [key]
-將key的數值+1，只能對數字操作，如果為空則新增值為1。
-decr [key]
-將key的數值-1，只能對數字操作，如果為空則新增值為-1。
-incrby / decrby [key] [步長]
-將key的數值定義長度的增減。(一次增加或減少多少)
+|-------------指令-------------|------------------------------說明---------------------------------- |--------備註--------|
+| --------------------------   |:---------------------------------:									 |:-----			   |
+|get [key]|查詢對應的key||
+|set [key] [value]|寫入對應的key value||
+|append [key] [value]|將給定的value添加到原值得尾端||
+|strlen [key]|取得key值得長度||
+|setnx [key] [value]|只有在key不存在時才添加此key||
+|incr [key]|將key的數值+1，只能對數字操作，如果為空則新增值為1。||
+|decr [key]|將key的數值-1，只能對數字操作，如果為空則新增值為-1。||
+|incrby / decrby [key] [步長]|將key的數值定義長度的增減。(一次增加或減少多少)||
+|mset [key1][value1][key2][value2]|同時設置一個或多個key-value。||
+|mget [key1][value1][key2][value2]|同時讀取一個或多個key-value。||
+|msetnx [key1][value1][key2][value2]|同時設置一個或多個key-value，輸入的key全部都不存在時才會成功(單線原子型)。||
+|getrange [key] [range][range] |取得value 開始到結束字符串位置，功能相似Substring(0,10)，(0,-1)取到最後、(0,-2)取到倒數第二。||
+|setrange [key] [偏移量] [value]|在指定的範圍內覆蓋掉原本的內容。 ||
+|setex [key] [過期時間(秒)] [value]|設定key時同時給定過期時間(如果重新寫入value，會取消過期時間)。||
+|getset [key][value]|以新換舊，設定新值的同時返回舊值。||
 
-mset [key1][value1][key2][value2]
-同時設置一個或多個key-value。
-mget [key1][value1][key2][value2]
-同時讀取一個或多個key-value。
-msetnx [key1][value1][key2][value2]
-同時設置一個或多個key-value，輸入的key全部都不存在時才會成功(單線原子型)。
-getrange [key] [range][range] 
-取得value 開始到結束字符串位置，功能相似Substring(0,10)，(0,-1)取到最後、(0,-2)取到倒數第二。
-setrange [key] [偏移量] [value]
-在指定的範圍內覆蓋掉原本的內容。 
-setex [key] [過期時間(秒)] [value]
-設定key時同時給定過期時間(如果重新寫入value，會取消過期時間)。
-getset [key][value]
-以新換舊，設定新值的同時返回舊值。
+
+
+
+
+
 
 
 ## List
