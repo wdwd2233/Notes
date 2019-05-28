@@ -32,7 +32,7 @@
 |exec					|執行所有先前排隊在一個交易中的命令，並恢複連接狀態正常											 |												|
 |discard				|取消multi後的所有操作																			 |												|
 
-
+雙11 秒殺案例 練習
 ```js
 ConsumerKey := "sk_Consumer_list"
 countKey := "sk_Productid_qt"
@@ -102,32 +102,27 @@ LUA 腳本補充
 3. redis的LUA腳本只有在2.6以上的版本才能使用。 
 4. 通過LUA腳本解決秒殺超賣商品的問題，實際上是redis利用單線程的特性與任務對列的方式解決併發問題。
 
-雙11 秒殺案例 範例
-1. 查看當前用戶是否秒殺成功，已經購買成功則返回錯誤
-2. 沒購買過，獲取商品庫存，判斷庫存大小是否>0
-3. 將庫存減一，將使用者加入成功者清單
-
-
 
 
 ## String																								
-|-------------指令-------------|------------------------------說明------------------------------------- | ---備註---|
-| --------------------------   |:---------------------------------								 |:-----			   |
-|get [key]|查詢對應的key||
-|set [key] [value]|寫入對應的key value||
-|append [key] [value]|將給定的value添加到原值得尾端||
-|strlen [key]|取得key值得長度||
-|setnx [key] [value]|只有在key不存在時才添加此key||
-|incr [key]|將key的數值+1，只能對數字操作，如果為空則新增值為1。||
-|decr [key]|將key的數值-1，只能對數字操作，如果為空則新增值為-1。||
-|incrby[key]  <br /> decrby [key] [步長]|將key的數值定義長度的增減。(一次增加或減少多少)||
-|mset [key1][value1] .... |同時設置一個或多個key-value。||
-|mget [key1][value1] ....|同時讀取一個或多個key-value。||
-|msetnx [key1][value1] ....|同時設置一個或多個key-value <br />輸入的key全部都不存在時才會成功(單線原子性)。||
-|getrange [key] [range][range] |取得value 開始到結束字符串位置 <br />功能相似Substring(0,10)，(0,-1)取到最後、(0,-2)取到倒數第二。||
-|setrange [key] [偏移量] [value]|在指定的範圍內覆蓋掉原本的內容。 ||
-|setex [key] [second] [value]|設定key時同時給定過期時間(如果重新寫入value，會取消過期時間)。||
-|getset [key][value]|以新換舊，設定新值的同時返回舊值。||
+|-------------指令-------------	|------------------------------說明-------------------------------------  	| ---備註---|
+| -------------------------- 	|:---------------------------------									      	|:-----			   |
+|get [key]|查詢對應的key		|																			|
+|set [key] [value]				|寫入對應的key value|														|
+|append [key] [value]			|將給定的value添加到原值得尾端|												|
+|strlen [key]					|取得key值得長度|															|
+|setnx [key] [value]			|只有在key不存在時才添加此key|												|
+|incr [key]						|將key的數值+1，只能對數字操作，如果為空則新增值為1。|						|
+|decr [key]						|將key的數值-1，只能對數字操作，如果為空則新增值為-1。|						|
+|incrby[key]  <br />
+ decrby [key] [步長]			|將key的數值定義長度的增減。(一次增加或減少多少)|							|
+|mset [key1][value1] .... 		|同時設置一個或多個key-value。|												|
+|mget [key1][value1] ....		|同時讀取一個或多個key-value。|												|
+|msetnx [key1][value1] ....		|同時設置一個或多個key-value <br />輸入的key全部都不存在時才會成功(單線原子性)。||
+|getrange [key] [range][range] 	|取得value 開始到結束字符串位置 <br />功能相似Substring(0,10)，(0,-1)取到最後、(0,-2)取到倒數第二。||
+|setrange [key] [偏移量] [value]|在指定的範圍內覆蓋掉原本的內容。 |											|
+|setex [key] [second] [value]	|設定key時同時給定過期時間(如果重新寫入value，會取消過期時間)。|			|
+|getset [key][value]			|以新換舊，設定新值的同時返回舊值。|										|
 
 
 
