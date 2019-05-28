@@ -32,7 +32,52 @@
 |exec|執行所有先前排隊在一個事務中的命令，並恢複連接狀態正常||
 |discard|取消multi後的所有操作||
 
+```js
+ConsumerKey := "sk_Consumer_list"
+	countKey := "sk_Productid_qt"
+	userID := "123"
+	// 設定商品庫存量
+	a.client.Set(countKey, "100", 0)
 
+	// Watch Key
+	err := a.client.Watch(func(tx *redis.Tx) error {
+		// 使用set 不能重複 將已購買過的ID加入 判斷是否購買過
+		Consumer, _ := tx.SIsMember(ConsumerKey, userID).Result()
+		if Consumer {
+			fmt.Println("您已經購買過了!")
+			// return
+		}
+
+		// 取得商品庫存量
+		count := tx.Get(countKey)
+		if count.Val() == "" {
+			fmt.Println("商品ID 錯誤!")
+			// return
+		}
+		if c, _ := count.Int(); c <= 0 {
+			fmt.Println("此商品已售完!")
+			// return
+		}
+
+		// Transaction
+		_, err := tx.Pipelined(func(pipe redis.Pipeliner) error {
+			// 將商品數量-1
+			pipe.Decr(countKey)
+			// 新增購買者清單
+			pipe.SAdd(ConsumerKey, userID)
+
+			return nil
+		})
+		if err != nil && err != redis.Nil {
+			return err
+		}
+		return err
+	}, countKey, ConsumerKey)
+
+	if err == redis.TxFailedErr {
+		fmt.Println("交易失敗")
+	}
+```
 
 
 ### Redis 命令
