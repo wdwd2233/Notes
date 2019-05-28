@@ -126,7 +126,7 @@ LUA 腳本補充
 |msetnx [key1][value1] ....|同時設置一個或多個key-value <br />輸入的key全部都不存在時才會成功(單線原子性)。||
 |getrange [key] [range][range] |取得value 開始到結束字符串位置 <br />功能相似Substring(0,10)，(0,-1)取到最後、(0,-2)取到倒數第二。||
 |setrange [key] [偏移量] [value]|在指定的範圍內覆蓋掉原本的內容。 ||
-|setex [key] [過期時間(秒)] [value]|設定key時同時給定過期時間(如果重新寫入value，會取消過期時間)。||
+|setex [key] [second] [value]|設定key時同時給定過期時間(如果重新寫入value，會取消過期時間)。||
 |getset [key][value]|以新換舊，設定新值的同時返回舊值。||
 
 
