@@ -114,8 +114,7 @@ LUA 腳本補充
 |setnx [key] [value]			|只有在key不存在時才添加此key|												|
 |incr [key]						|將key的數值+1，只能對數字操作，如果為空則新增值為1。|						|
 |decr [key]						|將key的數值-1，只能對數字操作，如果為空則新增值為-1。|						|
-|incrby[key]  <br />
- decrby [key] [步長]			|將key的數值定義長度的增減。(一次增加或減少多少)|							|
+|incrby[key]  <br /> decrby [key] [步長]|將key的數值定義長度的增減。(一次增加或減少多少)|					|
 |mset [key1][value1] .... 		|同時設置一個或多個key-value。|												|
 |mget [key1][value1] ....		|同時讀取一個或多個key-value。|												|
 |msetnx [key1][value1] ....		|同時設置一個或多個key-value <br />輸入的key全部都不存在時才會成功(單線原子性)。||
