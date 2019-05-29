@@ -188,12 +188,12 @@ LUA 腳本補充
 ## zset
 1. 有序集合
 
-|---------------------指令---------------------|----------------------說明---------------------- |--------備註--------|
+|-----------------指令-----------------|------------------------說明------------------------ |-------備註-------|
 | --------------------------   		|:---------------------------------									 |:-----			   |
 |zadd [key] [score1] [value1]....	|將一個或多個score和value添加到有序集的key中。||
-|zrange [key] [start][stop] <br />	[withscores]|返回有序集key中，下標在[start][stop]，<br /> 帶withscores可以讓分數一起返回。||
-|zrangebyscore [key] [min] [max] <br />	[withscores][limit offset count]|返回有序集key中，所有score介於min和max之間<br /> (包刮min、max)的值按照score值有小到大排列。||
-|zrevrangbyscore [key] [max] [min] <br />	[withscores][limit offset count]|返回有序集key中，所有score介於min和max之間<br /> (包刮min、max)的值按照score值有大到小排列。||
+|zrange [key] [start][stop] <br />[withscores]|返回有序集key中，下標在[start][stop]，<br /> 帶withscores可以讓分數一起返回。||
+|zrangebyscore [key] [min] [max] <br />[withscores][limit offset count]|返回有序集key中，所有score介於min和max之間<br /> (包刮min、max)的值按照score值有小到大排列。||
+|zrevrangbyscore [key] [max] [min] <br />[withscores][limit offset count]|返回有序集key中，所有score介於min和max之間<br /> (包刮min、max)的值按照score值有大到小排列。||
 |zincrby [key][increment][value]|為元素的score增加數量(int)。||
 |zrem [key][value]|刪除該集合下，指定值的元素。||
 |zcount [key][min][max]|統計該集合分數區間內的元素數量。||
