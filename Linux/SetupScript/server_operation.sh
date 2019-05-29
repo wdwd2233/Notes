@@ -166,6 +166,8 @@ function create_nginx()
 {
 	echo 'create nginx...'
 	
+	nginx_host_cfg=/root/DockerArea/Nginx/nginx.conf
+	nginx_container_cfg=/etc/nginx/nginx.conf
 	nginx_host_backend=/root/Server/env/server/backend
 	nginx_container_backend=/usr/share/nginx/html/backend
 	nginx_host_client=/root/Server/env/client
@@ -174,9 +176,11 @@ function create_nginx()
 	
 	docker run --detach --rm \
 		-e "TZ=Asia/Taipei" \
+		-v $nginx_host_cfg:$nginx_container_cfg:ro \
 		-v $nginx_host_backend:$nginx_container_backend \
 		-v $nginx_host_client:$nginx_container_client \
 		--publish $nginx_port:80 \
+		--publish 15101:15101 \
 		--name my-nginx nginx
 		
 	firewall-cmd --permanent --zone=public --add-port=$nginx_port/tcp
