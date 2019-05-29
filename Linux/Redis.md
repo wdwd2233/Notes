@@ -173,16 +173,16 @@ LUA 腳本補充
 2. Redis hash 是一個string類型的field(屬性標籤)和value的映射表，hash特別適合用於儲存對象。
 3. 類似java裡面的map<string,object>
 
-|-------------指令-------------|------------------------------說明---------------------------------- |--------備註--------|
-| --------------------------   |:---------------------------------:									 |:-----			   |
-|hset [key1][field][value]|給key集合中的fiekd賦值value。||
-|hget [key][field]|從key集合的field取出value。||
+|-------------指令-------------	|------------------------------說明---------------------------------- |--備註--|
+| -------------------------- 	|:---------------------------------									 |:-----			   |
+|hset [key1][field][value]		|給key集合中的fiekd賦值value。||
+|hget [key][field]				|從key集合的field取出value。||
 |hmset [key] [field1][value1] [field2][value2] |批量設置hash的值。||
 |hexists [key] [field]|查看field是否存在key內。||
 |hkeys [key]|列出該hash內所有的field。||
 |hvals [key]|列出該hash內所有value。||
 |hincrby [key][field][increment]|為hash內的field新增數量(int)||
-|hsetnx [key][field][value]|將hash中插入一個[field][value]，如果field不存在才成功，反之則失敗。||
+|hsetnx [key][field][value]|將hash中插入一個[field][value]<br />※如果field不存在才成功，反之則失敗。||
 
 
 ## zset
