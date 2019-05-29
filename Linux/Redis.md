@@ -143,7 +143,7 @@ LUA 腳本補充
 |lindex [key] [index]|按照索引下標獲得元素(從左到右)。||
 |llen [key]|獲取列表長度。||
 |linsert [key] after [value][new value]|在[value]前面插入[new value]的值。||
-||linsert [key] before [value][new value]|在[value]後面插入[new value]的值。||
+|linsert [key] before [value][new value]|在[value]後面插入[new value]的值。||
 |lrem [key][n][value]|從左邊刪除n個value(n:為負數則從右邊刪)<br />(n:為0的時候將列表中符合value的值全部刪除)。||
 
 
