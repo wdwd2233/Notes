@@ -39,16 +39,6 @@ function install_systools()
 	yum -y install jq || return 1
 }
 
-function install_chrony()
-{
-	echo 'install chrony...'
-	yum -y install chrony
-	
-	systemctl enable chronyd.service
-	systemctl start chronyd.service
-	systemctl status chronyd.service
-}
-
 function install_samba()
 {
 	echo 'install samba...'
@@ -139,11 +129,6 @@ if [ $? -ne 0 ]; then
 	exit 1;
 fi
 
-install_chrony
-if [ $? -ne 0 ]; then
-	printc C_RED "install chrony error!"
-	exit 1;
-fi
 install_samba
 if [ $? -ne 0 ]; then
 	printc C_RED "install samba error!"

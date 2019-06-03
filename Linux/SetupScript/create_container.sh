@@ -5,12 +5,6 @@ redis_container_name=my-redis
 mysql_passwd=1234
 mysql_container_name=my-mysql
 mysql_docker_file_path=/root/DockerArea/MySQL/
-mysql_master_conf_path=/root/DockerArea/MySQL/master.cnf
-mysql_slave_conf_path=/root/DockerArea/MySQL/slave.cnf
-mysql_master_ip=10.40.0.199
-mysql_master_port=3306
-mysql_slave_ip=10.40.0.199
-mysql_slave_port=3307
 mysql_db_name=cegame
 
 getInnerIP static_ip
@@ -60,80 +54,6 @@ function create_mysql()
 	
 	firewall-cmd --permanent --zone=public --add-port=$mysql_port/tcp
 	firewall-cmd --reload
-}
-
-function create_mysql_master()
-{
-	# https://github.com/Junnplus/blog/issues/1
-	# https://blog.miniasp.com/post/2012/07/04/How-to-setup-MySQL-55-One-way-replication-Master-Slave-mode.aspx
-	echo 'create MySQL master container...'
-	
-	pushd $PWD
-	cd $mysql_docker_file_path
-	mysql_host_data=/storage/mysqlm/data
-	mysql_container_data=/var/lib/mysql
-	mysql_container_conf=/etc/mysql/conf.d/master.conf
-	docker build -t my-mysql .
-	mysqlm_container_name=my-mysqlm
-	docker run -e "TZ=Asia/Taipei" \
-		-v $mysql_host_data:$mysql_container_data \
-		-v $mysql_master_conf_path:$mysql_container_conf \
-		--detach \
-		--publish $mysql_master_port:3306 \
-		-e MYSQL_ROOT_PASSWORD=$mysql_passwd \
-		--name $mysqlm_container_name my-mysql
-	docker exec -it $mysqlm_container_name bash -c "mysql -V"
-	popd
-	
-	firewall-cmd --permanent --zone=public --add-port=$mysql_master_port/tcp
-	firewall-cmd --reload
-}
-function create_mysql_slave()
-{
-	echo 'create MySQL slave container...'
-	
-	pushd $PWD
-	cd $mysql_docker_file_path
-	mysql_host_data=/storage/mysqls/data
-	mysql_container_data=/var/lib/mysql
-	mysql_container_conf=/etc/mysql/conf.d/slave.cnf
-	docker build -t my-mysql .
-	mysqls_container_name=my-mysqls
-	docker run -e "TZ=Asia/Taipei" \
-		-v $mysql_host_data:$mysql_container_data \
-		-v $mysql_slave_conf_path:$mysql_container_conf \
-		--detach \
-		--publish $mysql_slave_port:3306 \
-		-e MYSQL_ROOT_PASSWORD=$mysql_passwd \
-		--name $mysqls_container_name my-mysql
-	docker exec -it $mysqls_container_name bash -c "mysql -V"
-	popd
-	
-	mysql_host_backup=/storage/mysqls/backups
-	mkdir $mysql_host_backup
-	(crontab -l; echo "0 2 * * * /bin/docker exec "$mysqls_container_name" sh -c 'exec mysqldump -uroot -p\"\$MYSQL_ROOT_PASSWORD\" "$mysql_db_name"' > "$mysql_host_backup"/"$mysql_db_name"-\`date +\"\%Y-\%m-\%d\"\`.sql") | crontab
-	(crontab -l; echo "0 3 * * * find $mysql_host_backup/*.sql -mtime +6 -type f -delete") | crontab
-	
-	firewall-cmd --permanent --zone=public --add-port=$mysql_slave_port/tcp
-	firewall-cmd --reload
-}
-
-function config_mysql_slave()
-{
-	echo 'config MySQL slave container...'
-	
-	mysqls_container_name=my-mysqls
-	
-	mysql_sql="\
-stop slave;\
-reset slave;\
-change master to master_host='$mysql_master_ip', master_port=$mysql_master_port, master_user='root', master_password='$mysql_passwd';\
-start slave;\
-show slave status\G
-"
-	mysql_command="mysql -uroot -p$mysql_passwd -e \"$mysql_sql\""
-	echo "$mysql_sql"
-	docker exec -it $mysqls_container_name bash -c "$mysql_command"
 }
 
 function test_redis()
@@ -189,9 +109,6 @@ function menu()
 	printc C_GREEN "================================================================\n"
 	printc C_CYAN "  1. redis\n"
 	printc C_CYAN "  2. mysql\n"
-	printc C_CYAN "  3. mysql master\n"
-	printc C_CYAN "  4. mysql slave\n"
-	printc C_CYAN "  5. config mysql slave\n"
 	printc C_CYAN "  11. test redis\n"
 	printc C_CYAN "  12. test mysql\n"
 	printc C_CYAN "  21. fix mysql\n"
@@ -205,15 +122,6 @@ function menu()
 				return 0;;
 			2)
 				create_mysql
-				return 0;;
-			3)
-				create_mysql_master
-				return 0;;
-			4)
-				create_mysql_slave
-				return 0;;
-			5)
-				config_mysql_slave
 				return 0;;
 			11)
 				test_redis

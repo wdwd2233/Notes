@@ -44,8 +44,6 @@ function install_gitlab()
 	
 	# the crontab job of gitlab backup
 	(crontab -l; echo "0 2 * * * /bin/docker exec -i "$gitlab_container_name" /opt/gitlab/bin/gitlab-rake gitlab:backup:create") | crontab
-	postfix=_gitlab_backup.tar
-	(crontab -l; echo "0 3 * * * find $gitlab_host_backup/*$postfix -mtime +6 -type f -delete") | crontab
 }
 
 install_git

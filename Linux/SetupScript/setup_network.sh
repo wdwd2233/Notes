@@ -1,10 +1,12 @@
 #!/bin/bash
 source script_lib
 
-network_interface=enp0s3
-static_ip=192.168.11.200
+network_interface=enp5s0
+network_interface1=enp6s0
+static_ip=10.40.0.200
+static_ip1=10.40.0.201
 host_name=ceserver200
-gateway=192.168.11.1
+gateway=10.40.0.1
 
 function setup_network()
 {
@@ -13,12 +15,20 @@ function setup_network()
 	# static ip
 	f=/etc/sysconfig/network-scripts/ifcfg-$network_interface
 	file_rline $f ^BOOTPROTO= 'BOOTPROTO=static'
-	file_rline $f ^BROADCAST= 'BROADCAST=192.168.1.255'
+	file_rline $f ^BROADCAST= 'BROADCAST=10.40.1.255'
 	file_rline $f ^NETMASK= 'NETMASK=255.255.255.0'
-	file_rline $f ^NETWORK= 'NETWORK=192.168.1.0'
+	file_rline $f ^NETWORK= 'NETWORK=10.40.1.0'
 	file_rline $f ^IPADDR= 'IPADDR='$static_ip
 	file_rline $f ^ONBOOT= 'ONBOOT=yes'
 	
+	f=/etc/sysconfig/network-scripts/ifcfg-$network_interface1
+	file_rline $f ^BOOTPROTO= 'BOOTPROTO=static'
+	file_rline $f ^BROADCAST= 'BROADCAST=10.40.1.255'
+	file_rline $f ^NETMASK= 'NETMASK=255.255.255.0'
+	file_rline $f ^NETWORK= 'NETWORK=10.40.1.0'
+	file_rline $f ^IPADDR= 'IPADDR='$static_ip1
+	file_rline $f ^ONBOOT= 'ONBOOT=yes'
+
 	# gateway
 	echo "setup gateway $gateway ..."
 	f=/etc/sysconfig/network
@@ -52,6 +62,7 @@ function setup_network()
 
 echo "install network"
 askDefault "static ip" "static_ip"
+askDefault "static ip1" "static_ip1"
 askDefault "host name" "host_name"
 askDefault "gateway" "gateway"
 setup_network
