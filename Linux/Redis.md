@@ -220,7 +220,6 @@ LUA 腳本補充
 			900秒內，如果至少增刪改了1個key，會自動保存，產生dump.rdb文件。<br/>
 			300秒內，如果至少改變了10個key，會自動保存，產生dump.rdb文件。<br/>
 			60秒內，如果至少改變了10000個key，會自動保存，產生dump.rdb文件。<br/>
-			
 				```javascript
 				save 900 1
 				save 300 10
