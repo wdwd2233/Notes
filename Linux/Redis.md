@@ -193,10 +193,12 @@ LUA 腳本補充
 
 
 
+### redis.conf 設定
 
-
-
-
+##### 1. 外部連接Redis
+	* 打開防火牆 預設 `port 6379` 。
+	* 註解掉 `bind 127.0.0.1` ，讓所有IP都能連。
+	* 將protected-mode 改為 `no` 。
 
 
 
