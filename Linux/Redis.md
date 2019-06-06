@@ -224,18 +224,31 @@ LUA 腳本補充
 			save 300 10
 			save 60 10000
 			```
-		2. stop-writes-on-bgsave-error：後台save出錯，那麼就停止寫入，出錯就剎車。
-		3. rdbcompression：是否啟用壓縮算法，默認開啟。
-		4. rdbchecksum：數據校驗。
-		
+			* shutdown 會自動執行save
+		2. stop-writes-on-bgsave-error：後台save出錯，那麼就停止寫入，出錯就直接停止寫的操作。
+		3. rdbcompression：是否啟用壓縮保存，默認開啟。
+		4. rdbchecksum：數據使用CRC64進行數據校驗，增加10%性能損耗。
+		5. dbfilename dump.rdb : 默認存檔檔名
+		5. dir ./ : .rdb檔案位置
 		
 	
 2. AOF( Append of File)
 
 	1. 是記錄操作者的所有寫操作，數據恢復的時候，把所有寫操作執行一遍，<br/>
-	以日誌的形式來記錄每個`寫入操作`，將Redis執行過的所有寫指令記錄下來(讀取操作不記錄)，
-	只許追加文件但不可以改寫文件，redis重啟的話就根據日誌文件的內容，將寫指令從頭到尾執行一次以完成數據的恢復工作。
+		以日誌的形式來記錄每個`寫入操作`，將Redis執行過的所有寫指令記錄下來(讀取操作不記錄)，
+		只許追加文件但不可以改寫文件，redis重啟的話就根據日誌文件的內容，將寫指令從頭到尾執行一次以完成數據的恢復工作。
+		
+		* AOF保存的是appendonly.aof文件
+		* 資料不會被壓縮，內容可辨識但無法透過file編輯修改
 	
+	2. 配置 APPEND ONLY MODE
 	
-資料不會被壓縮，內容可辨識但無法透過file編輯修改
-
+		1. 同步規則 appendfsync
+			* appendfsync always：同步持久化，每次發生數據變更會被立即記錄到磁盤，性能較差，但數據完整性比較好
+			* appendfsync everysec：出廠默認推薦，異步操作，每秒記錄，如果一秒內宕機，有數據丟失
+			* appendfsync no：從不同步
+		2. appendonly no: 持久化存儲方式默認關閉，設置yes就是啟動持久化。
+		3. appendfilename "appendonly.aof" : 默認存檔檔名。
+		4. no-appendfsync-on-rewrite no : yes不會延遲但可能丟失少量的數據 NO對IO的讀寫可能會延遲但資料不會丟失。
+		5. auto-aof-rewrite-percentage 100 auto-aof-rewrite-min-size 64mb :
+		6. aof-load-truncated yes : 恢復數據時，會忽略最後一條可能存在問題的指令。yes即在aof寫入時，可能存在指令寫錯的問題(突然斷電，寫了一半)，這種情況下，yes會log並繼續，而no會直接恢復失敗.
