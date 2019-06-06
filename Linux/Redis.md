@@ -263,5 +263,30 @@ LUA 腳本補充
 		
 ##### 3. Redis 主從
 
-	1. Master以寫入為主，slave讀取為主。
-	2. 
+1. Master以寫入為主，Slave讀取為主。
+	
+	
+2. 配置內容:
+
+	* Slave連線後會將原本Master的資料完整複製過來
+	* 如果Slave有斷線，在重新連線後會自動將Master的資料複製過來
+	
+	
+	1. Master 設定
+		* daemonize yes  : 背景執行 (windows 不支持)
+		* appendonly no : 關掉AOF設定(或者改名子)
+	2. Slave 設定
+		* include redis.master.conf : 要包含的主要配置文件
+		* pidfile /var/run/redis.pid : (windows 不支持) 
+		* port 6379 : 指定個別的port
+		* dbfilename dump.rdb : 個別的備份檔
+		* slaveof 127.0.0.1 6379 : 建立從集
+		
+	3. 指令
+		* info replication : 查看主從訊息
+		
+	4. 主從同步原理:<br/>
+		1. 每次從機連通後，都會給主機發送sync指令
+		2. 主機立刻進行存盤操作，發送RDB文件，給從機
+		3. 從機收到RDB文件後，進行全盤加載
+		4. 之後每次主機的寫操作，都會立刻發送給從機，從機執行相同的命令
