@@ -268,9 +268,10 @@ LUA 腳本補充
 	
 2. 配置內容:
 
-	* Slave連線後會將原本Master的資料完整複製過來
+	* Slave連線後會將原本Master的資料完整複製過來(Slave原本的資料會清空)
 	* 如果Slave有斷線，在重新連線後會自動將Master的資料複製過來
-	
+	* Slave還可以在接Slave
+	* 
 	
 	1. Master 設定
 		* daemonize yes  : 背景執行 (windows 不支持)
@@ -290,3 +291,11 @@ LUA 腳本補充
 		2. 主機立刻進行存盤操作，發送RDB文件，給從機
 		3. 從機收到RDB文件後，進行全盤加載
 		4. 之後每次主機的寫操作，都會立刻發送給從機，從機執行相同的命令
+		
+	5. 去中心化:<br/>
+		1. 上一個Slave可以是下一個slave的Master
+		2. Slave同樣可以接收其他slave的連接和同步請求
+		3. Slave作為了鏈條中下一個的master,可以有效減輕master的寫壓力
+		* 缺點 : 鏈中的Slave掛掉，下面的Slave全部都無法讀取
+		
+		
