@@ -229,26 +229,34 @@ LUA 腳本補充
 		3. rdbcompression：是否啟用壓縮保存，默認開啟。
 		4. rdbchecksum：數據使用CRC64進行數據校驗，增加10%性能損耗。
 		5. dbfilename dump.rdb : 默認存檔檔名
-		5. dir ./ : .rdb檔案位置
+		5. dir ./ : .rdb和.aof檔案存放位置
 		
 	
 2. AOF( Append of File)
 
-	1. 是記錄操作者的所有寫操作，數據恢復的時候，把所有寫操作執行一遍，<br/>
+	1. 記錄操作者的所有寫操作，數據恢復的時候，把所有寫操作執行一遍，<br/>
 		以日誌的形式來記錄每個`寫入操作`，將Redis執行過的所有寫指令記錄下來(讀取操作不記錄)，
 		只許追加文件但不可以改寫文件，redis重啟的話就根據日誌文件的內容，將寫指令從頭到尾執行一次以完成數據的恢復工作。
 		
+		* AOF默認關閉，需要手動在配置文中打開
 		* AOF保存的是appendonly.aof文件
+		* AOF和RDB同時開啟時，redis默認讀AOF(因為AOF保存間格較短)
 		* 資料不會被壓縮，內容可辨識但無法透過file編輯修改
+		* 比起RDB，檔案更大，恢復時間較久
+		* 官方不建議單獨使用AOF，因為可能發生bug造數據無法恢復，建議兩個都使用
 	
 	2. 配置 APPEND ONLY MODE
 	
 		1. 同步規則 appendfsync
 			* appendfsync always：同步持久化，每次發生數據變更會被立即記錄到磁盤，性能較差，但數據完整性比較好
 			* appendfsync everysec：出廠默認推薦，異步操作，每秒記錄，如果一秒內宕機，有數據丟失
-			* appendfsync no：從不同步
-		2. appendonly no: 持久化存儲方式默認關閉，設置yes就是啟動持久化。
-		3. appendfilename "appendonly.aof" : 默認存檔檔名。
-		4. no-appendfsync-on-rewrite no : yes不會延遲但可能丟失少量的數據 NO對IO的讀寫可能會延遲但資料不會丟失。
-		5. auto-aof-rewrite-percentage 100 auto-aof-rewrite-min-size 64mb :
+			* appendfsync no：從不同步，默認關閉
+		2. appendfilename "appendonly.aof" : 默認存檔檔名。
+		3. no-appendfsync-on-rewrite no : yes不會延遲但可能丟失少量的數據 NO對IO的讀寫可能會延遲但資料不會丟失(阻塞式寫入)。
+		4. auto-aof-rewrite-percentage 100 :  aof檔案重寫機制，比上一次多寫文件多了100%才重寫
+		5. auto-aof-rewrite-min-size 64mb :  aof檔案重寫機制，文件大於64mb才重寫
 		6. aof-load-truncated yes : 恢復數據時，會忽略最後一條可能存在問題的指令。yes即在aof寫入時，可能存在指令寫錯的問題(突然斷電，寫了一半)，這種情況下，yes會log並繼續，而no會直接恢復失敗.
+	
+	3. 指令
+	
+		1. bgrewriteaof : 異步執行一個AOF文件重寫操作，可以把文件體積縮小。
