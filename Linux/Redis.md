@@ -261,7 +261,7 @@ LUA 腳本補充
 	
 		1. bgrewriteaof : 異步執行一個AOF文件重寫操作，可以把文件體積縮小。
 		
-##### 3. Redis 主從
+##### 3. Redis Master-Slave
 
 1. Master以寫入為主，Slave讀取為主。
 	
@@ -271,7 +271,7 @@ LUA 腳本補充
 	* Slave連線後會將原本Master的資料完整複製過來(Slave原本的資料會清空)
 	* 如果Slave有斷線，在重新連線後會自動將Master的資料複製過來
 	* Slave還可以在接Slave
-	* 
+	* redis主從同步版本必須一致，不一致的話同步過程中會出現各種奇葩問題！
 	
 	1. Master 設定
 		* daemonize yes  : 背景執行 (windows 不支持)
@@ -285,6 +285,7 @@ LUA 腳本補充
 		
 	3. 指令
 		* info replication : 查看主從訊息
+		* slaveof no one : 取消Slave，將此改成Master
 		
 	4. 主從同步原理:<br/>
 		1. 每次從機連通後，都會給主機發送sync指令
@@ -298,4 +299,6 @@ LUA 腳本補充
 		3. Slave作為了鏈條中下一個的master,可以有效減輕master的寫壓力
 		* 缺點 : 鏈中的Slave掛掉，下面的Slave全部都無法讀取
 		
-		
+##### 4. Redis-Sentinel 哨兵機制
+
+redis-sentinel conf/sentinel.conf
