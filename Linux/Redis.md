@@ -301,4 +301,44 @@ LUA 腳本補充
 		
 ##### 4. Redis-Sentinel 哨兵機制
 
-redis-sentinel conf/sentinel.conf
+1. 
+
+2. 配置內容:
+
+	1. sentinel.conf 
+		* port 26379 : 默認port 26379
+		* daemonize yes : 
+		* sentinel monitor my-master 127.0.0.1 6390 1 : 至少需要幾個 sentinel 同意，master_6379 才算失效，自動 failover。
+		* sentinel down-after-milliseconds master 1000 : 少毫秒數內沒有回應，master_6379 就算失效。
+		* sentinel parallel-syncs master 1 : 當 failover 發生時，最多可以有多少個 slave 從新的 master 同步資料。
+		* sentinel failover-timeout master 1000 : 多少毫秒數內沒有 failover 成功，就算 failover 失敗。
+	2. 指令
+		* redis-server.exe conf\sentinel.conf --sentinel  : 啟動sentinel (windows 版)
+		* redis-sentinel conf\sentinel.conf : 啟動sentinel (Linux版)
+		* info sentinel : 查看Sentinel訊息
+		
+3.	原理
+	
+	1. Master crash之後會去判斷slave-priority優先級來決定誰接手master
+		* 0則是永遠不會當作master
+		* 數字越小優先級越高
+		* priority相等會以數據較完整的當作master
+		* 找集群runid最小的優先
+		
+##### 5. Redis-Cluster 集群機制 
+
+1. Redis-Cluster實現了水平擴充，會啟動N個redis節點，將整個數據分布存放於N個節點中，每個節點存放總數據的1/N
+	Redis-Cluster透過分區(partition)提供了一定的可用度，即使集群中有一部份節點失效，集群還是可以繼續執行
+
+2. 環境 
+	* 下載[https://rubyinstaller.org/downloads/]
+	* 集群環境為 三個Master及三個Slave
+	
+
+3. 配置內容:
+	1. 
+		* cluster-enabled yes : 開啟集群模式
+		* cluster-config-file nodes-6390.conf : 設定節點配置文件名稱
+		* cluster-node-timeout 15000 : 設定節點失效超過(毫秒)，集群自動進行Master-Slave切換
+	2. 指令
+		* redis-trib.rb create -- replicas 1 [ip][ip][ip] [ip][ip][ip] :真實IP位址(不能127.0.0.1)
