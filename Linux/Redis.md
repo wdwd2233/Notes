@@ -323,7 +323,7 @@ LUA 腳本補充
 		* 0則是永遠不會當作master
 		* 數字越小優先級越高
 		* priority相等會以數據較完整的當作master
-		* 找集群runid最小的優先
+		* 找集群RunID最小的優先
 		
 ##### 5. Redis-Cluster 集群機制 
 
