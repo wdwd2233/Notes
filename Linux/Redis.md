@@ -336,7 +336,7 @@ LUA 腳本補充
 	
 
 3. 配置內容:
-	1. 
+	1. conf
 		* cluster-enabled yes : 開啟集群模式
 		* cluster-config-file nodes-6390.conf : 設定節點配置文件名稱
 		* cluster-node-timeout 15000 : 設定節點失效超過(毫秒)，集群自動進行Master-Slave切換
