@@ -331,10 +331,9 @@ LUA 腳本補充
 	Redis-Cluster透過分區(partition)提供了一定的可用度，即使集群中有一部份節點失效，集群還是可以繼續執行
 
 2. 環境 
-	* 下載[https://rubyinstaller.org/downloads/]
 	* 集群環境為 三個Master及三個Slave
-	
-
+	* 下載[https://rubyinstaller.org/downloads]
+	* 指令 : gem install redis
 3. 配置內容:
 	1. conf
 		* cluster-enabled yes : 開啟集群模式
@@ -343,3 +342,4 @@ LUA 腳本補充
 		* appendonly yes :
 	2. 指令
 		* redis-trib.rb create -- replicas 1 [ip][ip][ip] [ip][ip][ip] :真實IP位址(不能127.0.0.1)
+		* redis-trib.rb create --replicas 1 127.0.0.1:6340 127.0.0.1:6350 127.0.0.1:6360 127.0.0.1:6341 127.0.0.1:6351 127.0.0.1:6361
