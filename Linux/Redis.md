@@ -1,7 +1,5 @@
 # Redis 
 
- * 下載 (https://github.com/microsoftarchive/redis/releases)
-
 ### Redis 優點
 1. 基於內存記憶體。
 2. 單線程 。
