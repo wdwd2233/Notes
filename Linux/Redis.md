@@ -343,3 +343,4 @@ LUA 腳本補充
 	2. 指令
 		* redis-trib.rb create -- replicas 1 [ip][ip][ip] [ip][ip][ip] :真實IP位址(不能127.0.0.1)
 		* redis-trib.rb create --replicas 1 127.0.0.1:6340 127.0.0.1:6350 127.0.0.1:6360 127.0.0.1:6341 127.0.0.1:6351 127.0.0.1:6361
+		
