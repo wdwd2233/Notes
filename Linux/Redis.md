@@ -336,6 +336,7 @@ LUA 腳本補充
 2. 環境 
 	* 集群環境為 三個Master及三個Slave
 	* 下載[https://rubyinstaller.org/downloads]
+	* redis-trib.rb 可以从 Windows 版的 Redis 处下载（原文地址、下载地址）。
 	* 指令 : gem install redis
 3. 配置內容:
 	1. conf
