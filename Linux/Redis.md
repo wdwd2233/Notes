@@ -266,7 +266,8 @@ LUA 腳本補充
 		
 ##### 3. Redis Master-Slave
 
-1. Master以寫入為主，Slave讀取為主。
+1. 說明
+	* Master以寫入為主，Slave讀取為主。
 	
 	
 2. 配置內容:
@@ -330,8 +331,15 @@ LUA 腳本補充
 		
 ##### 5. Redis-Cluster 集群機制 
 
-1. Redis-Cluster實現了水平擴充，會啟動N個redis節點，將整個數據分布存放於N個節點中，每個節點存放總數據的1/N
-	Redis-Cluster透過分區(partition)提供了一定的可用度，即使集群中有一部份節點失效，集群還是可以繼續執行
+1. 	說明
+	* Redis-Cluster實現了水平擴充，會啟動N個redis節點，將整個數據分布存放於N個節點中，每個節點存放總數據的1/N
+	* Redis-Cluster透過分區(partition)提供了一定的可用度，即使集群中有一部份節點失效，集群還是可以繼續執行
+	* Master如果掛了，對應的Slave會自動變成Master。(重開後原本的Master會依附成Slave)
+	* Master和Slave如果同時crash，會依據cluster-require-full-coverage設定來決定是否繼續執行
+	
+	優點:
+		* 實現水平擴充
+		* 無中心配置
 
 2. 環境 
 	* 集群環境為 三個Master及三個Slave
@@ -344,7 +352,9 @@ LUA 腳本補充
 		* cluster-config-file nodes-6390.conf : 設定節點配置文件名稱
 		* cluster-node-timeout 15000 : 設定節點失效超過(毫秒)，集群自動進行Master-Slave切換
 		* appendonly yes :
-	2. 指令
+	2. 啟動
 		* redis-trib.rb create -- replicas 1 [ip][ip][ip] [ip][ip][ip] :真實IP位址(不能127.0.0.1)
-		* redis-trib.rb create --replicas 1 127.0.0.1:6340 127.0.0.1:6350 127.0.0.1:6360 127.0.0.1:6341 127.0.0.1:6351 127.0.0.1:6361
-		
+4. 指令:
+	* CLUSTER KEYSLOT [key] : 計算key會放在哪個slot上面
+	* CLUSTER COUNTKEYSINSLOT [slot] : 返回slot目前包含哪些key
+	* CLUSTER GETKEYSINSLOT [slot] [count]: 返回slot中count個key
