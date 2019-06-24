@@ -61,6 +61,21 @@ function build_platform()
 		./$build_script_name
 }
 
+function commit_platform()
+{
+	echo 'commit server...'
+	
+	pushd $PWD
+	cd /root/Server/env/platform
+	commit_comment="[src] add. linux platform 上版。"
+	askDefault "commit comment" "commit_comment"
+	printf -v commit_comment_escape %b "$commit_comment"
+	git add *.out
+	git commit -m "$commit_comment_escape"
+	git push origin master
+	popd
+}
+
 function start_platform()
 {
 	echo 'start server...'
@@ -134,6 +149,7 @@ function menu()
 	printc C_CYAN "  1. clone platform\n"
 	printc C_CYAN "  2. setup platform firewall\n"
 	printc C_CYAN "  11. build platform\n"
+	printc C_CYAN "  12. commit platform\n"
 	printc C_CYAN "  21. start platform\n"
 	printc C_CYAN "  22. stop platform\n"
 	printc C_CYAN "  23. check platform status\n"
@@ -149,6 +165,9 @@ function menu()
 				return 0;;
 			11)
 				build_platform
+				return 0;;
+			12)
+				commit_platform
 				return 0;;
 			21)
 				start_platform

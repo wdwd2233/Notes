@@ -21,9 +21,7 @@ function install_sebp/elk()
 	sysctl -p
 	
 	# 安裝
-	sudo docker pull sebp/elk
-	
-	sudo docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name elk sebp/elk
+	sudo docker run -p 5601:5601 -p 9200:9200 -p 5044:5044 -it --name my-elk sebp/elk
 	
 	
 	# 設定 docker-compose 啟動

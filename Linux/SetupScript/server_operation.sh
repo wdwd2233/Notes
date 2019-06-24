@@ -173,6 +173,8 @@ function create_nginx()
 	nginx_host_client=/root/Server/env/client
 	nginx_container_client=/usr/share/nginx/html/client
 	nginx_port=8080
+	nginx_platform_port=19901
+	nginx_gameserver_port=19902
 	
 	docker run --detach --rm \
 		-e "TZ=Asia/Taipei" \
@@ -180,10 +182,13 @@ function create_nginx()
 		-v $nginx_host_backend:$nginx_container_backend \
 		-v $nginx_host_client:$nginx_container_client \
 		--publish $nginx_port:80 \
-		--publish 15101:15101 \
+		--publish $nginx_platform_port:$nginx_platform_port \
+		--publish $nginx_gameserver_port:$nginx_gameserver_port \
 		--name my-nginx nginx
 		
 	firewall-cmd --permanent --zone=public --add-port=$nginx_port/tcp
+	firewall-cmd --permanent --zone=public --add-port=$nginx_platform_port/tcp
+	firewall-cmd --permanent --zone=public --add-port=$nginx_gameserver_port/tcp
 	firewall-cmd --reload
 }
 
