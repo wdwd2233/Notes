@@ -1,4 +1,4 @@
-# [Changelog]
+# [CE-Platform Changelog]
 
 
 ## 1.0.2 - 2019-07-04
@@ -10,14 +10,16 @@
 - [11-4] BackendGetActivityMod	: 後台修改活動。
 - [11-5] BackendPostActivityModCarousel : 後台修改活動是否輪播。
 
+### Deprecated 
+- []  BackendPostInvitePermission : 之後會整合到權限管理內。 
 
 ## 1.0.1 - 2019-07-03
 
-### Changed
+### Changed 
 - [1-2] Promotion改為3位英文+4位數字，透過MemberID補足7碼後進行Format Preserving Encryption(10)，將前三碼再做一次FPE(26)後轉大寫，將轉大寫後的字母做偏移10個字母。
 	
 
-[Changelog]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ
+[CE-Platform Changelog]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ
 [1-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jfcuwps90r60
 [11-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.sp1npcc63kb1
 [11-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.b7mr1d8eswlo
