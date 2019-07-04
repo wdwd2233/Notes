@@ -1,6 +1,15 @@
 # [CE-Platform Changelog]
 
 
+## Unreleased
+....
+
+## 1.0.3 - 2019-07-05
+
+### Changed  
+- [11-2] BackendGetActivityList	: 傳入參數CurPageIndex(頁數)、RowCountPerPage(筆數)
+
+
 ## 1.0.2 - 2019-07-04
 
 ### Added 
