@@ -4,7 +4,7 @@
 ## Unreleased
 ....
 
-## 1.0.3 - 2019-07-05
+## 1.0.3 - 2019-07-04
 
 ### Changed  
 - [11-2] BackendGetActivityList	: 傳入參數CurPageIndex(頁數)、RowCountPerPage(筆數)
