@@ -10,6 +10,10 @@
 ### Added  
 - [11-2] BackendGetActivityList	: 增加CarouselImg(輪播圖)及CarouselImg(推廣底圖)。
 - [11-3] BackendGetActivityAdd : 傳入參數CarouselImg(輪播圖)、PromotionImg(推廣底圖)，PromotionImg支援多檔案上傳。
+- [4-1] FrontendGetMemberRewardTotal : 玩家查詢回饋金總額
+- [4-2] FrontendGetMemberReward : 玩家查詢回饋金
+- [4-3] FrontendPostRewardReceive : 玩家領取回饋金
+
 
 ### Changed  
 - [11-2] BackendGetActivityList	: 欄位FileName(string)更改為URL(string)。
