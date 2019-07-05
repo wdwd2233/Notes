@@ -2,12 +2,28 @@
 
 
 ## Unreleased
-....
+- [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量。
+- [11-4] BackendGetActivityMod : 更改底圖。
+
+## 1.0.4 - 2019-07-05
+
+### Added  
+- [11-2] BackendGetActivityList	: 增加CarouselImg(輪播圖)及CarouselImg(推廣底圖)。
+- [11-3] BackendGetActivityAdd : 傳入參數CarouselImg(輪播圖)、PromotionImg(推廣底圖)，PromotionImg支援多檔案上傳。
+
+### Changed  
+- [11-2] BackendGetActivityList	: 欄位FileName(string)更改為URL(string)。
+- [11-3] BackendGetActivityAdd : HTTP Method 改為 POST/form-data。
+
+
 
 ## 1.0.3 - 2019-07-04
 
+### Added 
+- [11-2] BackendGetActivityList	: 回傳參數CarouselImg(輪播圖)、PromotionImg(推廣底圖)。
+
 ### Changed  
-- [11-2] BackendGetActivityList	: 傳入參數CurPageIndex(頁數)、RowCountPerPage(筆數)
+- [11-2] BackendGetActivityList	: 傳入參數CurPageIndex(頁數)、RowCountPerPage(筆數)。
 
 
 ## 1.0.2 - 2019-07-04
@@ -21,6 +37,7 @@
 
 ### Deprecated 
 - []  BackendPostInvitePermission : 之後會整合到權限管理內。 
+
 
 ## 1.0.1 - 2019-07-03
 
