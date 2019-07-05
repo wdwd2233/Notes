@@ -3,7 +3,7 @@
 
 ## Unreleased
 - [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量。
-- [11-4] BackendGetActivityMod : 更改底圖。
+
 
 ## 1.0.4 - 2019-07-05
 
@@ -13,7 +13,7 @@
 - [4-1] FrontendGetMemberRewardTotal : 玩家查詢回饋金總額
 - [4-2] FrontendGetMemberReward : 玩家查詢回饋金
 - [4-3] FrontendPostRewardReceive : 玩家領取回饋金
-
+- [11-4] BackendGetActivityMod : PromotionImg(推廣底圖)、PromotionDel(刪除檔名)，、PromotionDel請以"，"串接(9886.jpg,9886.jpg,0886.jpg)
 
 ### Changed  
 - [11-2] BackendGetActivityList	: 欄位FileName(string)更改為URL(string)。
