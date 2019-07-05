@@ -18,7 +18,7 @@
 ### Changed  
 - [11-2] BackendGetActivityList	: 欄位FileName(string)更改為URL(string)。
 - [11-3] BackendGetActivityAdd : HTTP Method 改為 POST/form-data。
-
+- [11-4] BackendGetActivityMod : HTTP Method 改為 POST/form-data。
 
 
 ## 1.0.3 - 2019-07-04
