@@ -2,7 +2,6 @@
 
 
 ## Unreleased
-- [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量。
 
 
 ## 1.1.0 - 2019-07-08
@@ -12,7 +11,9 @@
 - [11-7] BackendGetRewardMiningList : 會員礦機清單。
 - [11-8] BackendGetMemberRewardList : 會員回饋金清單
 
-
+### Changed  
+- [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量為1張。
+- [11-3] BackendGetActivityAdd : PromotionImg(推廣底圖)限制上傳數量為5張。
 
 
 ## 1.0.5 - 2019-07-05
