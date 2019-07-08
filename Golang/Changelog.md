@@ -5,6 +5,21 @@
 - [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量。
 
 
+## 1.1.0 - 2019-07-08
+
+### Added
+- [11-7] BackendGetRewardMiningList : 會員礦機清單。
+- [11-8] BackendGetMemberRewardList : 會員回饋金清單
+- [11-9] 
+
+
+
+## 1.0.5 - 2019-07-05
+
+### Changed  
+- [11-2] BackendGetActivityList	: server時間欄位time.Time → string，排序依開始時間由近至遠。
+
+
 ## 1.0.4 - 2019-07-05
 
 ### Added  
@@ -48,8 +63,9 @@
 ### Changed 
 - [1-2] Promotion改為3位英文+4位數字，透過MemberID補足7碼後進行Format Preserving Encryption(10)，將前三碼再做一次FPE(26)後轉大寫，將轉大寫後的字母做偏移10個字母。
 	
-
-[CE-Platform Changelog]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ
+[11-9] :
+[11-7]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.pwft76vdrtnp
+[11-8]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.ksp3iy7h6fjp
 [1-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jfcuwps90r60
 [11-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.sp1npcc63kb1
 [11-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.b7mr1d8eswlo
@@ -59,3 +75,4 @@
 [4-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.vgwg4gfiopgb
 [4-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.q5pu5ek7m2tu
 [4-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.o2m2mleh9bdp
+[CE-Platform Changelog]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ
