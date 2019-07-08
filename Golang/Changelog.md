@@ -10,6 +10,9 @@
 - [11-6] BackendGetRewardOwnerList : 擁有回饋金的玩家清單
 - [11-7] BackendGetRewardMiningList : 會員礦機清單。
 - [11-8] BackendGetMemberRewardList : 會員回饋金清單
+- [backend] : Server OnStart Execution SetRedisMemberID(), Redis key Account2ID。
+- [backend] : MemberIDbyAccount()改由Redis取得。
+
 
 ### Changed  
 - [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量為1張。
