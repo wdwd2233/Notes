@@ -2,7 +2,7 @@
 
 
 ## Unreleased
-
+- 會員註冊成功後將MemberID加進Redis key Account2ID。
 
 ## 1.1.0 - 2019-07-08
 
