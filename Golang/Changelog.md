@@ -13,9 +13,10 @@
 
 ### Changed 
 - [backend] : Account2ID第一次查不到後改用dbAgent.MemberIDbyAccount去查DB，如果有查到則反向加入Redis key Account2ID內。
-- [11-6] BackendGetRewardOwnerList : 傳入參數增加Account 會員帳號。
+- [backend] : a.client.HGet 排除掉 Error() != "redis: nil" 的logger。
 - [11-2] BackendGetActivityList : ActivityID type 由int改為string。
-
+- [11-6] BackendGetRewardOwnerList : 傳入參數增加Account 會員帳號。
+- [11-7] BackendGetRewardMiningList : 傳入參數增加 DAccount 會員帳號
 
 ### Fixed 
 - [11-4] BackendGetActivityMod : 修正刪除PromotionImg會同步刪除CarouselImg的BUG。
