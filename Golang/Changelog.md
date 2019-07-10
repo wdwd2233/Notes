@@ -2,7 +2,6 @@
 
 
 ## Unreleased
-- 會員註冊成功後將MemberID加進Redis key Account2ID。
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
 
@@ -11,6 +10,9 @@
 
 ### Added
 - [9-9] BackendGetMemberUseRecordList : 會員前台操作紀錄。
+
+### Changed 
+- [backend] : Account2ID第一次查不到後改用dbAgent.MemberIDbyAccount去查DB，如果有查到則反向加入Redis key Account2ID內。
 
 
 
