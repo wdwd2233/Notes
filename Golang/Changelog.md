@@ -6,11 +6,19 @@
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
 
+
+## 1.1.2 - 2019-07-10
+
+### Added
+[9-9]: BackendGetMemberUseRecordList : 會員前台操作紀錄。
+
+
+
 ## 1.1.1 - 2019-07-10
 
 ### Added
 - [1-1] BackendLogin : 回傳增加Promotion(推廣碼)。
-- [12-1]BackendGetActivityPromotionFile : 代理取得推廣碼、推廣網址及推廣底圖。(圖片使用Base64編碼)
+- [12-1] BackendGetActivityPromotionFile : 代理取得推廣碼、推廣網址及推廣底圖。(圖片使用Base64編碼)
 
 ### Fixed 
 - [11-4] BackendGetActivityMod : 修正不能同時操作刪除照片及新增照片BUG。
@@ -84,7 +92,9 @@
 ### Changed 
 - [1-2] Promotion改為3位英文+4位數字，透過MemberID補足7碼後進行Format Preserving Encryption(10)，將前三碼再做一次FPE(26)後轉大寫，將轉大寫後的字母做偏移10個字母。
 	
-	
+
+
+[9-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.gnvqo8ejd2al
 [1-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.o0l5pxkfu5ik
 [12-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.vo0czos23kc9
 [11-6]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.202o0nvucrl
