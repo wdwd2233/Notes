@@ -10,7 +10,7 @@
 ## 1.1.2 - 2019-07-10
 
 ### Added
-[9-9]: BackendGetMemberUseRecordList : 會員前台操作紀錄。
+- [9-9] BackendGetMemberUseRecordList : 會員前台操作紀錄。
 
 
 
