@@ -6,14 +6,18 @@
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
 
-## 1.1.1 - 2019-07-09
+## 1.1.1 - 2019-07-10
 
 ### Added
 - [1-1] BackendLogin : 回傳增加Promotion(推廣碼)。
 - [12-1]BackendGetActivityPromotionFile : 代理取得推廣碼、推廣網址及推廣底圖。(圖片使用Base64編碼)
 
+### Fixed 
+- [11-4] BackendGetActivityMod : 修正不能同時操作刪除照片及新增照片BUG。
+
 ### Changed 
 - [11-4] BackendGetActivityMod : PromotionImg(推廣底圖)優化IO刪除操作。
+
 
 
 ## 1.1.0 - 2019-07-08
