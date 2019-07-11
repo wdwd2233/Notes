@@ -5,6 +5,13 @@
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
 
+## 1.1.3 - 2019-07-12
+
+### Added
+-[9-10] BackendGetMemberUseRecordSetting : 會員前台操作紀錄設定
+-[12-2] BackendGetActivityPromotionFileSetting : 代理活動推廣圖設定
+***
+
 
 ## 1.1.2 - 2019-07-11
 
@@ -108,6 +115,9 @@
 ***
 
 
+
+[9-10]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nmd0plp6m0xq
+[12-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.1buyr772xcm3
 [9-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.gnvqo8ejd2al
 [1-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.o0l5pxkfu5ik
 [12-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.vo0czos23kc9
