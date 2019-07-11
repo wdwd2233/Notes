@@ -21,7 +21,15 @@
 ### Fixed 
 - [11-4] BackendGetActivityMod : 修正刪除PromotionImg會同步刪除CarouselImg的BUG。
 
+* * *
 
+***
+
+*****
+
+- - -
+
+---------------------------------------
 
 ## 1.1.1 - 2019-07-10
 
