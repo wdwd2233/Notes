@@ -12,7 +12,7 @@
 - [12-2] BackendGetActivityPromotionFileSetting : 代理活動推廣圖設定。
 
 ### Changed 
-- [11-6] BackendGetRewardOwnerList : 回傳參數增加回饋金總額(已領取+未領取)。
+- [11-6] BackendGetRewardOwnerList : 回傳參數增加Reward欄位(回饋金總額) 註:已領取+未領取
 ***
 
 
