@@ -20,16 +20,8 @@
 
 ### Fixed 
 - [11-4] BackendGetActivityMod : 修正刪除PromotionImg會同步刪除CarouselImg的BUG。
-
-* * *
-
 ***
 
-*****
-
-- - -
-
----------------------------------------
 
 ## 1.1.1 - 2019-07-10
 
@@ -42,7 +34,7 @@
 
 ### Changed 
 - [11-4] BackendGetActivityMod : PromotionImg(推廣底圖)優化IO刪除操作。
-
+***
 
 
 ## 1.1.0 - 2019-07-08
@@ -58,12 +50,14 @@
 ### Changed  
 - [11-3] BackendGetActivityAdd : CarouselImg(輪播圖)限制上傳數量為1張。
 - [11-3] BackendGetActivityAdd : PromotionImg(推廣底圖)限制上傳數量為5張。
+***
 
 
 ## 1.0.5 - 2019-07-05
 
 ### Changed  
 - [11-2] BackendGetActivityList	: server時間欄位time.Time → string，排序依開始時間由近至遠。
+***
 
 
 ## 1.0.4 - 2019-07-05
@@ -80,6 +74,7 @@
 - [11-2] BackendGetActivityList	: 欄位FileName(string)更改為URL(string)。
 - [11-3] BackendGetActivityAdd : HTTP Method 改為 POST/form-data。
 - [11-4] BackendGetActivityMod : HTTP Method 改為 POST/form-data。
+***
 
 
 ## 1.0.3 - 2019-07-04
@@ -89,6 +84,7 @@
 
 ### Changed  
 - [11-2] BackendGetActivityList	: 傳入參數CurPageIndex(頁數)、RowCountPerPage(筆數)。
+***
 
 
 ## 1.0.2 - 2019-07-04
@@ -102,13 +98,14 @@
 
 ### Deprecated 
 - []  BackendPostInvitePermission : 之後會整合到權限管理內。 
+***
 
 
 ## 1.0.1 - 2019-07-03
 
 ### Changed 
 - [1-2] Promotion改為3位英文+4位數字，透過MemberID補足7碼後進行Format Preserving Encryption(10)，將前三碼再做一次FPE(26)後轉大寫，將轉大寫後的字母做偏移10個字母。
-	
+***
 
 
 [9-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.gnvqo8ejd2al
