@@ -5,6 +5,19 @@
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
 
+
+## 1.2.0 - 2019-07-
+
+### Added 
+- [] BackendGetRoleSetting : 角色權限管理設定。
+- [] BackendGetRoleList : 角色權限管理。
+- [] BackendPostRoleAdd : 新增權限角色。
+- [] BackendPostRoleDel : 刪除權限角色。
+- [] BackendPostRoleMod : 修改權限角色。
+- [] BackendGetPermissionListByGroup : 權限清單。
+
+***
+
 ## 1.1.3 - 2019-07-12
 
 ### Added
