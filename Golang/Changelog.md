@@ -15,11 +15,16 @@
 - [] BackendPostRoleDel : 刪除權限角色。
 - [] BackendPostRoleMod : 修改權限角色。
 - [] BackendGetPermissionListByGroup : 權限清單。
+- [12-3] BackendGetActivityPromotionFile : 產生活動推廣底圖，回傳參數CarouselImg為Base64編碼。
+
+### Security
+- [12-3] BackendGetActivityPromotionFile : 需要驗證Promotion及URL參數是否與12.1回傳之參數是否一致。
 
 ### Changed 
 - [12-1] BackendGetActivityPromotionFile : 修改為BackendGetActivityPromotion，URL改為/get_activity_PromotionFile。
 - [12-1] BackendGetActivityPromotionFile : 回傳參數PromotionImg變更為"推廣底圖URL"。
 ***
+
 
 ## 1.1.3 - 2019-07-12
 
@@ -134,7 +139,7 @@
 ***
 
 
-
+[12-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/
 [9-10]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nmd0plp6m0xq
 [12-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.1buyr772xcm3
 [9-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.gnvqo8ejd2al
