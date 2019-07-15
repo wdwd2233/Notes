@@ -16,6 +16,8 @@
 - [] BackendPostRoleMod : 修改權限角色。
 - [] BackendGetPermissionListByGroup : 權限清單。
 
+### Changed 
+- [12-1] BackendGetActivityPromotionFile : 修改為BackendGetActivityPromotion，URL改為/get_activity_PromotionFile。
 ***
 
 ## 1.1.3 - 2019-07-12
