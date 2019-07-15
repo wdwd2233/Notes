@@ -18,6 +18,7 @@
 
 ### Changed 
 - [12-1] BackendGetActivityPromotionFile : 修改為BackendGetActivityPromotion，URL改為/get_activity_PromotionFile。
+- [12-1] BackendGetActivityPromotionFile : 回傳參數PromotionImg變更為"推廣底圖URL"。
 ***
 
 ## 1.1.3 - 2019-07-12
