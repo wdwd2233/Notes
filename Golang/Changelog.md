@@ -4,6 +4,14 @@
 ## Unreleased
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
+- test1002登入，玩家列表不應該能修改自身設定。
+
+
+
+## 1.2.1 - 2019-07-17
+
+### Changed 
+- [13-4] BackendPostRoleCheck : 回傳參數Warning結構改為Warning[ object:Flag(int)RoleID([]string) ]。
 
 
 ## 1.2.0 - 2019-07-17
