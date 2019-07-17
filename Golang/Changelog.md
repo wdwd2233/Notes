@@ -11,7 +11,7 @@
 ## 1.2.1 - 2019-07-17
 
 ### Changed 
-- [13-4] BackendPostRoleCheck : 回傳參數Warning結構改為Warning[ object:Flag(int)RoleID([]string) ]。
+- [13-4] BackendPostRoleCheck : 回傳參數Warning結構改為Warning[object{Flag(int),RoleID([]string)]}。
 
 
 ## 1.2.0 - 2019-07-17
