@@ -6,23 +6,26 @@
 - 推廣碼、推廣渠道機制重新設計。
 
 
-## 1.2.0 - 2019-07-
+## 1.2.0 - 2019-07-17
 
 ### Added 
-- [] BackendGetRoleSetting : 角色權限管理設定。
-- [] BackendGetRoleList : 角色權限管理。
-- [] BackendPostRoleAdd : 新增權限角色。
-- [] BackendPostRoleDel : 刪除權限角色。
-- [] BackendPostRoleMod : 修改權限角色。
-- [] BackendGetPermissionListByGroup : 權限清單。
+- [13-1] BackendGetRoleSetting : 角色權限管理設定，畫面載入時取得相關設定資訊。
+- [13-2] BackendGetPermissionListByGroup : 權限清單，新增、修改角色時修改清單。
+- [13-3] BackendGetRoleList : 角色清單。
+- [13-4] BackendPostRoleCheck :  角色權限檢查，修改角色權限送出前，請先取得此API回傳值，確定此次修改影響的權限。
+- [13-5] BackendPostRoleAdd : 新增權限角色。
+- [13-6] BackendPostRoleDel : 刪除權限角色。
+- [13-7] BackendPostRoleMod : 修改權限角色。
 - [12-3] BackendGetActivityPromotionFile : 產生活動推廣底圖，回傳參數CarouselImg為Base64編碼。
 
 ### Security
 - [12-3] BackendGetActivityPromotionFile : 需要驗證Promotion及URL參數是否與12.1回傳之參數是否一致。
 
 ### Changed 
-- [12-1] BackendGetActivityPromotionFile : 修改為BackendGetActivityPromotion，URL改為/get_activity_PromotionFile。
-- [12-1] BackendGetActivityPromotionFile : 回傳參數PromotionImg變更為"推廣底圖URL"。
+- [12-1] BackendGetActivityPromotion : 修改為BackendGetActivityPromotion，URL改為/get_activity_PromotionFile。
+- [12-1] BackendGetActivityPromotion : 回傳參數PromotionImg變更為"推廣底圖URL"，結構變更為{Domain(string)+Name([]string)}。
+- [backend] sp_AgentMemberGetList : 顯示小數兩位。
+
 ***
 
 
@@ -138,7 +141,13 @@
 - [1-2] Promotion改為3位英文+4位數字，透過MemberID補足7碼後進行Format Preserving Encryption(10)，將前三碼再做一次FPE(26)後轉大寫，將轉大寫後的字母做偏移10個字母。
 ***
 
-
+[13-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.51j170mc04tt
+[13-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.vkkcfvh9tqy9
+[13-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.6wl8dq6jw22r
+[13-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.hedp7dkso66b
+[13-5]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.soqinq70kbpb
+[13-6]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.q6o0yphllcbj
+[13-7]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.83ura4doqsii
 [12-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/
 [9-10]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nmd0plp6m0xq
 [12-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.1buyr772xcm3
