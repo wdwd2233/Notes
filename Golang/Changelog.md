@@ -151,7 +151,7 @@
 - [11-5] BackendPostActivityModCarousel : 後台修改活動是否輪播。
 
 ### Deprecated 
-- []  BackendPostInvitePermission : 之後會整合到權限管理內。 
+- [backend]  BackendPostInvitePermission : 之後會整合到權限管理內。 
 ***
 
 
@@ -161,6 +161,10 @@
 - [1-2] Promotion改為3位英文+4位數字，透過MemberID補足7碼後進行Format Preserving Encryption(10)，將前三碼再做一次FPE(26)後轉大寫，將轉大寫後的字母做偏移10個字母。
 ***
 
+
+
+
+[10-7]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.sgf4d3fmh7xt
 [13-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.51j170mc04tt
 [13-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.vkkcfvh9tqy9
 [13-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.6wl8dq6jw22r
