@@ -9,6 +9,9 @@
 
 ## 1.2.2 - 2019-07-18
 
+### Added 
+- [10-7] BackendPostAnnouncementImgFile : 上傳公告圖檔，HTTP Method 為 POST/form-data。
+
 ### Deprecated 
 - [12-3] BackendGetActivityPromotionFile : 因base64效能問題，改由前端canvas產生。
 
