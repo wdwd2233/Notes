@@ -7,11 +7,20 @@
 - test1002登入，玩家列表不應該能修改自身設定。
 
 
+## 1.2.2 - 2019-07-18
+
+### Deprecated 
+- [12-3] BackendGetActivityPromotionFile : 因base64效能問題，改由前端canvas產生。
+
+***
+
 
 ## 1.2.1 - 2019-07-17
 
 ### Changed 
 - [13-4] BackendPostRoleCheck : 回傳參數Warning結構改為Warning[object{Flag(int),RoleID([]string)]}。
+
+***
 
 
 ## 1.2.0 - 2019-07-17
