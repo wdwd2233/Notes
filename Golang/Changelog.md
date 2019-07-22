@@ -13,14 +13,14 @@
 - [Platform] : 新增聊天系統測試機(ws://211.75.221.120:19901/platform/chatserver)。
 
 ### Changed 
-- [1-2] FrontendPostMemberIdentity : 傳入參數新增 ChannelID 渠道編號。
-- [1-3] FrontendGetLoginMember : 傳入參數新增 ChannelID 渠道編號。
-- [3-8] FrontendGetSameLike : 回傳參數移除 GameName、GameDescription、ImgURL。
-- [3-1] FrontendMemberHotRank : 新增回傳參數GR(遊戲排行榜圖)、GRF(遊戲排行榜焦點圖)。
-- [3-2] FrontendMemberRecommendRank : 新增回傳參數GR(遊戲排行榜圖)、GRF(遊戲排行榜焦點圖)。
-- [3-3] FrontendMemberWinRank : 新增回傳參數GR(遊戲排行榜圖)、GRF(遊戲排行榜焦點圖)。
+- [F1-2] FrontendPostMemberIdentity : 傳入參數新增 ChannelID 渠道編號。
+- [F1-3] FrontendGetLoginMember : 傳入參數新增 ChannelID 渠道編號。
+- [F3-8] FrontendGetSameLike : 回傳參數移除 GameName、GameDescription、ImgURL。
+- [F3-1] FrontendMemberHotRank : 新增回傳參數GR(遊戲排行榜圖)、GRF(遊戲排行榜焦點圖)。
+- [F3-2] FrontendMemberRecommendRank : 新增回傳參數GR(遊戲排行榜圖)、GRF(遊戲排行榜焦點圖)。
+- [F3-3] FrontendMemberWinRank : 新增回傳參數GR(遊戲排行榜圖)、GRF(遊戲排行榜焦點圖)。
  
-**
+***
 
 
 ## 1.2.2 - 2019-07-18
@@ -179,6 +179,12 @@
 
 
 
+[F1-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jfcuwps90r60
+[F1-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.10lkblizw57o
+[F3-8]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jba8y1a6o003
+[F3-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.shsu0z5107t4
+[F3-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.t1njk5rfjtrl
+[F3-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.723vyzu9szdv 
 [3-8]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jba8y1a6o003
 [10-7]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.sgf4d3fmh7xt
 [13-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.51j170mc04tt
@@ -207,5 +213,7 @@
 [4-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.q5pu5ek7m2tu
 [4-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.o2m2mleh9bdp
 [CE-Platform Changelog]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ
+
+
 [backend]: http://www.dreammaker.game.tw/ceplatform/home1#/
 [Platform]: http://www.dreammaker.game.tw/ceplatform-front/
