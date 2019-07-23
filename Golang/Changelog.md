@@ -6,6 +6,21 @@
 - 推廣碼、推廣渠道機制重新設計。
 - test1002登入，玩家列表不應該能修改自身設定。
 
+## 1.3.1 - 2019-07-23
+
+### Added 
+-[b2-4] BackendGetMemberWinLoseRank : 傳入參數增加CurPageIndex、RowCountPerPage。
+-[b2-4-1] BackendGetMemberWinLoseRankTop : 新增盈虧排行榜前三名。
+
+### Changed
+-[b3-1] BackendGetGameResult : 傳入參數刪除Account、OrderID改由Conditions(string)取代。
+(Regex:^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$)
+-[f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
+-[f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
+(Regex:^[A-Za-z0-9]{6,8}$)
+
+
+
 
 ## 1.3.0 - 2019-07-22
 
@@ -178,13 +193,20 @@
 ***
 
 
-
+[F1-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#
 [F1-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jfcuwps90r60
 [F1-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.10lkblizw57o
 [F3-8]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jba8y1a6o003
 [F3-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.shsu0z5107t4
 [F3-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.t1njk5rfjtrl
 [F3-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.723vyzu9szdv 
+
+[b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
+[b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
+[b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.3cif7mfclmuf
+
+
+
 [3-8]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jba8y1a6o003
 [10-7]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.sgf4d3fmh7xt
 [13-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.51j170mc04tt
