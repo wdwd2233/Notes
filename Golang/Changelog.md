@@ -6,6 +6,22 @@
 - 推廣碼、推廣渠道機制重新設計。
 - test1002登入，玩家列表不應該能修改自身設定。
 
+
+
+## 1.3.2 - 2019-07-23
+
+### Added 
+- [b2-4] BackendGetMemberRankWin : Add WinRank。
+- [b2-4-1] BackendGetMemberRankLose :  Add LoseRank。
+
+### Removed 
+- [b2-4] BackendGetMemberWinLoseRank : 新增盈虧排行榜。
+- [b2-4-1] BackendGetMemberWinLoseRankTop : 刪除盈虧排行榜前三名。
+
+
+***
+
+
 ## 1.3.1 - 2019-07-23
 
 ### Added 
@@ -20,7 +36,7 @@
 - [f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。<br />
 (Regex:^[A-Za-z0-9]{6,8}$)
 
-
+***
 
 
 ## 1.3.0 - 2019-07-22
@@ -204,7 +220,7 @@
 
 [b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
-[b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.3cif7mfclmuf
+[b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.y4hdjfi2k5k0
 
 
 
