@@ -9,14 +9,15 @@
 ## 1.3.1 - 2019-07-23
 
 ### Added 
--[b2-4] BackendGetMemberWinLoseRank : 傳入參數增加CurPageIndex、RowCountPerPage。
--[b2-4-1] BackendGetMemberWinLoseRankTop : 新增盈虧排行榜前三名。
+- [b2-4] BackendGetMemberWinLoseRank : 傳入參數增加CurPageIndex、RowCountPerPage。
+- [b2-4-1] BackendGetMemberWinLoseRankTop : 新增盈虧排行榜前三名。
 
 ### Changed
--[b3-1] BackendGetGameResult : 傳入參數刪除Account、OrderID改由Conditions(string)取代。
+- [b3-1] BackendGetGameResult : 傳入參數刪除Account、OrderID改由Conditions(string)取代。
 (Regex:^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$)
--[f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
--[f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
+
+- [f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
+- [f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
 (Regex:^[A-Za-z0-9]{6,8}$)
 
 
