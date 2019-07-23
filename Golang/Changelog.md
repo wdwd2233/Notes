@@ -13,11 +13,11 @@
 - [b2-4-1] BackendGetMemberWinLoseRankTop : 新增盈虧排行榜前三名。
 
 ### Changed
-- [b3-1] BackendGetGameResult : 傳入參數刪除Account、OrderID改由Conditions(string)取代。\n
+- [b3-1] BackendGetGameResult : 傳入參數刪除Account、OrderID改由Conditions(string)取代。<br />
 (Regex:^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$)
 
 - [f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。
-- [f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。\n
+- [f1-1] FrontendGetPhoneVerification : 傳入參數Account增加Regular Expression。<br />
 (Regex:^[A-Za-z0-9]{6,8}$)
 
 
