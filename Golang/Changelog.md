@@ -8,7 +8,7 @@
 
 
 
-## 1.3.2 - 2019-07-23
+## 1.3.2 - 2019-07-24
 
 ### Added 
 - [b2-4] BackendGetMemberRankWin : Add WinRank。
