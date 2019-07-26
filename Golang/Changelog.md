@@ -7,9 +7,18 @@
 - test1002登入，玩家列表不應該能修改自身設定。
 - [f2-6] ProblemImg : 單張尺寸最大4MB。
 
+***
+## 1.3.4 - 2019-07-26
+
+### Added 
+
+### Removed
+- [b12-2] BackendGetActivityPromotionFileSetting : 因修改版面需求，移除此API。
+- [b12-1] BackendGetActivityPromotion : 因修改版面需求，移除此API。
+- [b12-3] BackendGetActivityPromotionFile : 因修改版面需求，移除此API。
 
 
-
+***
 ## 1.3.3 - 2019-07-26
 
 ### Added 

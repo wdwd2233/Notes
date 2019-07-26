@@ -1,0 +1,41 @@
+@startuml
+
+actor 所有會員 as AllUser #red
+actor 會員2 as user2 #red
+actor 會員1 as user1 #red
+entity socket as socket #green
+database 資料庫 as db #orange
+database 快取 as redis #orange
+database 服務器內存 as model #orange
+entity api as server #green
+
+
+title 註冊連線(進入聊天室)
+activate user1 #red
+note over user1 : 會員前台登入
+user1-[#red]>socket : 使用Token註冊連線
+socket-[#red]>redis : 驗證Token
+redis-[#red]> socket: (成功/失敗)
+socket-[#red]>user1 : 註冊 (成功/失敗)
+model-[#red]>user1 : 成功將聊天室內容回傳
+deactivate user1
+
+
+newpage 發送訊息
+user1-[#green]>socket : 發送聊天訊息
+note over socket : 驗證Code,PlayerInfo
+socket-[#orange]>user1 : (成功/失敗)
+socket-[#orange]>AllUser : 廣播
+
+
+newpage 發送訊息
+user1-[#green]>socket : 發送加好友請求
+note over socket : 驗證Code,PlayerInfo
+socket-[#green]>db : 新增好友
+db-[#green]>socket: 新增好友(成功/失敗)
+socket-[#green]>model: 檢查好友上線狀態
+model-[#green]>socket: 上線/離線
+socket-[#orange]>user1 : 加好友請求(成功新增好友列表(上線狀態)/失敗)
+
+@enduml
+
