@@ -12,9 +12,9 @@
 ### Added 
 - [f5-1] FrontendGetGiftMember : 會員贈送玩家清單。
 - [f5-2] FrontendGetMemberGiftVerification : 會員申請贈送驗證。<br />
-	* (傳入參數GoldCoin填入(-1)，表示測試並不會真的送出簡訊)。
+	(傳入參數GoldCoin填入(-1)，表示測試並不會真的送出簡訊)。
 - [f5-3] FrontendPostMemberGiftAdd : 交易驗證碼。<br />
-	* (傳入參數Verification填入(-1)，表示測試)。
+	(傳入參數Verification填入(-1)，表示測試)。
 - [f5-4] FrontendPostMemberGiftReceive : 會員接受贈送。
 
 ### Changed
