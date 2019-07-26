@@ -11,11 +11,11 @@
 
 ### Added 
 - [f5-1] FrontendGetGiftMember : 會員贈送玩家清單。
-- [f5-2] FrontendGetMemberGiftVerification : 會員申請贈送驗證(傳入參數GoldCoin填入(-1)，表示測試並不會真的送出簡訊)。
-- [f5-3] FrontendPostMemberGiftAdd : 交易驗證碼(傳入參數Verification填入(-1)，表示測試)。
+- [f5-2] FrontendGetMemberGiftVerification : 會員申請贈送驗證。<br />
+	(傳入參數GoldCoin填入(-1)，表示測試並不會真的送出簡訊)。
+- [f5-3] FrontendPostMemberGiftAdd : 交易驗證碼。<br />
+	(傳入參數Verification填入(-1)，表示測試)。
 - [f5-4] FrontendPostMemberGiftReceive : 會員接受贈送。
-一、
-
 
 ### Changed
 - [b2-4] BackendGetMemberRankWin : 回傳參數新增Count(資料總筆數)。
@@ -233,6 +233,13 @@
 [F3-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.shsu0z5107t4
 [F3-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.t1njk5rfjtrl
 [F3-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.723vyzu9szdv 
+[f5-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.nl4tmhrvs0ei
+[f5-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.1wiskgz5n573
+[f5-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.t1y1ni21i171
+[f5-4]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.6wwb0znfqrr2
+
+
+
 
 [b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
