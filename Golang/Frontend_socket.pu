@@ -16,8 +16,17 @@ note over user1 : 會員前台登入
 user1-[#red]>socket : 使用Token註冊連線
 socket-[#red]>redis : 驗證Token
 redis-[#red]> socket: (成功/失敗)
-socket-[#red]>user1 : 註冊 (成功/失敗)
-model-[#red]>user1 : 成功將聊天室內容回傳
+socket-[#red]>user1 : 連線成功(code:101)
+
+socket-[#orange]>db : 取得好友列表
+db-[#orange]>socket : 獲得好友列表
+
+socket-[#green]>model : 取得好友上線狀態
+model-[#green]>socket : 獲得好友上線狀態
+socket-[#green]>user1 : 獲得好友上線狀態(code:301)
+
+socket-[#red]>model : 取得聊天室內容
+socket-[#red]>user1 : 將聊天室內容回傳(code:401)
 deactivate user1
 
 
@@ -28,8 +37,8 @@ socket-[#orange]>user1 : (成功/失敗)
 socket-[#orange]>AllUser : 廣播
 
 
-newpage 發送訊息
-user1-[#green]>socket : 發送加好友請求
+newpage 加好友
+user1-[#green]>socket : 發送加好友請求(Code、MemberID)
 note over socket : 驗證Code,PlayerInfo
 socket-[#green]>db : 新增好友
 db-[#green]>socket: 新增好友(成功/失敗)
