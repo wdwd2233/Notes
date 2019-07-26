@@ -5,7 +5,23 @@
 - sp_MemberIDAccountGetList 增加權限。
 - 推廣碼、推廣渠道機制重新設計。
 - test1002登入，玩家列表不應該能修改自身設定。
+- [f2-6] ProblemImg : 單張尺寸最大4MB。
 
+## 1.3.3 - 2019-07-26
+
+### Added 
+- [f5-1] FrontendGetGiftMember : 會員贈送玩家清單。
+- [f5-2] FrontendGetMemberGiftVerification : 會員申請贈送驗證(傳入參數GoldCoin填入(-1)，表示測試並不會真的送出簡訊)。
+- [f5-3] FrontendPostMemberGiftAdd : 交易驗證碼(傳入參數Verification填入(-1)，表示測試)。
+- [f5-4] FrontendPostMemberGiftReceive : 會員接受贈送。
+一、
+
+
+### Changed
+- [b2-4] BackendGetMemberRankWin : 回傳參數新增Count(資料總筆數)。
+- [b2-4-1] BackendGetMemberRankLose :  回傳參數新增Count(資料總筆數)。
+- [b9-2] BackendGetReplyProblemReturn : 傳入參數增加 Account(帳號)。
+- [b3-1] BackendGetGameResult : 傳入參數增加 PointChangeOrderID (點數異動群組編號)。
 
 
 ## 1.3.2 - 2019-07-24
@@ -221,7 +237,7 @@
 [b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
 [b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.y4hdjfi2k5k0
-
+[b9-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#
 
 
 [3-8]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jba8y1a6o003
