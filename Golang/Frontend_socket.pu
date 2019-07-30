@@ -10,7 +10,9 @@ database 服務器內存 as model #orange
 entity api as server #green
 
 
-title 註冊連線(進入聊天室)
+' 1. 先回傳結果再將好友301、聊天室401內容分別回傳
+' 2. 如果執行成功回傳結果101內包含好友資訊、對話內容，失敗則回傳ErrorCode。
+title 註冊連線(進入聊天室)1
 activate user1 #red
 note over user1 : 會員前台登入
 user1-[#red]>socket : 使用Token註冊連線
@@ -27,14 +29,22 @@ socket-[#green]>user1 : 獲得好友上線狀態(code:301)
 
 socket-[#red]>model : 取得聊天室內容
 socket-[#red]>user1 : 將聊天室內容回傳(code:401)
+
+socket-[#green]>model : 通知好友，此會員上線了
+model-[#green]>socket : 獲得好友再線名單
+socket-[#green]>user2 : 顯示在線
 deactivate user1
 
 
+
+
+' 1.如果執行成功是否直接回傳對話內容?(廣播需排除自己)
 newpage 發送訊息
 user1-[#green]>socket : 發送聊天訊息
 note over socket : 驗證Code,PlayerInfo
 socket-[#orange]>user1 : (成功/失敗)
 socket-[#orange]>AllUser : 廣播
+
 
 
 newpage 加好友

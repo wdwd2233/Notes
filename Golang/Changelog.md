@@ -7,10 +7,19 @@
 - test1002登入，玩家列表不應該能修改自身設定。
 - [f2-6] ProblemImg : 單張尺寸最大4MB。
 
+
+
+
+
+
 ***
-## 1.3.4 - 2019-07-26
+## 1.3.4 - 2019-07-30
 
 ### Added 
+- [f2-7] FrontendGetGameList : 新增遊戲列表查詢。
+
+### Changed
+- [f2-1] FrontendGetHomeSetting : 回傳參數新增GameType、GameStyle。
 
 ### Removed
 - [b12-2] BackendGetActivityPromotionFileSetting : 因修改版面需求，移除此API。
@@ -240,6 +249,8 @@
 [F1-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#
 [F1-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jfcuwps90r60
 [F1-3]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.10lkblizw57o
+[f2-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.rpg9yzjuwkuz
+[f2-7]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.t9schpv5yhe
 [F3-8]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.jba8y1a6o003
 [F3-1]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.shsu0z5107t4
 [F3-2]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.t1njk5rfjtrl
