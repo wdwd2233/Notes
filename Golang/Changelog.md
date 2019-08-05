@@ -8,13 +8,29 @@
 - [f2-6] ProblemImg : 單張尺寸最大4MB。
 
 
+
 ***
-## 1.3.5 - 2019-
+## 1.3.6 - 2019-08-05
+
+### Added 
+- [b3-2] BackendGetGameRecord : 新增 Detailed 參數，由GameServer提供的參數。
+- [b2-1] BackendGetAgentMember : 新增RoleID(角色編號)、RoleName(角色名稱)。
+- [b1-1] BackendGetLogin : 優化GetArea，Redis新增RoleID狀態。
+- [b2-9] BackendGetAgentMemberSetting : 新增代理會員設定資訊。
+
+### Changed
+- [b2-1] BackendGetAgentMember : Agent 將由原本[]改為{}
+- [b3-2] BackendGetGameRecord : 回傳參數移除Count，GameResult將由原本[]改為{}，並新增Account欄位
+
+
+
+***
+## 1.3.5 - 2019-08-01
 
 ### Added 
 - [f3-9] FrontendGetGameList : 新增遊戲列表查詢。
 - [f3-10] FrontendGetGameSetting : 遊戲資訊。
-- [f3-9] FrontendGetGameList : 回傳參數新增GRF(string)。
+- [f3-9] FrontendGetGameList : 回傳參數新增 GRF(string)。
 
 ### Changed
 - [f2-1] FrontendGetHomeSetting : 回傳參數移除GameType、GameStyle。
@@ -273,7 +289,7 @@
 [f3-10]: https://docs.google.com/document/d/10J9ECd5FsSVNzkz6w8pviuR9ibYLXyBUgJ7KE4otO-4/edit#heading=h.hp9qk0y4qjoh
 
 
-
+[b1-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.o0l5pxkfu5ik
 [b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
 [b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.y4hdjfi2k5k0
