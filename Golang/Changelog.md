@@ -7,6 +7,26 @@
 - test1002登入，玩家列表不應該能修改自身設定。
 - [f2-6] ProblemImg : 單張尺寸最大4MB。
 
+***
+## 1.3.7 - 2019-08-08
+
+### Added 
+- [b2-1] BackendGetAgentMember : 回傳參數新增 IsSide (是否為登入者的旁線)。
+- [b2-6] BackendPostMemberRoleMod : 取代原本的 BackendPostInvitePermission 。
+- [b12-4] BackendGetActivityPromotionList : 代理活動推廣列表。
+- [b12-5] BackendGetChannelList : 渠道列表。
+- [b12-6] BackendGetChannelActivityList : 渠道活動列表。
+- [f] FrontendGetIdentityInformation : 會員中心-個人中心-資本資料。
+
+### Changed
+- [backend] BackendGetRiskControl : 新增MemberID，用於判斷權限。
+- [backend] BackendGetRiskGameList : 新增MemberID，用於判斷權限。
+- [backend] BackendGetGameWinLoseByHour : 新增MemberID，用於判斷權限。
+- [backend] BackendGetRiskMemberList : 新增MemberID，用於判斷權限。
+- [f2-4] FrontendGetImglobbyGameIcon : 回傳欄位移除Path(路徑)、新增GameInfo(遊戲資訊)。
+
+### Removed 
+- [b2-6] BackendPostInvitePermission : 功能更新 BackendPostMemberRoleMod 。
 
 
 ***
@@ -294,9 +314,12 @@
 [b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
 [b3-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.4mdodxr0nv3q
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
+[b2-6] https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.5qmjgpoqfeg
 [b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.y4hdjfi2k5k0
 [b2-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.fus5jw7f7w9l
 [b9-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#
+[b12-5]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.81idplj7ylxj
+[b12-6]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.i7dp7yza9j81
 [b13-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.51j170mc04tt
 [b13-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.vkkcfvh9tqy9
 [b13-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.6wl8dq6jw22r
