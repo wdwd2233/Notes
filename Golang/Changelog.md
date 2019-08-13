@@ -14,7 +14,12 @@
 
 ### Added 
 - [f] FrontendGetMemberLogout : 會員登出。 
+- [f] FrontendPostMemberNickName : 修改暱稱。
+- [b2-1] BackendGetAgentMember : 回傳參數新增 Rate(分潤比例)、LimitRate(分潤比例上限)。
 
+### Changed
+- [b3-2] BackendGetGameRecord : 回傳參數增加 GameProviderGameID (遊戲編號-遊戲商)。
+- [b2-1] BackendGetAgentMember : 回傳參數移除Permission(權限)、DividedRatio(比例)。
 
 ***
 ## 1.3.7 - 2019-08-08
