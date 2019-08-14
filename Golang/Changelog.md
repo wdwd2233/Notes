@@ -23,7 +23,9 @@
 - [b2-1] BackendGetAgentMember : 回傳參數增加 AgentCount (代理會員數)。
 - [b2-4] BackendGetMemberRankWin : WaterMoney (水錢)改 Payout (派彩)。
 - [b2-4-1] BackendGetMemberRankLose : WaterMoney (水錢)改 Payout (派彩)。
-
+- [b7-1] BackendGetAgentMemberStatistics : 回傳參數移除WaterMoney(水錢)。
+- [b7-2] BackendGetMemberReport : 回傳參數移除WaterMoney(水錢)。
+- [b7-3] BackendGetMemberGameReport : 回傳參數新增TotalRaceCount (代理總注單量)、 RaceCount (自身注單量)、 WinRate(勝率)，移除WaterMoney(水錢)。
 
 ***
 ## 1.3.8 - 2019-08-13
@@ -348,6 +350,7 @@
 [b2-6] https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.5qmjgpoqfeg
 [b2-4-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.y4hdjfi2k5k0
 [b2-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.fus5jw7f7w9l
+[b7-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.pefm1wya7g8r
 [b9-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#
 [b12-5]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.81idplj7ylxj
 [b12-6]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.i7dp7yza9j81
