@@ -10,6 +10,22 @@
 
 
 ***
+## 1.4.0 - 2019-08-
+
+### Added 
+- [f3-3-7] FrontendGetGiftByGifter : 會員贈送清單。
+- [f3-3-8] FrontendGetGiftByReceiver : 會員收禮清單。
+
+### Changed
+- [b2-9] BackendGetAgentMemberSetting : 回傳參數Class改為DividedRatio。
+- [b2-5] BackendPostAgentDividedRatio : 傳入參數 DividedRatio 改為 DividedID 。
+- [backend] backendPostGameStateSetting : DBcode 1 → 0。
+- [b2-1] BackendGetAgentMember : 回傳參數增加 AgentCount (代理會員數)。
+- [b2-4] BackendGetMemberRankWin : WaterMoney (水錢)改 Payout (派彩)。
+- [b2-4-1] BackendGetMemberRankLose : WaterMoney (水錢)改 Payout (派彩)。
+
+
+***
 ## 1.3.8 - 2019-08-13
 
 ### Added 
@@ -325,6 +341,7 @@
 
 [b1-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.o0l5pxkfu5ik
 [b2-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.qtd5yuu0myrl
+[b2-5]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.jw079su2xjd5
 [b3-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.nq3e0itpkv2a
 [b3-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.4mdodxr0nv3q
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
