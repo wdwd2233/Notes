@@ -13,16 +13,18 @@
 ## 1.4.0 - 2019-08-
 
 ### Added 
+
 - [f3-3-7] FrontendGetGiftByGifter : 會員贈送清單。
 - [f3-3-8] FrontendGetGiftByReceiver : 會員收禮清單。
 
 ### Changed
+
 - [b2-9] BackendGetAgentMemberSetting : 回傳參數Class改為DividedRatio。
 - [b2-5] BackendPostAgentDividedRatio : 傳入參數 DividedRatio 改為 DividedID 。
 - [backend] backendPostGameStateSetting : DBcode 1 → 0。
 - [b2-1] BackendGetAgentMember : 回傳參數增加 AgentCount (代理會員數)。
 - [b2-4] BackendGetMemberRankWin : WaterMoney (水錢)改 Payout (派彩)。
-- [b2-4-1] BackendGetMemberRankLose : WaterMoney (水錢)改 Payout (派彩)。
+- [b2-4] BackendGetMemberRankLose : WaterMoney (水錢)改 Payout (派彩)。
 - [b7-1] BackendGetAgentMemberStatistics : 回傳參數移除WaterMoney(水錢)。
 - [b7-2] BackendGetMemberReport : 回傳參數移除WaterMoney(水錢)。
 - [b7-3] BackendGetMemberGameReport : 回傳參數新增TotalRaceCount (代理總注單量)、 RaceCount (自身注單量)、 WinRate(勝率)，移除WaterMoney(水錢)。
