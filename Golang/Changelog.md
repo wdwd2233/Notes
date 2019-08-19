@@ -6,19 +6,49 @@
 - 推廣碼、推廣渠道機制重新設計。
 - test1002登入，玩家列表不應該能修改自身設定。
 - [f2-6] ProblemImg : 單張尺寸最大4MB。
-
+BackendGetMemberWallet : 取得會員錢包資料,修正金幣顯示比例(資料庫*1000)
+BackendPostMemberCompensate : 會員補點
+後台首頁圖表: 如果沒有同期可以比較是否顯示-1
+後台顯示自己的介紹人ID
+BackendPostMemberCompensate客服補點允許小數位數
 
 
 ***
-## 1.4.0 - 2019-08-
+## 2.0.0 - 2019-08-19
+
+### Changed
+- [2-1-3] FrontendGetImglobbyGameIcon : 回傳參數移除GR、GRF。
+- [4-1-2] FrontendGetGameList : 回傳參數移除GR、GRF。
+- [4-1-3] FrontendGetGameDetail : 回傳參數移除ImgURL。
+- [2-4-1] FrontendMemberHotRank : 回傳參數移除GR、GRF。
+- [2-4-2] FrontendMemberRecommendRank : 回傳參數移除GR、GRF。
+- [2-4-3] FrontendMemberWinRank : 回傳參數移除GR、GRF。
+- [] backendPostGameStateSetting : 回傳參數移除HomePicture(首頁輪播圖)、
+GameIntroductionPicture(遊戲介紹圖片)、GameListMainPicture(遊戲列表主圖)、GameListSubPicture(遊戲列表副圖)。
+
+***
+## 1.4.0 - 2019-08-14
 
 ### Added 
+- [b12-7] BackendPostChannelAdd : 新增渠道。
+- [b12-8] BackendPostChannelMod : 修改渠道。
+- [b12-9] BackendPostChannelDel : 刪除渠道。
 
+### Changed
+- [f3-9] FrontendGetGameList : 回傳參數新增GameTypeID、GameType、GameStyleID、GameStyle、RecommendCount、HotCount。
+backendPostGameStateSetting : 傳入參數新增IsCarousel(是否輪播)。
+backendPostGameStateSetting : 傳入參數移除HomePage、GameRank、Description。
+backendPostGameStateSetting : 移除參數HomePage、GameRank、Description。
+
+
+***
+## 1.4.0 - 2019-08-14
+
+### Added 
 - [f3-3-7] FrontendGetGiftByGifter : 會員贈送清單。
 - [f3-3-8] FrontendGetGiftByReceiver : 會員收禮清單。
 
 ### Changed
-
 - [b2-9] BackendGetAgentMemberSetting : 回傳參數Class改為DividedRatio。
 - [b2-5] BackendPostAgentDividedRatio : 傳入參數 DividedRatio 改為 DividedID 。
 - [backend] backendPostGameStateSetting : DBcode 1 → 0。
@@ -360,6 +390,9 @@
 [b9-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#
 [b12-5]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.81idplj7ylxj
 [b12-6]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.i7dp7yza9j81
+[b12-7]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.flnur0n99qzi
+[b12-8]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.r729izngn6z8
+[b12-9]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.rjqzi3f8bw22
 [b13-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.51j170mc04tt
 [b13-2]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.vkkcfvh9tqy9
 [b13-3]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.6wl8dq6jw22r
