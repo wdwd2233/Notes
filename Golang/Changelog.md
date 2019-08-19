@@ -17,13 +17,13 @@ BackendPostMemberCompensate客服補點允許小數位數
 ## 2.0.0 - 2019-08-19
 
 ### Changed
-- [2-1-3] FrontendGetImglobbyGameIcon : 回傳參數移除GR、GRF。
-- [4-1-2] FrontendGetGameList : 回傳參數移除GR、GRF。
-- [4-1-3] FrontendGetGameDetail : 回傳參數移除ImgURL。
-- [2-4-1] FrontendMemberHotRank : 回傳參數移除GR、GRF。
-- [2-4-2] FrontendMemberRecommendRank : 回傳參數移除GR、GRF。
-- [2-4-3] FrontendMemberWinRank : 回傳參數移除GR、GRF。
-- [] backendPostGameStateSetting : 回傳參數移除HomePicture(首頁輪播圖)、
+- [f2-1-3] FrontendGetImglobbyGameIcon : 回傳參數移除GR、GRF。
+- [f4-1-2] FrontendGetGameList : 回傳參數移除GR、GRF。
+- [f4-1-3] FrontendGetGameDetail : 回傳參數移除ImgURL。
+- [f2-4-1] FrontendMemberHotRank : 回傳參數移除GR、GRF。
+- [f2-4-2] FrontendMemberRecommendRank : 回傳參數移除GR、GRF。
+- [f2-4-3] FrontendMemberWinRank : 回傳參數移除GR、GRF。
+- [b4-3] backendPostGameStateSetting : 回傳參數移除HomePicture(首頁輪播圖)、
 GameIntroductionPicture(遊戲介紹圖片)、GameListMainPicture(遊戲列表主圖)、GameListSubPicture(遊戲列表副圖)。
 
 ***
