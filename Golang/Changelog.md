@@ -27,7 +27,7 @@ BackendPostMemberCompensate客服補點允許小數位數
 GameIntroductionPicture(遊戲介紹圖片)、GameListMainPicture(遊戲列表主圖)、GameListSubPicture(遊戲列表副圖)。
 
 ***
-## 1.4.0 - 2019-08-14
+## 1.4.1 - 2019-08-17
 
 ### Added 
 - [b12-7] BackendPostChannelAdd : 新增渠道。
