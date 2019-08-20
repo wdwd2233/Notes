@@ -14,6 +14,17 @@ BackendPostMemberCompensate客服補點允許小數位數
 
 
 ***
+## 2.0.1 - 2019-08-20
+
+### Changed
+- [b7-1] BackendGetAgentMemberStatistics : 回傳參數新增 AgentPath (代理路徑)。
+- [b1-6] BackendGetDataOverview : 回傳參數Overviews(obj)中的 ChangePercent 如果顯示-1，則代表無同期比較。
+- [backend] : 新增驗證-角色為管理員的帳號是否使用公司IP登入。
+- [b13-5] BackendPostRoleAdd : 傳入參數新增 IsAdmin 是否為管理員(0非管理員、1管理員)
+- [b13-6] BackendPostRoleMod : 傳入參數新增 IsAdmin 是否為管理員(0非管理員、1管理員)
+
+
+***
 ## 2.0.0 - 2019-08-19
 
 ### Changed
@@ -374,6 +385,7 @@ backendPostGameStateSetting : 移除參數HomePage、GameRank、Description。
 
 
 [b1-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.o0l5pxkfu5ik
+[b1-6]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.gb9ljcu98jpv
 [b2-1]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.qtd5yuu0myrl
 [b2-4]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.kermp91gsxdi
 [b2-5]: https://docs.google.com/document/d/1xzBjCcf-_380Nddc5yFbHkIv37iWltjYp8mebYQe0WQ/edit#heading=h.jw079su2xjd5
