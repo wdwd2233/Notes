@@ -13,8 +13,15 @@ BackendPostMemberCompensate : 會員補點
 BackendPostMemberCompensate客服補點允許小數位數
 
 
+
 ***
-## 2.0.1 - 2019-08-20
+## 2.0.1 - 2019-08-21
+
+### Added 
+*********自營運平台專案 暫停*********
+
+***
+## 2.0.1 - 2019-08-21
 
 ### Changed
 - [b7-1] BackendGetAgentMemberStatistics : 回傳參數新增 AgentPath (代理路徑)。
