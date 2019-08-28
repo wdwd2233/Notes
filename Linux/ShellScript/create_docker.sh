@@ -95,12 +95,13 @@ function create_nginx() {
 	mkdir -p -m 711 /root/DockerArea/nginx
 	mkdir -p -m 711 $nginx_host_log
 	mkdir -p -m 711 $nginx_host_client
+	mkdir -p -m 711 /root/DockerArea/nginx/ssl
 
 	docker run --detach --name my-nginx nginx
 	docker cp my-nginx:$nginx_container_cfg $nginx_host_cfg
-	docker stop my-nginx 
-	docker rm my-nginx 
-	docker rmi nginx 
+	docker stop my-nginx
+	docker rm my-nginx
+	docker rmi nginx
 
 	docker run --detach \
 		-e "TZ=Asia/Taipei" \
