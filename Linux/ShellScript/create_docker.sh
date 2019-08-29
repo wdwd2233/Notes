@@ -139,6 +139,10 @@ function redis_client() {
 function create_vsftpd() {
 	echo 'create vsftpd...'
 
+	DataConnectionPort=20
+	CommandConnectionPort=21
+	DockerHostIP=10.40.0.43
+
 	vsftpd_host_cfg=/root/DockerArea/FTP/fax
 	vsftpd_container_cfg=/home/vsftpd
 
@@ -148,18 +152,18 @@ function create_vsftpd() {
 	docker run --detach \
 		-e "TZ=Asia/Taipei" \
 		-v $vsftpd_host_cfg:$vsftpd_container_cfg \
-		-p 20:20 \
-		-p 21:21 \
+		-p $DataConnectionPort:$DataConnectionPort \
+		-p $CommandConnectionPort:$CommandConnectionPort \
 		-p 21100-21110:21100-21110 \
 		-e FTP_USER=root \
 		-e FTP_PASS=a \
-		-e PASV_ADDRESS=10.40.0.43 \
+		-e PASV_ADDRESS=$DockerHostIP \
 		-e PASV_MIN_PORT=21100 \
 		-e PASV_MAX_PORT=21110 \
 		--name my-ftp --restart=always fauria/vsftpd
 
-	firewall-cmd --permanent --zone=public --add-port=20/tcp
-	firewall-cmd --permanent --zone=public --add-port=21/tcp
+	firewall-cmd --permanent --zone=public --add-port=$DataConnectionPort/tcp
+	firewall-cmd --permanent --zone=public --add-port=$CommandConnectionPort/tcp
 	firewall-cmd --reload
 }
 
