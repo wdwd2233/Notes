@@ -124,6 +124,7 @@ function create_nginx() {
 		-v $nginx_host_ssl:$nginx_container_ssl \
 		-v $nginx_host_client:$nginx_container_client \
 		--publish $nginx_port:80 \
+		--publish 443:443 \
 		--name my-nginx nginx
 
 	firewall-cmd --permanent --zone=public --add-port=$nginx_port/tcp
