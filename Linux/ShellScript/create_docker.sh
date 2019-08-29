@@ -80,12 +80,23 @@ function create_mysql() {
 function create_nginx() {
 	echo 'create nginx...'
 
+	# 主要nginx.conf
 	nginx_host_cfg=/root/DockerArea/nginx/nginx.conf
 	nginx_container_cfg=/etc/nginx/nginx.conf
 
+	# nginx include conf
+	nginx_host_icfg=/root/DockerArea/nginx/conf
+	nginx_container_icfg=/etc/nginx/conf.d
+
+	# nginx log
 	nginx_host_log=/root/DockerArea/nginx/log
 	nginx_container_log=/var/log/nginx
 
+	# nginx ssl
+	nginx_host_ssl=/root/DockerArea/nginx/ssl
+	nginx_container_ssl=/etc/nginx/ssl
+
+	# nginx html
 	nginx_host_client=/root/Server/env/client
 	nginx_container_client=/usr/share/nginx/html/client
 
@@ -93,12 +104,14 @@ function create_nginx() {
 
 	# 創建目錄 -p 多層創建 -m 權限
 	mkdir -p -m 711 /root/DockerArea/nginx
-	mkdir -p -m 711 $nginx_host_log
+	mkdir -m 711 $nginx_host_icfg
+	mkdir -m 711 $nginx_host_log
+	mkdir -m 711 $nginx_host_ssl
 	mkdir -p -m 711 $nginx_host_client
-	mkdir -p -m 711 /root/DockerArea/nginx/ssl
 
 	docker run --detach --name my-nginx nginx
 	docker cp my-nginx:$nginx_container_cfg $nginx_host_cfg
+	docker cp my-nginx:$nginx_container_icfg/default.conf $nginx_host_icfg/default.conf
 	docker stop my-nginx
 	docker rm my-nginx
 	docker rmi nginx
@@ -106,7 +119,9 @@ function create_nginx() {
 	docker run --detach \
 		-e "TZ=Asia/Taipei" \
 		-v $nginx_host_cfg:$nginx_container_cfg:ro \
+		-v $nginx_host_icfg:$nginx_container_icfg \
 		-v $nginx_host_log:$nginx_container_log \
+		-v $nginx_host_ssl:$nginx_container_ssl \
 		-v $nginx_host_client:$nginx_container_client \
 		--publish $nginx_port:80 \
 		--name my-nginx nginx
