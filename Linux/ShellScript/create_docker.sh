@@ -97,8 +97,8 @@ function create_nginx() {
 	nginx_container_ssl=/etc/nginx/ssl
 
 	# nginx html
-	nginx_host_client=/root/Server/env/client
-	nginx_container_client=/usr/share/nginx/html/client
+	nginx_host_client=/root/DockerArea/nginx/html
+	nginx_container_client=/usr/share/nginx/html
 
 	nginx_port=8080
 
@@ -107,11 +107,12 @@ function create_nginx() {
 	mkdir -m 711 $nginx_host_icfg
 	mkdir -m 711 $nginx_host_log
 	mkdir -m 711 $nginx_host_ssl
-	mkdir -p -m 711 $nginx_host_client
+	mkdir -m 711 $nginx_host_client
 
 	docker run --detach --name my-nginx nginx
 	docker cp my-nginx:$nginx_container_cfg $nginx_host_cfg
 	docker cp my-nginx:$nginx_container_icfg/default.conf $nginx_host_icfg/default.conf
+	docker cp my-nginx:$nginx_container_client/. $nginx_host_client
 	docker stop my-nginx
 	docker rm my-nginx
 	docker rmi nginx
