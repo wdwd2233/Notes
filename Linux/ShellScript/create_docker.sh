@@ -136,6 +136,33 @@ function redis_client() {
 	docker run -it --link $redis_container_name:$redis_container_name --rm redis sh -c 'exec redis-cli -h '$redis_container_name' -p 6379'
 }
 
+function create_vsftpd() {
+	echo 'create vsftpd...'
+
+	vsftpd_host_cfg=/root/DockerArea/FTP/fax
+	vsftpd_container_cfg=/home/vsftpd
+
+	# 創建目錄 -p 多層創建 -m 權限
+	mkdir -p -m 711 $vsftpd_host_cfg
+
+	docker run --detach \
+		-e "TZ=Asia/Taipei" \
+		-v $vsftpd_host_cfg:$vsftpd_container_cfg \
+		-p 20:20 \
+		-p 21:21 \
+		-p 21100-21110:21100-21110 \
+		-e FTP_USER=root \
+		-e FTP_PASS=a \
+		-e PASV_ADDRESS=10.40.0.43 \
+		-e PASV_MIN_PORT=21100 \
+		-e PASV_MAX_PORT=21110 \
+		--name my-ftp --restart=always fauria/vsftpd
+
+	firewall-cmd --permanent --zone=public --add-port=20/tcp
+	firewall-cmd --permanent --zone=public --add-port=21/tcp
+	firewall-cmd --reload
+}
+
 function menu() {
 	time=$(date '+%Y-%m-%d %H:%M:%S')
 	printc C_GREEN "================================================================\n"
@@ -146,6 +173,7 @@ function menu() {
 	printc C_CYAN "  11. redis client\n"
 	printc C_CYAN "  2.  create_mysql\n"
 	printc C_CYAN "  3.  create_nginx\n"
+	printc C_CYAN "  4.  create_vsftpd\n"
 	printc C_CYAN "  q.  Exit\n"
 	while true; do
 		read -p "Please Select:" cmd
@@ -164,6 +192,10 @@ function menu() {
 			;;
 		3)
 			create_nginx
+			return 0
+			;;
+		4)
+			create_vsftpd
 			return 0
 			;;
 		[Qq]*)
