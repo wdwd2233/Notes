@@ -143,15 +143,20 @@ function create_vsftpd() {
 	CommandConnectionPort=21
 	DockerHostIP=10.40.0.43
 
-	vsftpd_host_cfg=/root/DockerArea/FTP/fax
-	vsftpd_container_cfg=/home/vsftpd
+	vsftpd_host_directory=/root/DockerArea/FTP/fax
+	vsftpd_container_directory=/home/vsftpd
+
+	vsftpd_host_log=/root/DockerArea/FTP/log
+	vsftpd_container_log=/var/log
 
 	# 創建目錄 -p 多層創建 -m 權限
-	mkdir -p -m 711 $vsftpd_host_cfg
+	mkdir -p -m 711 $vsftpd_host_directory
+	mkdir -m 711 $vsftpd_host_log
 
 	docker run --detach \
 		-e "TZ=Asia/Taipei" \
-		-v $vsftpd_host_cfg:$vsftpd_container_cfg \
+		-v $vsftpd_host_directory:$vsftpd_container_directory \
+		-v $vsftpd_host_log:$vsftpd_container_log \
 		-p $DataConnectionPort:$DataConnectionPort \
 		-p $CommandConnectionPort:$CommandConnectionPort \
 		-p 21100-21110:21100-21110 \
