@@ -10,7 +10,7 @@
 
 4. [下載] (https://windows.php.net/download/)
 
-	1. 路徑 C:\php-7.3.9
+	1. 路徑 `C:\php-7.3.9`
 		
 ## [Composer](https://laravel.tw/docs/4.2/quick)
 
@@ -19,10 +19,8 @@
 2. [下載](https://getcomposer.org/download/])
 
 	1. 安裝時，將PHP路徑指向 C:\php-7.3.9
-	2. 執行
-<?php
-        set PATH=%PATH%;C:\php-7.3.9
-?>
+	2. 執行 `set PATH=%PATH%;C:\php-7.3.9`
+
 
 
 
@@ -30,4 +28,4 @@
 
 1. terminal 進入 工作目錄(D:\WorkPlace\ceplatform\PHP) 
 
-2. 創建新專案 → 運行 composer create-project laravel/laravel ceplatform --prefer-dist 
+2. 創建新專案 → 運行 `composer create-project laravel/laravel ceplatform --prefer-dist`
