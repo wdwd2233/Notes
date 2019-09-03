@@ -12,7 +12,7 @@
 
 	1. 路徑 `C:\php-7.3.9`
 		
-## [Composer](https://laravel.tw/docs/4.2/quick)
+## [Composer 管理工具](https://laravel.tw/docs/4.2/quick)
 
 1. Composer是PHP的軟體包管理系統，由Nils Adermann及Jordi Boggiano提出並實做，於2012年3月1日發行第一個版本。
 
@@ -24,7 +24,7 @@
 
 
 
-## [Laravel框架](https://laravel.tw/docs/4.2/quick)
+## [Laravel 框架](https://laravel.tw/docs/4.2/quick)
 
 1. terminal 進入 工作目錄(D:\WorkPlace\ceplatform\PHP) 
 
