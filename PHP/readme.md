@@ -8,7 +8,7 @@
 2. PHP的語法借鑑吸收C語言、Java和Perl等流行電腦語言的特點，易於一般程式設計師學習。
 3. PHP的主要目標是允許網路開發人員快速編寫動態頁面，但PHP也被用於其他很多領域。
 
-4. [下載] (https://windows.php.net/download/)
+4. [下載](https://windows.php.net/download/)
 
 	1. 路徑 `C:\php-7.3.9`
 		
