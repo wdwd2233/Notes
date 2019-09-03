@@ -18,7 +18,7 @@
 
 2. [下載](https://getcomposer.org/download/)
 
-	1. 安裝時，將PHP路徑指向 C:\php-7.3.9
+	1. 安裝時，將PHP路徑指向 `C:\php-7.3.9`
 	2. 執行 `set PATH=%PATH%;C:\php-7.3.9`
 
 
