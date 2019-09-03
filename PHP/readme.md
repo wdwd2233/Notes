@@ -20,9 +20,9 @@
 
 	1. 安裝時，將PHP路徑指向 C:\php-7.3.9
 	2. 執行
- 	<?php
+<?php
         set PATH=%PATH%;C:\php-7.3.9
-    ?>
+?>
 
 
 
