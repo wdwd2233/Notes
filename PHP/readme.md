@@ -40,8 +40,6 @@
 
 2. 左側選單 站台 → Default Web Site → 處理常式對應 → 新增模組對應 。
 
-3. 要求路徑: `*.php` 、  模組: `FastCgiModule` 、執行檔: `C:\php-7.3.9\php-cgi.exe` 、名稱 `PHP via FastCGI`
+3. 要求路徑: `*.php` 、  模組: `FastCgiModule` 、執行檔: `C:\php-7.3.9\php-cgi.exe` 、名稱: `PHP via FastCGI`
 
 4. 側選單 站台 → Default Web Site → 預設文件 → 新增 `index.php`
-
-5. 
