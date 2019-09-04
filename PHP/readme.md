@@ -11,7 +11,20 @@
 4. [下載](https://windows.php.net/download/)
 
 	1. 路徑 `C:\php-7.3.9`
-		
+
+
+## Internet Information Services(IIS )部屬 PHP
+
+1. Internet Information Services → World Wide Web 服務 → 應用程式開發功能 → CGI [v] 。
+
+2. 左側選單 站台 → Default Web Site → 處理常式對應 → 新增模組對應 。
+
+3. 要求路徑: `*.php` 、  模組: `FastCgiModule` 、執行檔: `C:\php-7.3.9\php-cgi.exe` 、名稱: `PHP via FastCGI`
+
+4. 側選單 站台 → Default Web Site → 預設文件 → 新增 `index.php`
+
+
+
 ## [Composer 管理工具](https://laravel.tw/docs/4.2/quick)
 
 1. Composer是PHP的軟體包管理系統，由Nils Adermann及Jordi Boggiano提出並實做，於2012年3月1日發行第一個版本。
@@ -34,12 +47,3 @@
 4. 運行專案  → `php artisan serve`
 
 
-## Internet Information Services(IIS )部屬 PHP
-
-1. Internet Information Services → World Wide Web 服務 → 應用程式開發功能 → CGI [v] 。
-
-2. 左側選單 站台 → Default Web Site → 處理常式對應 → 新增模組對應 。
-
-3. 要求路徑: `*.php` 、  模組: `FastCgiModule` 、執行檔: `C:\php-7.3.9\php-cgi.exe` 、名稱: `PHP via FastCGI`
-
-4. 側選單 站台 → Default Web Site → 預設文件 → 新增 `index.php`
