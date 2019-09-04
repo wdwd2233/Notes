@@ -23,7 +23,6 @@
 
 
 
-
 ## [Laravel 框架](https://laravel.tw/docs/4.2/quick)
 
 1. terminal 進入 工作目錄(D:\WorkPlace\ceplatform\web) 
@@ -33,3 +32,16 @@
 3. 進入工作目錄 → `cd D:\WorkPlace\ceplatform\PHP\ceplatform` 
 
 4. 運行專案  → `php artisan serve`
+
+
+## Internet Information Services(IIS )部屬 PHP
+
+1. Internet Information Services → World Wide Web 服務 → 應用程式開發功能 → CGI [v] 。
+
+2. 左側選單 站台 → Default Web Site → 處理常式對應 → 新增模組對應 。
+
+3. 要求路徑: `*.php` 、  模組: `FastCgiModule` 、執行檔: `C:\php-7.3.9\php-cgi.exe` 、名稱 `PHP via FastCGI`
+
+4. 側選單 站台 → Default Web Site → 預設文件 → 新增 `index.php`
+
+5. 
