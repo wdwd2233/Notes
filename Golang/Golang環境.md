@@ -103,6 +103,14 @@
 
 #### 4. 建立 go module
 
+
+* 通過環境變量GO111MODULE 來控制是否使用go mod方式來管理包。
+
+* GO111MODULE 可以設置為三個字符串值之一：off，on或auto（默認值）。
+    * off : 不使用模塊，使用“ GOPATH 模式”。
+    * on : 使用模塊，只根據go.mod 下載依賴。
+    * auto : 同時滿足下面兩個條件開啟模塊模式
+
 1. VS code 設定終端機
     1. 檔案→喜好設定→設定→(功能)→(終端機)
     2. External: Windows Exec (自訂要在 Windows 上執行的終端機。)
