@@ -115,5 +115,6 @@
         * `"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"`
         * `"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"`
 
-2. 打開 GO111MODULE `set GO111MODULE=on`
-3. 建立 go mod  `go mod init github.com/wdwd2233`
+2. 開啟終端機 (D:\go)
+3. 打開 GO111MODULE `set GO111MODULE=on`
+4. 建立 go mod  `go mod init github.com/wdwd2233`
