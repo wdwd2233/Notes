@@ -35,12 +35,12 @@
 
 	![command](https://github.com/wdwd2233/Notes/blob/master/Golang/img/go1.png?raw=true)
 
-2.	設定專案資料夾 (E:\GitHub\golang\Main)。
+2.	設定專案資料夾 (D:\go)。
 
  1. 再專案路徑下建立三個資料夾 (bin,pkg,src)。
 
 
-3. 本機(內容) → 進階系統設定 → 環境變數 → GOPATH (E:\GitHub\golang\Main )。
+3. 本機(內容) → 進階系統設定 → 環境變數 → GOPATH (D:\go\src )。
 		
         
 #### 3. 安裝 VisualStudio Code [下載](https://code.visualstudio.com/)
@@ -101,3 +101,19 @@
 }
 ```
 
+#### 4. 建立 go module
+
+1. VS code 設定終端機
+    1. 檔案→喜好設定→設定→(功能)→(終端機)
+    2. External: Windows Exec (自訂要在 Windows 上執行的終端機。)
+        * command `C:\WINDOWS\System32\cmd.exe`
+        * shell `C:\Program Files\Git\bin\bash.exe`
+
+    or 
+
+    3. 開啟settings.json 
+        * `"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"`
+        * `"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"`
+
+2. 打開 GO111MODULE `set GO111MODULE=on`
+3. 建立 go mod  `go mod init github.com/wdwd2233`
