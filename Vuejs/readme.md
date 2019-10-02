@@ -4,7 +4,7 @@
 
 ## [Node.js](https://nodejs.org/en/)
 
-1. Node.js 是一個開放原始碼、跨平台的、可用於伺服器端和網路應用的執行環境，並採用 Google 的 V8 引擎來執行代碼。Node.js 的。
+1. Node.js 是一個開放原始碼、跨平台的、可用於伺服器端和網路應用的執行環境，並採用 Google 的 V8 引擎來執行代碼。
 2. 大部分基本模組都是用 JavaScript 寫成的。Node.js 含有一系列內建模組，使得程式可以作為獨立伺服器執行 ( wiki )。
 
 4. nodejs 12.11.1 [下載](https://nodejs.org/dist/v12.11.1/node-v12.11.1-x64.msi)
