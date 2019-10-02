@@ -29,4 +29,7 @@
 1. del package-lock.json 
 2. del node_modules
 3. `npm install`
-4. `npm run serve`
+4. `npm run serve` 
+
+
+6. build完的檔案 (dist)
