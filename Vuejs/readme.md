@@ -11,7 +11,7 @@
 
 5. 檢查 node 安裝狀態 `node -v`
 
-6. 檢查 node 安裝狀態 `npm -v`
+6. 檢查 npm 安裝狀態 `npm -v`
 
 ## [Vue.js](https://v1-cn.vuejs.org/)
 
@@ -21,7 +21,7 @@
 
 4. cmd 執行 `npm install --global vue-cli`
 
-5. 檢查 node 安裝狀態 `vue -V`
+5. 檢查 vue 安裝狀態 `vue -V`
 
 
 ## 維護平台專案
