@@ -12,6 +12,8 @@
 
 	1. 路徑 `C:\php-7.3.9`
 
+5. iis 是使用 FastCGI 的方式執行 PHP ，所以需要下載 `None Thread Safe`(NTS，非線程安全)的版本效率較好。
+6. apache、nginx 是使用 SAPI 的方式執行 PHP ，所以建議下載 `Thread Safe`(TS，線程安全)的版本效率較好。
 
 ## Internet Information Services(IIS)部屬 PHP
 
