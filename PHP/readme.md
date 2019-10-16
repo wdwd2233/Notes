@@ -28,11 +28,11 @@
 5. 重新啟動 Internet Information Services `iisreset /restart` 。
 
 
-## [Composer 管理工具](https://laravel.tw/docs/4.2/quick)
+## [Composer 管理工具](https://getcomposer.org/)
 
 1. Composer是PHP的軟體包管理系統，由Nils Adermann及Jordi Boggiano提出並實做，於2012年3月1日發行第一個版本。
 
-2. [下載](https://getcomposer.org/download/)
+2. [下載](https://getcomposer.org/Composer-Setup.exe)
 
 	1. 安裝時，將PHP路徑指向 `C:\php-7.3.9`
 	2. 執行 `set PATH=%PATH%;C:\php-7.3.9`
