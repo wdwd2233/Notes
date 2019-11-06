@@ -17,7 +17,15 @@
   + 移動到至目錄 `D:\mongodb_server\mongodb-v3.6\bin` 
   + 啟動mongodb 服務器 `mongod.exe --dbpath=../../db --config=../mongodb.cfg --port=27017` 
 
-  
+* NoSQL Manager for MongoDB GUI tool <https://www.mongodbmanager.com/>
+
+ + MongoDB的圖形介面管理軟體 
+ + 全功能整合GUI
+ + 容易去使用document觀察
+ + 容易操作與管理MongoDB物件
+ + 以SSH通道連接MongoDB
+ + Map-Reduce操作編輯
+ + 多台Mongo host/database 連線
 
 * 設置系統服務
 
