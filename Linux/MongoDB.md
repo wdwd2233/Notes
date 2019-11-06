@@ -6,6 +6,8 @@
 
 		免安裝 <https://www.mongodb.org/dl/win32>	雙數版(穩定版)、基數版(開發版)
 
+ * 數據庫的集合會自動創建。
+
 ### 安裝 
 
 * 設定環境變量 : `D:\mongodb_server\mongodb-v3.6\bin` (安裝版)
@@ -54,3 +56,21 @@ displayName: MongoDB27017
  - show dbs : 顯示當前所有數據庫
  - use [database] : 進入指定數據庫
  - db : 當前的數據庫
+ - show collections : 顯示數據庫中所有的集合
+
+##### CRUD 操作
+
+ * Create（新增）
+
+    - db.stus.insertOne({name:"孫悟空",age:18,gender:"男生"}) : 像集合[stus]內插入一個[{name:"孫悟空",age:18,gender:"男生"}]
+
+    - 
+
+ * Read（讀取）
+
+    - db.stus.find() : 查詢集合[stus]中所有的文檔。
+
+ 
+ * Update（更新） 
+ * Delete（刪除）
+
