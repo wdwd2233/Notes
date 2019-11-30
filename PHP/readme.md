@@ -49,3 +49,6 @@
 
 4. 運行專案  → `php artisan serve` 。
 
+## Redis dll 
+
+1. [下載](https://pecl.php.net/package/redis)

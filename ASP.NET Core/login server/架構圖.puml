@@ -1,0 +1,32 @@
+@startuml
+
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor user
+
+actor SmartFoxServer
+actor LeoGameServer
+
+
+
+user --> Resource_Owner
+
+'認證層'
+rectangle OAuthServer {
+  Resource_Owner --> (Authorization Layer) : create handshake token
+  (Authorization Layer) --> (redis) : set token in redis expire 2s
+}
+
+'傳輸層'
+rectangle OAuthServer {
+  user --> (Transport Layer) : using tokens to establish connections
+  (Transport Layer) --> (redis) : check if user info is valid
+  (Transport Layer) <--> (SmartFoxServer) 
+  (Transport Layer) <--> (LeoGameServer) 
+}
+
+
+
+@enduml
