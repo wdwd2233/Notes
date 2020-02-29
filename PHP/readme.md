@@ -36,12 +36,19 @@
 
 3. 安裝 
 	 * 勾選 開發者模式
+
 		![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004775531.jpg?raw=true)
+
 	 * 安裝目錄 C:\composer
+
 		![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004821347.jpg?raw=true)
+
 	 * 預設 PHP 執行檔 位置
+
 		![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004832881.jpg?raw=true)
+
 	 * 不用設定
+
 		![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004844032.jpg?raw=true)
 
 
