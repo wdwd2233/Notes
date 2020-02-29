@@ -34,6 +34,17 @@
 
 2. [下載](https://getcomposer.org/Composer-Setup.exe)
 
+3. 安裝 
+	 1.勾選 開發者模式
+![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004775531.jpg?raw=true)
+	 2.安裝目錄 C:\composer
+![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004821347.jpg?raw=true)
+	 3. 預設 PHP 執行檔 位置
+![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004832881.jpg?raw=true)
+	 4.  不用設定
+![](https://github.com/wdwd2233/Notes/blob/master/PHP/images/1583004844032.jpg?raw=true)
+
+
 	1. 安裝時，將PHP路徑指向 `C:\php-7.3.9`
 	2. 執行 `set PATH=%PATH%;C:\php-7.3.9`
 
