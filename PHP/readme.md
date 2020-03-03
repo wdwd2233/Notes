@@ -60,13 +60,11 @@
 
 ## [Laravel 框架](https://laravel.tw/docs/4.2/quick)
 
-1. terminal 進入 工作目錄(D:\WorkPlace\ceplatform\web)  。
+1. terminal 進入 工作目錄(D:\WorkPlace\Laravel\VAWebsite)  。
 
-2. 創建新專案 → 運行 `composer create-project laravel/laravel ceplatform --prefer-dist` 。
+2. 創建新專案 → 運行 `composer create-project laravel/laravel VAWebsite --prefer-dist` 。
 
-3. 進入工作目錄 → `cd D:\WorkPlace\ceplatform\PHP\ceplatform`  。
-
-4. 運行專案  → `php artisan serve` 。
+3. 運行專案  → `php artisan serve` 。
 
 ## Redis dll 
 
