@@ -1,0 +1,113 @@
+
+<!-- ![](https://github.com/wdwd2233/Notes/blob/master/Windows/img/XAMPP.png?raw=true) -->
+
+
+# 限制遠端桌面重新導向
+
+1. 將原則編輯器中'不允許剪貼簿重新導向'及'不允許磁碟重新導向'啟用。
+
+
+2. 執行 `gpedit.msc`
+
+	![限制遠端桌面重新導向](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583207309627.jpg?raw=true)
+
+
+3. 進入目錄 
+	`(電腦設定→系統管理範本→Windows元件→遠端桌面服務→遠端桌面工作階段主機→裝置及資源重新導向)`
+
+	![限制遠端桌面重新導向](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583207018446.jpg?raw=true)
+
+
+4. 將`不允許剪貼簿重新導向`及`不允許磁碟重新導向`啟用。
+
+	![限制遠端桌面重新導向](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583207365635.jpg?raw=true)
+
+
+## 變更遠端桌面預設 3389 Port
+
+1. 執行 `regedit`
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583207839262.jpg?raw=true)
+
+2. 進入目錄
+
+	`電腦\HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TerminalServer\WinStations\RDP-Tcp\PortNumber`
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583172916097.jpg?raw=true)
+
+3. 變更 `64490` Port
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583208178369.jpg?raw=true)
+
+4. 開防火牆 `64490` Port
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583208267073.jpg?raw=true)
+
+5. 重新啟動 遠端桌面 `控制台→系統→遠端桌面` 停用後再重新開啟
+ 
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583215454183.jpg?raw=true)
+
+
+6. 直接修改機碼，複製代碼儲存成 `RemoteDesktop.reg`
+
+	```bat
+	Windows Registry Editor Version 5.00
+
+	[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp]
+	"PortNumber"=dword:FBEA
+	```
+
+
+## 建立 登入檢查機制
+
+※ 環境需有 [dotnet core 3.1 SDK](https://dotnet.microsoft.com/download) 並執行`dotnet tool install --global line.cli`
+
+![登入檢查機制](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583228889304.jpg?raw=true)
+
+1. 建立Batch檔 (RDP.bat)
+
+	```bat
+	@echo off
+	chcp 65001
+	@For /f "tokens=1-3 delims=/ " %%a in ('date /t') do (set date=%%a-%%b-%%c)
+	@echo The date is %date%
+	rename C:\Logs\RDP\tslog.log %date%.log
+	if not exist C:\Logs\RDP md C:\Logs\RDP
+	if not exist C:\Logs\RDP\%date%.log type nul > C:\Logs\RDP\%date%.log
+	cacls C:\Logs\RDP\%date%.log /E /G users:F
+	echo  ********************************************************************* >>C:\Logs\RDP\%date%.log
+	echo   時間：%date% %time% >>C:\Logs\RDP\%date%.log
+	echo   遠端電腦: %CLIENTNAME% >>C:\Logs\RDP\%date%.log
+	echo   登入網域: %USERDOMAIN% >>C:\Logs\RDP\%date%.log
+	echo   登入帳號: %USERNAME% >>C:\Logs\RDP\%date%.log
+	echo   遠端連線狀況 >>C:\Logs\RDP\%date%.log
+	netstat -n -p tcp | find ":64490" >>C:\Logs\RDP\%date%.log
+	echo  ********************************************************************* >>C:\Logs\RDP\%date%.log
+		
+	REM 本機IP
+	for /f "delims=: tokens=2" %%i in ('ipconfig ^| find /i "IPv4"') do set IP=%%i 
+	
+	line notify -n xu0tK93EKeGyxrd2SFbdn9whSSpJu93i1mE151ucIXK -m "IP:%IP% ,遠端電腦:%CLIENTNAME%, 登入帳號: %USERNAME%"
+	
+	REM REM localhost
+	REM if "%CLIENTNAME%" == "" goto end	
+	REM REM 允許名稱清單
+	REM if "%CLIENTNAME%" == "TIORN" goto end	
+	REM shutdown /I	
+	REM :end
+	```
+
+2. 執行 `regedit`
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583207839262.jpg?raw=true)
+
+3. 進入目錄 `電腦\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`
+
+4. 新增 `字串值(S)`
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583219612623.jpg?raw=true)
+	
+
+4. 新增 `數值名稱:RDP、數值資料:C:\RDP.bat`
+
+	![變更遠端桌面預設Port](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583173669649.jpg?raw=true)
