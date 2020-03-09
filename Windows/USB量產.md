@@ -43,7 +43,7 @@
 
 	![限制遠端桌面重新導向](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583419256843.jpg?raw=true)
 
-10. 設定完成後點選`Save`儲存，返回`Production`後點選`Scan`，跑完出縣綠色圈圈代表完成。
+10. 設定完成後點選`Save`儲存，返回`Production`後點選`Start`，跑完出縣綠色圈圈代表完成。
 
 	![限制遠端桌面重新導向](https://github.com/wdwd2233/Notes/blob/master/Windows/img/1583419279310.jpg?raw=true)
 
