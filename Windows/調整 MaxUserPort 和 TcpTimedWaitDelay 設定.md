@@ -70,19 +70,14 @@ var ihubo = {
 
 ## 調整 TcpTimedWaitDelay 設定
 
+1. TcpTimedWaitDelay值會決定在關閉時，連接停留在 TIME_WAIT 狀態的時間長度。 
+2. 當連線處於 TIME_WAIT 狀態時，無法重複使用通訊端配對。 這也稱為2MSL 狀態，因為此值應為網路上最大區段存留期的兩倍。 
 
-Age             | Time  | Food | Gold 
---------------- | ----  | ---  | ---  
-Feudal Age      | 02:10 |  500 |    0 
-Castle Age      | 02:40 |  800 |  200 
-Imperial Age    | 03:30 | 1000 |  800 
 
-擊鍵	HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
-Value	TcpTimedWaitDelay
-資料類型：	REG_DWORD
-格或	Windows Server 2012 和更早版本：30-300 （十進位）
-Windows 8 和更早版本：30-300 （十進位）
-Windows Server 2012 R2 和更新版本：2-300 （十進位）
-Windows 8.1 和更新版本：2-300 （十進位）
-預設值︰	0x78 （120十進位）
-建議值：	30
+|Age             | Time                                                                 |
+|--------------- | ----                                                                 |
+|Value			| TcpTimedWaitDelay														|
+|資料類型        | REG_DWORD															|
+|擊鍵			| HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters	|
+|建議值			| 30																	|
+|預設值			| 0x78 （120十進位）													|
