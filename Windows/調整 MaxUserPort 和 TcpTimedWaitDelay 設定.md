@@ -24,7 +24,7 @@
         * netsh int ipv6 show dynamicport tcp
         * netsh int ipv6 show dynamicport udp
 
-## 調整 TcpTimedWaitDelay 設定 [下載](http://jquery.com)
+## 調整 TcpTimedWaitDelay 設定 [下載](https://github.com/wdwd2233/Notes/blob/master/Windows/file/TIME_WAITto30s.reg)
 
 1. TcpTimedWaitDelay值會決定在關閉時，連接停留在 TIME_WAIT 狀態的時間長度。 
 2. 當連線處於 TIME_WAIT 狀態時，無法重複使用通訊端配對。 這也稱為2MSL 狀態，因為此值應為網路上最大區段存留期的兩倍。 
