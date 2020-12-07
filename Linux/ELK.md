@@ -14,7 +14,15 @@ cd /tmp
 	```javascript
 	yum -y install java-1.8.0-openjdk-devel java-1.8.0-openjdk
 	```
+2.	mmap計數的限制等於262,144或更多
+	!! 自從Elasticsearch版本5發布以來，這是Elasticsearch無法啟動的最常見原因。
+	當前主機上的值`sysctl vm.max_map_count`
 	
+	```javascript
+	echo "vm.max_map_count=262144" > /etc/sysctl.conf
+	sysctl -p
+	```
+
 ----
 ### 2. [Elasticsearch](https://www.elastic.co/downloads/elasticsearch) (elasticsearch-6.6.1.rpm)
  1. Elasticsearch 是搜尋引擎，就像是資料庫，把收集到的 Log 存在這裡，下載後透過 WinSCP 放到 /tmp/，執行以下指令安裝：
