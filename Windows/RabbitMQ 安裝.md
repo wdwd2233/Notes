@@ -1,5 +1,7 @@
 # RabbitMQ 安裝在 Windows
 
+![RabbitMQ](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWnU9CBzwzPvZk5-VTu3ZKYC76BIQ9Q9aX9g&usqp=CAU)
+
 
 **前言**
 
