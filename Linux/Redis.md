@@ -31,7 +31,7 @@
 
 
 ##### 雙11 秒殺案例 練習
-```js
+```go
 ConsumerKey := "sk_Consumer_list"
 countKey := "sk_Productid_qt"
 userID := "123"
